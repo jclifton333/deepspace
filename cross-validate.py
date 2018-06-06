@@ -61,8 +61,8 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
         dnn_epochs, dnn_batch_size, dnn_verbose, area_clf_epochs, 
         area_clf_batch_size, area_clf_verbose, taxa_threshold):
     # First, define the models to be cross-validated
-    #area = ['locality', 'country', 'administrative_area_level_2', 'administrative_area_level_3', 'administrative_area_level_4', 'administrative_area_level_5']
-    area = ['state', 'county', 'city', 'country']
+    area = ['locality', 'country', 'administrative_area_level_2', 'administrative_area_level_3', 'administrative_area_level_4', 'administrative_area_level_5']
+    # area = ['state', 'county', 'city', 'country']
     def fit_knn(sp, partition, sample_weight, seeds, partition_counter, **kwargs):
         clf = KNeighborsClassifier(n_neighbors=knn_n_neighbors, metric='jaccard')
         sp_clf = SpatialClassifier(clf, partition)
@@ -84,10 +84,8 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
         model.compile(loss='categorical_crossentropy', optimizer=Adam(), 
                 metrics=['accuracy'])
         sp_clf = SpatialClassifier(model, partition)
-        sp_clf.fit(sp, to_categorical=True, sample_weight=sample_weight, 
+        sp_clf.fit(sp, to_categorical=True, sample_weight=sample_weight,
                 epochs=nn_epochs, batch_size=nn_batch_size, verbose=nn_verbose)
-        model_name = 'national-{}-nn-{}.h5'.format(seeds, partition_counter)
-        model.save(model_name)
         return sp_clf
     
     def fit_dnn(sp, partition, sample_weight, seeds, partition_counter):
@@ -106,10 +104,9 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
         model.compile(loss='categorical_crossentropy', optimizer=Adam(), 
                 metrics=['accuracy'])
         clf = SpatialClassifier(model, partition)
-        clf.fit(sp, to_categorical=True, sample_weight=sample_weight, 
+        # model_name = 'global-final-{}-dnn-{}.h5'.format(seeds, partition_counter)
+        clf.fit(sp, to_categorical=True, sample_weight=sample_weight,
                 epochs=dnn_epochs, batch_size=dnn_batch_size, verbose=dnn_verbose)
-        model_name = 'national-{}-dnn-{}.h5'.format(seeds, partition_counter)
-        model.save(model_name)
         return clf
     
     def fit_area_clf(X, Y, sample_weight):
@@ -181,7 +178,7 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
     
     sample_ids = table.ids(axis='sample')
     assigned_fold = dict(zip(sample_ids, np.random.choice(folds, size=len(sample_ids))))
-    pdb.set_trace()
+    # pdb.set_trace()
     for fold in range(folds):
         click.echo("\n===============\nFold {} of {}\n===============\n".format(fold+1, folds))
         # Allocate points in fold to testing set, all other points to training set

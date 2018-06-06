@@ -9,7 +9,7 @@ class SpatialClassifier(object):
         self.model = model
         self.seeds = seeds
 
-    def fit(self, sp, model_fname, to_categorical=False, **kwargs):
+    def fit(self, sp, model_fname=None, to_categorical=False, **kwargs):
         """Fit self.model to sp.values collected from sp.coords/
 
         Parameters
@@ -27,7 +27,8 @@ class SpatialClassifier(object):
         if to_categorical:
             y = self._to_categorical(y)
         self.model.fit(sp.values.as_matrix(), y, **kwargs)
-        self.model.save(model_fname)
+        if model_fname is not None:
+            self.model.save(model_fname)
 
     def predict(self, values, **kwargs):
         """Predict most likely cell for each observation in sp.values.
@@ -171,7 +172,7 @@ class Geolocator(object):
             Outter-level keys are values.index and inner-level keys are
             the probabilities in p, each holding a SpatialPoints instance.
         """
-        pdb.set_trace()
+        # pdb.set_trace()
         assert all(0. <= prob <= 1. for prob in p)
         likelihood = likelihood.sum(axis=1).rename('likelihood')
         probs = likelihood.groupby(level='ids').transform(lambda x: x / x.sum())

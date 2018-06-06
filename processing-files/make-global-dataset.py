@@ -25,10 +25,11 @@ def main(min_counts):
     logger.info('making final data set from raw data')
 
     # Build interim metadata
-    raw_metadata_fp = os.path.join(raw_dir, 'metadata.csv')
-    dateparse = lambda x: pd.datetime.strptime(x, '%d-%b-%Y')
-    df = pd.read_csv(raw_metadata_fp, index_col='SampleID',
-            parse_dates=['Date'], date_parser=dateparse)
+    raw_metadata_fp = os.path.join(raw_dir, 'metadata-final-modified.csv')
+    dateparse = lambda x: pd.datetime.strptime(x, '%d-%b-%y')
+    #df = pd.read_csv(raw_metadata_fp, encoding = "ISO-8859-1", index_col='SampleID',
+    #        parse_dates=['Date'], date_parser=dateparse)
+    df = pd.read_csv(raw_metadata_fp, encoding = "ISO-8859-1", index_col='SampleID')
     df.rename(columns={'Latitude': 'lat', 'Longitude': 'lon'}, inplace=True)
     df = df[['lat', 'lon']]
     df['lat'] = df['lat'].map(to_decimal_degrees)
@@ -42,7 +43,7 @@ def main(min_counts):
     # First we retrieve the Google Maps API Key stored in .env in project_dir
     # You must edit the .env file to include your own Google API key! More info:
     # https://developers.google.com/maps/documentation/geocoding/get-api-key
-    #dotenv.load_dotenv(os.path.join(project_dir, '.env'))
+    # dotenv.load_dotenv(os.path.join(project_dir, '.env'))
     dotenv.load_dotenv('env')
     gmaps = googlemaps.Client(key=os.environ.get('GOOGLE_API_KEY'))
 
@@ -63,7 +64,11 @@ def main(min_counts):
     for id_, lat, lon in df[['lat', 'lon']].itertuples():
         print("Retrieving areas for sample point w/ id: {}".format(id_))
         time.sleep(0.15)  # 10 queries per second (Google Maps API requires <50 qps)
-        response = gmaps.reverse_geocode((lat, lon))
+        try:
+          response = gmaps.reverse_geocode((lat, lon))
+        except:
+          print("reverse geocode didn't work")
+          pdb.set_trace()
         if response:
             result = response[0]  # extract areas from top result
             for address_component in result['address_components']:
@@ -86,12 +91,13 @@ def main(min_counts):
     click.echo("Making interim BIOM files from raw")
     md = df.to_dict(orient='index')
     biom_src = {
-            'combined':'plant_fungal_combined.biom'}
+            'final':'final.biom'
+#           'combined':'plant_fungal_combined.biom'}
 #            'ITS': 'DOD_global_dust_ITS_otu_table_wTax.biom',
 #            '16S':'DoD_16S_otu_table_wTax_noChloroMito.biom',
 #            'trnL': 'otu.table.trnl.unoise2.sintax.taxfilt.mc8.biom',
 #            'data2-fungal':'100ITS.biom'
-#        }
+        }
     biom_files = []
 
     for barcode_sequence, biom_file in list(biom_src.items()):
