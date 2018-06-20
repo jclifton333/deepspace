@@ -3,14 +3,15 @@
 FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_DIR="$(dirname "$FILE_DIR")"
 
-FOLDS=10
+#FOLDS=10
+FOLDS=2
 PARTS=50
 
 #DOMAIN_PATH=$PROJECT_DIR/data/external/global/domain.csv
 #CENTROIDS_PATH=$PROJECT_DIR/data/external/global/country-centroids.csv
 
-DOMAIN_PATH=$PROJECT_DIR/deepspace/data/external/global/domain.csv
-CENTROIDS_PATH=$PROJECT_DIR/deepspace/data/external/global/country-centroids.csv
+DOMAIN_PATH=$PROJECT_DIR/deepspace/data/external/global/domain-final.csv
+CENTROIDS_PATH=$PROJECT_DIR/deepspace/data/external/global/country-centroids-final.csv
 
 
 KNN_N_NEIGHBORS=25

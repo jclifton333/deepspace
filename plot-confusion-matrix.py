@@ -17,7 +17,7 @@ pandas2ri.activate()
 #@click.option('--model', default=None)
 #@click.argument('input_')
 #@click.argument('output')
-def plot_confusion_matrix(input_, output, centroid='country', centroid_fp=os.getcwd() + '/data/external/global/country-centroids.csv', title='', model='DeepSpace'):
+def plot_confusion_matrix(input_, output, centroid='country', centroid_fp=os.getcwd() + '/data/external/global/country-centroids-final.csv', title='', model='DeepSpace'):
     if not isinstance(input_, str):
       input_ = str(input_, 'utf-8')
     if not isinstance(centroid_fp, str):
@@ -65,8 +65,9 @@ def plot_confusion_matrix(input_, output, centroid='country', centroid_fp=os.get
     """)
 
 if __name__ == '__main__':
-    input_dict = {'coarse': os.getcwd() + '/global-results/100-coarse-DS-only-cross-val.csv',
-                   'mixed': os.getcwd() + '/global-results/100-mixed-DS-only-cross-val.csv'}
+    input_dict = {'coarse': os.getcwd() + '/final-coarse-cross-val.csv',
+                   'mixed': os.getcwd() + '/final-mixed-cross-val.csv',
+		  'fine': os.getcwd() + '/final-fine-cross-val.csv'}
     for name, fp in input_dict.items():
-      output = 'dada2-corrected-{}.png'.format(name)
+      output = 'final-{}.png'.format(name)
       plot_confusion_matrix(fp, output)

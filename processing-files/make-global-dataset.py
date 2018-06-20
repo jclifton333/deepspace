@@ -10,12 +10,13 @@ import googlemaps
 import pdb
 
 import pandas as pd
+import numpy as np
 
 from biom import load_table
 from utils import biom_summarize_table
 
 @click.command()
-@click.option('--min-counts', default=1, type=int)
+@click.option('--min-counts', default=3000, type=int)
 def main(min_counts):
     """
     Runs data processing scripts to turn raw data (from data/raw)
@@ -36,7 +37,6 @@ def main(min_counts):
     df['lon'] = df['lon'].map(to_decimal_degrees)
     df.index.names = ['#SampleID']
     df.dropna(inplace=True)
-
     # Query Google Maps API for reverse geocoding: use a point's lat, lon to find
     # address which includes country, state, county, city, postal_code, ...
 
@@ -68,7 +68,7 @@ def main(min_counts):
           response = gmaps.reverse_geocode((lat, lon))
         except:
           print("reverse geocode didn't work")
-          pdb.set_trace()
+          print('lat: {} lon: {}'.format(type(lat), type(lon)))
         if response:
             result = response[0]  # extract areas from top result
             for address_component in result['address_components']:
@@ -99,7 +99,7 @@ def main(min_counts):
 #            'data2-fungal':'100ITS.biom'
         }
     biom_files = []
-
+    md_sample_ids = df['SampleID']
     for barcode_sequence, biom_file in list(biom_src.items()):
         # Add sample metadata to biom
         raw_biom_fp = os.path.join(raw_dir, biom_file)
@@ -107,13 +107,13 @@ def main(min_counts):
         biom_files.append(interim_biom_file)
         interim_biom_fp = os.path.join(interim_dir, interim_biom_file)
         table = load_table(raw_biom_fp)
-        #if biom_file == 'DoD_global_dust_ITS_dada2_tab.biom':
-          #Debugging: show ids that are both in dada2 sample ids and metadata
-          #print('Printing common IDs')
-          #for id in md.keys():
-          #  if id in table.ids(axis='sample'):
-          #   print('Common id: {}'.format(id))
-        #pdb.set_trace()
+
+        # Make sure we only get sample ids in both md and table
+        table_sample_ids = table.ids(axis='sample')
+        overlapping_sample_ids = np.intersect1d(md_sample_ids, table_sample_ids)
+        overlap_filter = lambda values, id_, md: id_ in overlapping_sample_ids
+        table = table.filter(overlap_filter, axis='sample')
+
         table.add_metadata(md, axis='sample')
         with open(interim_biom_fp, 'w') as f:
             table.to_json(generated_by=__file__, direct_io=f)
@@ -135,7 +135,6 @@ def main(min_counts):
     # with very few counts. Let's filter by samples with a minimum number of 
     # sequence reads, given by the min_counts option
     at_or_exceeds_min_count = lambda values, id_, md: sum(values) >= min_counts
-
     # We also remove any samples that, perhaps due to error in lat, lon records,
     # do not fall in the study's list of countries.
     valid_countries = [
@@ -169,14 +168,14 @@ def main(min_counts):
             'South Korea',
             'Vietnam'
             ]
-    in_valid_country = lambda values, id_, md: md['country'] in valid_countries
+    # in_valid_country = lambda values, id_, md: md['country'] in valid_countries
 
     click.echo("Making processed BIOM files from interim")
     for biom_file in biom_files:
         interim_biom_fp = os.path.join(interim_dir, biom_file)
         table = load_table(interim_biom_fp)
         table.filter(at_or_exceeds_min_count, axis='sample', inplace=True)
-        table.filter(in_valid_country, axis='sample', inplace=True)
+        # table.filter(in_valid_country, axis='sample', inplace=True)
         processed_biom_fp = os.path.join(processed_dir, biom_file)
         with open(processed_biom_fp, 'w') as f:
             table.to_json(generated_by=__file__, direct_io=f)

@@ -1,6 +1,10 @@
 local-data/
 data/
 
+# Pycharm ignores
+*.idea
+*.swp
+
 ## Python recommended ignores (source: https://github.com/github/gitignore/blob/master/Python.gitignore)
 
 # Byte-compiled / optimized / DLL files

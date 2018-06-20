@@ -127,13 +127,14 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
                 batch_size=area_clf_batch_size, verbose=area_clf_verbose)
         return model
  
-    model_fitters = {
-            'Spatial KNN': fit_knn,
-            'Spatial RF': fit_rf,
-            'Spatial NN': fit_nn,
-            'DeepSpace': fit_dnn,
-            }
-    
+    # model_fitters = {
+    #         'Spatial KNN': fit_knn,
+    #         'Spatial RF': fit_rf,
+    #         'Spatial NN': fit_nn,
+    #         'DeepSpace': fit_dnn,
+    #         }
+    model_fitters = {'Spatial KNN': fit_knn}    
+
     click.echo("Loading domain file")
     df = pd.read_csv(domain_fp, index_col='domain')
     coord_names = ['lat', 'lon']
@@ -150,7 +151,7 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
     eliminate_exceptionally_rare_taxa = lambda values, id_, md: np.mean(values > 0) > taxa_threshold
     table.filter(eliminate_exceptionally_rare_taxa, axis='observation')
     click.echo("Modeling {} sample points with dimensionality {}.".format(table.shape[1], table.shape[0]))
-
+    # pdb.set_trace()
     # Important variables and metrics to calculate
     regions = list(region)
     regions.sort()
@@ -178,7 +179,6 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
     
     sample_ids = table.ids(axis='sample')
     assigned_fold = dict(zip(sample_ids, np.random.choice(folds, size=len(sample_ids))))
-    # pdb.set_trace()
     for fold in range(folds):
         click.echo("\n===============\nFold {} of {}\n===============\n".format(fold+1, folds))
         # Allocate points in fold to testing set, all other points to training set
@@ -188,7 +188,7 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
             coord_names=coord_names, area_names=area_names, ids_name='ids')
         sp_test = SpatialPoints.from_biom_table(sub_tables['test'], verbose=True,
             coord_names=coord_names, area_names=area_names, ids_name='ids')
-        
+        pdb.set_trace()
         # Determine nearest domain point to every true spatial point.
         # This will be used later to determine if the model predicts the best 
         # possible point in the domain nearest to the point's true origin.
@@ -201,7 +201,6 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
                 .join(domain.areas, on='domain')
                 .drop('domain', axis=1))    
         true_areas = sp_test.areas.copy()
-        
         # Weight training set points relative to state population
         if weight_by:
             population = pd.read_csv(weight_by_fp, index_col=weight_by) 
@@ -390,6 +389,7 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
                         nearest = near_areas[area].loc[id_]
                         is_pred_over_near_area = pred_ids_area.isin([nearest]).any()
                         over_areas.set_value(id_, area, is_pred_over_near_area)
+                        pdb.set_trace()
                 print(best_pred.to_frame().mean(axis=0))
                 print(over_areas.mean(axis=0))
                 

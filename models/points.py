@@ -203,7 +203,6 @@ class SpatialPoints(object):
                 columns=table.ids(axis='observation'))
         values.index.rename(ids_name, inplace=True)
         values = values.loc[coords.index]
-        
         return SpatialPoints(coords=coords, values=values, areas=areas)
 
     @property

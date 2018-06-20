@@ -17,9 +17,9 @@ def summarize_cross_validation(inputs):
     def q90(x):
         return np.percentile(x, q=90)
     error_cols = ['10%', '50%', '90%']
-    #region_cols =['0.5', '0.75', '0.9']
-    region_cols = ['0.9']
-    #area_cols = ['State', 'County', 'City']
+    region_cols =['0.5', '0.75', '0.9']
+    # region_cols = ['0.9']
+    # area_cols = ['State', 'County', 'City']
     area_cols = ['country', 'locality', 'administrative_area_level_2','administrative_area_level_3','administrative_area_level_4','administrative_area_level_5']
     
     table_cols = ['Seeds', 'Model'] + error_cols + region_cols + area_cols
@@ -69,11 +69,11 @@ def summarize_cross_validation(inputs):
             table = pd.concat([table, summary], axis=0)
     
     table = table[table_cols]
-    table.to_csv(os.getcwd() + '/global-results/dada2-corrected-DS-only-cross-val-summary.csv')
+    table.to_csv(os.getcwd() + '/final-cross-val-summary.csv')
     print(table.to_latex(index=False, float_format=lambda x: "{0:.1f}".format(x), na_rep='-'))
 
 if __name__ == '__main__':
-    seed_types = ['coarse', 'mixed']
-    inputs = [os.getcwd() + '/global-results/100-{}-DS-only-cross-val.csv'.format(seed_name) for seed_name in seed_types]
-    #inputs = [os.getcwd() + '/global-results/100-mixed-DS-only-5-fold-cross-val.csv']
+    seed_types = ['coarse', 'mixed', 'fine']
+    inputs = [os.getcwd() + '/final-{}-cross-val.csv'.format(seed_name) for seed_name in seed_types]
+    pdb.set_trace()
     summarize_cross_validation(inputs)

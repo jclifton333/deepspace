@@ -1,0 +1,493 @@
+ids,seeds,model,fold,true_lat,true_lon,pred_lat,pred_lon,best_pred,error,0.5,0.75,0.9,pred_locality,pred_country,pred_administrative_area_level_2,pred_administrative_area_level_3,pred_administrative_area_level_4,pred_administrative_area_level_5,near_locality,near_country,near_administrative_area_level_2,near_administrative_area_level_3,near_administrative_area_level_4,near_administrative_area_level_5,true_locality,true_country,true_administrative_area_level_2,true_administrative_area_level_3,true_administrative_area_level_4,true_administrative_area_level_5,over_locality,over_country,over_administrative_area_level_2,over_administrative_area_level_3,over_administrative_area_level_4,over_administrative_area_level_5
+1_B,coarse,DeepSpace,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+5_B,coarse,DeepSpace,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+9_K,coarse,DeepSpace,0,29.24,47.97,29.79219261,48.469638399999994,False,78.17481883310202,True,True,True,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+AFG_3,coarse,DeepSpace,0,34.94,69.27,48.33508079,21.00598482,False,4154.16491176903,False,False,False,Detek,Hungary,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+AFG_5,coarse,DeepSpace,0,34.94,69.27,29.79219261,48.469638399999994,False,2031.9728600696692,False,False,False,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_16,coarse,DeepSpace,0,-22.65,-43.04,-21.775046600000003,-43.76539416,True,122.68221394811242,True,True,True,,Brazil,,,,,,Brazil,,,,,Magé,Brazil,Magé,,,,True,True,True,True,True,True
+Brazil_51,coarse,DeepSpace,0,-30.15106,-51.223222,-30.63345306,-53.256040000000006,False,202.28082598167614,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_8,coarse,DeepSpace,0,-10.95,-37.07,-9.927745833,-35.53578209,False,202.71571029776374,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_12,coarse,DeepSpace,0,11.54,43.16,28.58859381,48.469638399999994,False,1974.9753307398446,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_5,coarse,DeepSpace,0,11.61,43.15,50.13534151,13.84155345,False,5051.520968922975,True,True,True,Ruda,Czechia,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00049228,coarse,DeepSpace,0,41.78,44.83,41.51369504,44.88742272,True,30.00310854952673,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00095622,coarse,DeepSpace,0,47.04,28.89,48.33508079,21.00598482,True,559.4002280623978,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095673,coarse,DeepSpace,0,47.04,28.88,48.33508079,21.00598482,True,558.6676258316777,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_9,coarse,DeepSpace,0,14.37,-87.61,14.19724694,-87.49897165,True,22.637530912128017,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+1_B,coarse,Spatial RF,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+5_B,coarse,Spatial RF,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+9_K,coarse,Spatial RF,0,29.24,47.97,28.58859381,48.469638399999994,False,87.27152301196544,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+AFG_3,coarse,Spatial RF,0,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,False,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+AFG_5,coarse,Spatial RF,0,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,False,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_16,coarse,Spatial RF,0,-22.65,-43.04,-24.65879626,-43.60749051,False,230.79646690375264,True,True,True,,Brazil,,,,,,Brazil,,,,,Magé,Brazil,Magé,,,,True,True,True,True,True,True
+Brazil_51,coarse,Spatial RF,0,-30.15106,-51.223222,-30.63345306,-53.256040000000006,False,202.28082598167614,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_8,coarse,Spatial RF,0,-10.95,-37.07,-9.927745833,-35.53578209,False,202.71571029776374,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_12,coarse,Spatial RF,0,11.54,43.16,28.58859381,48.469638399999994,False,1974.9753307398446,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_5,coarse,Spatial RF,0,11.61,43.15,11.46876431,43.10734026,True,16.38311921843193,True,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,True,True,True,True,True
+LE00049228,coarse,Spatial RF,0,41.78,44.83,39.94661599,46.08149462,False,229.49065663224235,True,True,True,,Azerbaijan,Kəlbəcər,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,False,True,True,True
+LE00095622,coarse,Spatial RF,0,47.04,28.89,48.33508079,21.00598482,True,559.4002280623978,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095673,coarse,Spatial RF,0,47.04,28.88,48.33508079,21.00598482,True,558.6676258316777,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_9,coarse,Spatial RF,0,14.37,-87.61,28.58859381,48.469638399999994,False,13303.043728542183,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,False,False,True,True,True,True
+1_B,coarse,Spatial KNN,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+5_B,coarse,Spatial KNN,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+9_K,coarse,Spatial KNN,0,29.24,47.97,28.58859381,48.469638399999994,False,87.27152301196544,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+AFG_3,coarse,Spatial KNN,0,34.94,69.27,48.33508079,21.00598482,False,4154.16491176903,False,True,True,Detek,Hungary,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+AFG_5,coarse,Spatial KNN,0,34.94,69.27,29.79219261,48.469638399999994,False,2031.9728600696692,False,True,True,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_16,coarse,Spatial KNN,0,-22.65,-43.04,-24.65879626,-43.60749051,False,230.79646690375264,True,True,True,,Brazil,,,,,,Brazil,,,,,Magé,Brazil,Magé,,,,True,True,True,True,True,True
+Brazil_51,coarse,Spatial KNN,0,-30.15106,-51.223222,-30.63345306,-53.256040000000006,False,202.28082598167614,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_8,coarse,Spatial KNN,0,-10.95,-37.07,-21.61108694,-40.69065462,False,1247.0323886640065,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_12,coarse,Spatial KNN,0,11.54,43.16,28.58859381,48.469638399999994,False,1974.9753307398446,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_5,coarse,Spatial KNN,0,11.61,43.15,48.33508079,21.00598482,False,4526.507508009814,True,True,True,Detek,Hungary,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00049228,coarse,Spatial KNN,0,41.78,44.83,39.94661599,46.08149462,False,229.49065663224235,True,True,True,,Azerbaijan,Kəlbəcər,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,False,True,True,True
+LE00095622,coarse,Spatial KNN,0,47.04,28.89,48.33508079,21.00598482,True,559.4002280623978,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095673,coarse,Spatial KNN,0,47.04,28.88,48.33508079,21.00598482,True,558.6676258316777,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_9,coarse,Spatial KNN,0,14.37,-87.61,14.19724694,-87.49897165,True,22.637530912128017,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+1_B,coarse,Spatial NN,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+5_B,coarse,Spatial NN,0,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+9_K,coarse,Spatial NN,0,29.24,47.97,28.58859381,48.469638399999994,False,87.27152301196544,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+AFG_3,coarse,Spatial NN,0,34.94,69.27,48.33508079,21.00598482,False,4154.16491176903,False,False,False,Detek,Hungary,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+AFG_5,coarse,Spatial NN,0,34.94,69.27,29.79219261,48.469638399999994,False,2031.9728600696692,False,False,True,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_16,coarse,Spatial NN,0,-22.65,-43.04,-21.775046600000003,-43.76539416,True,122.68221394811242,True,True,True,,Brazil,,,,,,Brazil,,,,,Magé,Brazil,Magé,,,,True,True,True,True,True,True
+Brazil_51,coarse,Spatial NN,0,-30.15106,-51.223222,-30.63345306,-53.256040000000006,False,202.28082598167614,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_8,coarse,Spatial NN,0,-10.95,-37.07,-21.61108694,-40.69065462,False,1247.0323886640065,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_12,coarse,Spatial NN,0,11.54,43.16,28.58859381,48.469638399999994,False,1974.9753307398446,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_5,coarse,Spatial NN,0,11.61,43.15,28.58859381,48.469638399999994,False,1967.7633982785057,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00049228,coarse,Spatial NN,0,41.78,44.83,41.51369504,44.88742272,True,30.00310854952673,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00095622,coarse,Spatial NN,0,47.04,28.89,48.33508079,21.00598482,True,559.4002280623978,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095673,coarse,Spatial NN,0,47.04,28.88,48.33508079,21.00598482,True,558.6676258316777,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_9,coarse,Spatial NN,0,14.37,-87.61,14.19724694,-87.49897165,True,22.637530912128017,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+15_B,coarse,DeepSpace,1,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_B,coarse,DeepSpace,1,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_K,coarse,DeepSpace,1,29.38,47.97,28.58859381,48.469638399999994,False,100.55933918481782,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,False,True,True,True,True,True
+6_K,coarse,DeepSpace,1,28.87,48.17,28.58859381,48.469638399999994,True,42.823964678958674,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+AFG_4,coarse,DeepSpace,1,34.94,69.27,29.79219261,48.469638399999994,False,2031.9728600696692,True,True,True,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_15,coarse,DeepSpace,1,-22.4,-42.96,-21.775046600000003,-43.76539416,True,108.27074856192858,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+Brazil_52,coarse,DeepSpace,1,-30.06,-51.15,-30.63345306,-53.256040000000006,False,211.97748790226328,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_9,coarse,DeepSpace,1,-10.95,-37.07,-10.05028823,-38.38395541,True,175.11484172603383,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_14,coarse,DeepSpace,1,11.54,43.17,24.89578778,50.85778219,False,1691.9153009441216,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+DJI_15,coarse,DeepSpace,1,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+HND_15,coarse,DeepSpace,1,14.39,-87.12,-30.63345306,-53.256040000000006,False,6180.776006840642,True,True,True,,Brazil,,,,,,Honduras,,,,,,Honduras,,,,,True,False,True,True,True,True
+LE00031608,coarse,DeepSpace,1,50.73,13.75,49.69142341,15.03562535,False,194.9080462513769,True,True,True,Krokočín,Czechia,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,False,True,True,True,True,True
+LE00040997,coarse,DeepSpace,1,47.7,44.85,41.51369504,44.88742272,False,688.1080261254655,True,True,True,Marneuli,Georgia,,,,,,Kazakhstan,Kurmangazy District,,,,Khanata,Russia,Maloderbetovsky District,,,,False,False,False,True,True,True
+LE00094387,coarse,DeepSpace,1,47.04,28.87,47.87474004,22.20005672,True,509.9742549442781,True,True,True,Nyírcsászári,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+15_B,coarse,Spatial RF,1,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_B,coarse,Spatial RF,1,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_K,coarse,Spatial RF,1,29.38,47.97,28.58859381,48.469638399999994,False,100.55933918481782,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,False,True,True,True,True,True
+6_K,coarse,Spatial RF,1,28.87,48.17,28.58859381,48.469638399999994,True,42.823964678958674,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+AFG_4,coarse,Spatial RF,1,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_15,coarse,Spatial RF,1,-22.4,-42.96,-21.775046600000003,-43.76539416,True,108.27074856192858,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+Brazil_52,coarse,Spatial RF,1,-30.06,-51.15,-30.64836014,-49.89740843,True,136.88253277681588,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_9,coarse,Spatial RF,1,-10.95,-37.07,24.89578778,50.85778219,False,10315.189099950212,True,True,True,,Qatar,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,False,True,True,True,True
+DJI_14,coarse,Spatial RF,1,11.54,43.17,24.89578778,50.85778219,False,1691.9153009441216,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+DJI_15,coarse,Spatial RF,1,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+HND_15,coarse,Spatial RF,1,14.39,-87.12,28.58859381,48.469638399999994,False,13264.377152085826,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Honduras,,,,,,Honduras,,,,,False,False,True,True,True,True
+LE00031608,coarse,Spatial RF,1,50.73,13.75,48.33508079,21.00598482,False,587.2996746504912,True,True,True,Detek,Hungary,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,False,False,True,True,True,True
+LE00040997,coarse,Spatial RF,1,47.7,44.85,41.51369504,44.88742272,False,688.1080261254655,False,True,True,Marneuli,Georgia,,,,,,Kazakhstan,Kurmangazy District,,,,Khanata,Russia,Maloderbetovsky District,,,,False,False,False,True,True,True
+LE00094387,coarse,Spatial RF,1,47.04,28.87,47.87474004,22.20005672,True,509.9742549442781,True,True,True,Nyírcsászári,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+15_B,coarse,Spatial KNN,1,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_B,coarse,Spatial KNN,1,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+4_K,coarse,Spatial KNN,1,29.38,47.97,28.58859381,48.469638399999994,False,100.55933918481782,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,False,True,True,True,True,True
+6_K,coarse,Spatial KNN,1,28.87,48.17,28.58859381,48.469638399999994,True,42.823964678958674,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+AFG_4,coarse,Spatial KNN,1,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_15,coarse,Spatial KNN,1,-22.4,-42.96,-24.65879626,-43.60749051,False,259.7761923403606,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+Brazil_52,coarse,Spatial KNN,1,-30.06,-51.15,-30.64836014,-49.89740843,True,136.88253277681588,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_9,coarse,Spatial KNN,1,-10.95,-37.07,24.89578778,50.85778219,False,10315.189099950212,True,True,True,,Qatar,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,False,True,True,True,True
+DJI_14,coarse,Spatial KNN,1,11.54,43.17,28.58859381,48.469638399999994,False,1974.6852059763141,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_15,coarse,Spatial KNN,1,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+HND_15,coarse,Spatial KNN,1,14.39,-87.12,-30.64836014,-49.89740843,False,6398.896331937,True,True,True,,Brazil,,,,,,Honduras,,,,,,Honduras,,,,,True,False,True,True,True,True
+LE00031608,coarse,Spatial KNN,1,50.73,13.75,48.33508079,21.00598482,False,587.2996746504912,True,True,True,Detek,Hungary,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,False,False,True,True,True,True
+LE00040997,coarse,Spatial KNN,1,47.7,44.85,48.33508079,21.00598482,False,1768.290377632751,False,True,True,Detek,Hungary,,,,,,Kazakhstan,Kurmangazy District,,,,Khanata,Russia,Maloderbetovsky District,,,,False,False,False,True,True,True
+LE00094387,coarse,Spatial KNN,1,47.04,28.87,48.33508079,21.00598482,False,605.8958763264797,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+15_B,coarse,Spatial NN,1,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_B,coarse,Spatial NN,1,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_K,coarse,Spatial NN,1,29.38,47.97,28.58859381,48.469638399999994,False,100.55933918481782,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,False,True,True,True,True,True
+6_K,coarse,Spatial NN,1,28.87,48.17,28.58859381,48.469638399999994,True,42.823964678958674,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+AFG_4,coarse,Spatial NN,1,34.94,69.27,29.19215876,47.27556651,False,2164.2593289692213,True,True,True,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_15,coarse,Spatial NN,1,-22.4,-42.96,-21.775046600000003,-43.76539416,True,108.27074856192858,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+Brazil_52,coarse,Spatial NN,1,-30.06,-51.15,-27.74379159,-49.92805676,False,283.77506883127234,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_9,coarse,Spatial NN,1,-10.95,-37.07,-10.05028823,-38.38395541,True,175.11484172603383,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_14,coarse,Spatial NN,1,11.54,43.17,28.58859381,48.469638399999994,False,1974.6852059763141,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_15,coarse,Spatial NN,1,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+HND_15,coarse,Spatial NN,1,14.39,-87.12,-27.74379159,-49.92805676,False,6166.928958094096,True,True,True,,Brazil,,,,,,Honduras,,,,,,Honduras,,,,,True,False,True,True,True,True
+LE00031608,coarse,Spatial NN,1,50.73,13.75,48.33508079,21.00598482,False,587.2996746504912,True,True,True,Detek,Hungary,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,False,False,True,True,True,True
+LE00040997,coarse,Spatial NN,1,47.7,44.85,41.51369504,44.88742272,False,688.1080261254655,False,True,True,Marneuli,Georgia,,,,,,Kazakhstan,Kurmangazy District,,,,Khanata,Russia,Maloderbetovsky District,,,,False,False,False,True,True,True
+LE00094387,coarse,Spatial NN,1,47.04,28.87,47.87474004,22.20005672,True,509.9742549442781,True,True,True,Nyírcsászári,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+12_K,coarse,DeepSpace,2,29.38,47.97,29.19215876,47.27556651,False,70.53469831741411,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+14_B,coarse,DeepSpace,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_B,coarse,DeepSpace,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_K,coarse,DeepSpace,2,28.92,48.18,29.19215876,47.27556651,False,93.00321435308078,True,True,True,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+9_B,coarse,DeepSpace,2,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+Brazil_18,coarse,DeepSpace,2,-22.39,-43.13,-21.61108694,-40.69065462,False,266.0655127021588,True,True,True,,Brazil,,,,,,Brazil,,,,,,Brazil,Petrópolis,,,,True,True,True,True,True,True
+Brazil_53,coarse,DeepSpace,2,-30.05,-51.19,-30.64836014,-49.89740843,True,140.7944820742905,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00049140,coarse,DeepSpace,2,41.75,44.76,42.02783601,43.69335083,False,93.57246484202562,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00099527,coarse,DeepSpace,2,47.05,28.86,41.51369504,21.00598482,False,876.8662036308524,True,True,True,Bigor Dolenci,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099812,coarse,DeepSpace,2,47.06,28.87,41.51369504,21.00598482,False,878.1722824843465,True,True,True,Bigor Dolenci,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_10,coarse,DeepSpace,2,14.37,-87.61,14.19724694,-87.49897165,True,22.637530912128017,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_14,coarse,DeepSpace,2,14.37,-87.62,14.19724694,-87.49897165,True,23.225425050170653,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+12_K,coarse,Spatial RF,2,29.38,47.97,29.19215876,47.27556651,False,70.53469831741411,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+14_B,coarse,Spatial RF,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_B,coarse,Spatial RF,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_K,coarse,Spatial RF,2,28.92,48.18,29.19215876,47.27556651,False,93.00321435308078,True,True,True,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+9_B,coarse,Spatial RF,2,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+Brazil_18,coarse,Spatial RF,2,-22.39,-43.13,-21.61108694,-40.69065462,False,266.0655127021588,True,True,True,,Brazil,,,,,,Brazil,,,,,,Brazil,Petrópolis,,,,True,True,True,True,True,True
+Brazil_53,coarse,Spatial RF,2,-30.05,-51.19,-30.64836014,-49.89740843,True,140.7944820742905,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00049140,coarse,Spatial RF,2,41.75,44.76,42.02783601,43.69335083,False,93.57246484202562,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00099527,coarse,Spatial RF,2,47.05,28.86,41.51369504,21.00598482,False,876.8662036308524,True,True,True,Bigor Dolenci,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099812,coarse,Spatial RF,2,47.06,28.87,29.19215876,47.27556651,False,2544.5533611884025,True,True,True,,Kuwait,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_10,coarse,Spatial RF,2,14.37,-87.61,14.19724694,-87.49897165,True,22.637530912128017,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_14,coarse,Spatial RF,2,14.37,-87.62,14.19724694,-87.49897165,True,23.225425050170653,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+12_K,coarse,Spatial KNN,2,29.38,47.97,28.58859381,48.469638399999994,False,100.55933918481782,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,False,True,True,True,True,True
+14_B,coarse,Spatial KNN,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_B,coarse,Spatial KNN,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_K,coarse,Spatial KNN,2,28.92,48.18,28.58859381,48.469638399999994,True,46.438518536536314,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+9_B,coarse,Spatial KNN,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_18,coarse,Spatial KNN,2,-22.39,-43.13,-24.65879626,-43.60749051,False,257.0124438857546,True,True,True,,Brazil,,,,,,Brazil,,,,,,Brazil,Petrópolis,,,,True,True,True,True,True,True
+Brazil_53,coarse,Spatial KNN,2,-30.05,-51.19,-30.64836014,-49.89740843,True,140.7944820742905,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00049140,coarse,Spatial KNN,2,41.75,44.76,42.02783601,43.69335083,False,93.57246484202562,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00099527,coarse,Spatial KNN,2,47.05,28.86,41.51369504,21.00598482,False,876.8662036308524,True,True,True,Bigor Dolenci,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099812,coarse,Spatial KNN,2,47.06,28.87,41.51369504,21.00598482,False,878.1722824843465,True,True,True,Bigor Dolenci,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_10,coarse,Spatial KNN,2,14.37,-87.61,-21.61108694,-40.69065462,False,6497.664765311036,True,True,True,,Brazil,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,False,True,True,True,True
+Soto_Cano_14,coarse,Spatial KNN,2,14.37,-87.62,-24.65879626,-43.60749051,False,6453.655096663399,True,True,True,,Brazil,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,False,True,True,True,True
+12_K,coarse,Spatial NN,2,29.38,47.97,29.19215876,47.27556651,False,70.53469831741411,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+14_B,coarse,Spatial NN,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_B,coarse,Spatial NN,2,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_K,coarse,Spatial NN,2,28.92,48.18,29.19215876,47.27556651,False,93.00321435308078,True,True,True,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+9_B,coarse,Spatial NN,2,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+Brazil_18,coarse,Spatial NN,2,-22.39,-43.13,-21.61108694,-40.69065462,False,266.0655127021588,True,True,True,,Brazil,,,,,,Brazil,,,,,,Brazil,Petrópolis,,,,True,True,True,True,True,True
+Brazil_53,coarse,Spatial NN,2,-30.05,-51.19,-30.64836014,-49.89740843,True,140.7944820742905,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00049140,coarse,Spatial NN,2,41.75,44.76,42.02783601,43.69335083,False,93.57246484202562,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00099527,coarse,Spatial NN,2,47.05,28.86,41.51369504,21.00598482,False,876.8662036308524,True,True,True,Bigor Dolenci,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099812,coarse,Spatial NN,2,47.06,28.87,41.51369504,21.00598482,False,878.1722824843465,True,True,True,Bigor Dolenci,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_10,coarse,Spatial NN,2,14.37,-87.61,14.19724694,-87.49897165,True,22.637530912128017,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_14,coarse,Spatial NN,2,14.37,-87.62,14.19724694,-87.49897165,True,23.225425050170653,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+8_K,coarse,DeepSpace,3,29.27,47.99,28.58859381,48.469638399999994,False,89.020842237905,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Zahra,Kuwait,,,,,False,True,True,True,True,True
+AFG_2,coarse,DeepSpace,3,34.94,69.27,29.19215876,47.27556651,False,2164.2593289692213,True,True,True,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_17,coarse,DeepSpace,3,-22.18,-42.98,-21.775046600000003,-43.76539416,True,92.69076667707472,True,True,True,,Brazil,,,,,,Brazil,,,,,São José do Vale do Rio Preto,Brazil,São José do Vale do Rio Preto,,,,True,True,True,True,True,True
+Brazil_57,coarse,DeepSpace,3,-30.01,-51.17,-30.64836014,-49.89740843,True,141.30997565638722,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00031431,coarse,DeepSpace,3,41.73,44.73,41.51369504,44.88742272,True,27.389764913274586,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00040972,coarse,DeepSpace,3,41.74,44.83,49.69142341,12.64748156,False,2299.808204480165,True,True,True,Detek,Czechia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00041000,coarse,DeepSpace,3,41.71,44.72,44.04309155,15.03562535,False,2280.384505371912,True,True,True,Čepin,Croatia,Općina Sali,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049339,coarse,DeepSpace,3,41.79,44.74,41.51369504,44.88742272,True,33.08563335489304,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+Soto_Cano_1,coarse,DeepSpace,3,14.39,-87.61,14.19724694,-87.49897165,True,103.78866304286105,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+8_K,coarse,Spatial RF,3,29.27,47.99,28.58859381,48.469638399999994,False,89.020842237905,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Zahra,Kuwait,,,,,False,True,True,True,True,True
+AFG_2,coarse,Spatial RF,3,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_17,coarse,Spatial RF,3,-22.18,-42.98,14.19724694,-87.49897165,False,6267.489079332095,True,True,True,,Honduras,,,,,,Brazil,,,,,São José do Vale do Rio Preto,Brazil,São José do Vale do Rio Preto,,,,True,False,True,True,True,True
+Brazil_57,coarse,Spatial RF,3,-30.01,-51.17,28.58859381,48.469638399999994,False,12403.172989200932,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,False,False,True,True,True,True
+LE00031431,coarse,Spatial RF,3,41.73,44.73,28.58859381,48.469638399999994,False,1500.3276415669106,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00040972,coarse,Spatial RF,3,41.74,44.83,28.58859381,48.469638399999994,False,1499.3953811734593,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00041000,coarse,Spatial RF,3,41.71,44.72,28.58859381,48.469638399999994,False,1498.375667029168,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049339,coarse,Spatial RF,3,41.79,44.74,28.58859381,48.469638399999994,False,1506.595501085737,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+Soto_Cano_1,coarse,Spatial RF,3,14.39,-87.61,14.19724694,-87.49897165,True,103.78866304286105,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+8_K,coarse,Spatial KNN,3,29.27,47.99,28.58859381,48.469638399999994,False,89.020842237905,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Zahra,Kuwait,,,,,False,True,True,True,True,True
+AFG_2,coarse,Spatial KNN,3,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_17,coarse,Spatial KNN,3,-22.18,-42.98,-24.65879626,-43.60749051,False,283.0551826884231,True,True,True,,Brazil,,,,,,Brazil,,,,,São José do Vale do Rio Preto,Brazil,São José do Vale do Rio Preto,,,,True,True,True,True,True,True
+Brazil_57,coarse,Spatial KNN,3,-30.01,-51.17,14.19724694,-87.49897165,False,6207.751912165571,True,True,True,,Honduras,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,False,True,True,True,True
+LE00031431,coarse,Spatial KNN,3,41.73,44.73,49.69142341,12.64748156,False,2293.1995940168786,True,True,True,Detek,Czechia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00040972,coarse,Spatial KNN,3,41.74,44.83,49.69142341,12.64748156,False,2299.808204480165,True,True,True,Detek,Czechia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00041000,coarse,Spatial KNN,3,41.71,44.72,42.02783601,43.69335083,False,92.0924202058321,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00049339,coarse,Spatial KNN,3,41.79,44.74,28.58859381,48.469638399999994,False,1506.595501085737,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+Soto_Cano_1,coarse,Spatial KNN,3,14.39,-87.61,14.19724694,-87.49897165,True,103.78866304286105,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+8_K,coarse,Spatial NN,3,29.27,47.99,28.58859381,48.469638399999994,False,89.020842237905,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,Zahra,Kuwait,,,,,False,True,True,True,True,True
+AFG_2,coarse,Spatial NN,3,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,False,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_17,coarse,Spatial NN,3,-22.18,-42.98,-21.775046600000003,-43.76539416,True,92.69076667707472,True,True,True,,Brazil,,,,,,Brazil,,,,,São José do Vale do Rio Preto,Brazil,São José do Vale do Rio Preto,,,,True,True,True,True,True,True
+Brazil_57,coarse,Spatial NN,3,-30.01,-51.17,-27.74379159,-49.92805676,False,279.58527085610734,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00031431,coarse,Spatial NN,3,41.73,44.73,41.51369504,44.88742272,True,27.389764913274586,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00040972,coarse,Spatial NN,3,41.74,44.83,44.04309155,15.03562535,False,2288.233919885498,False,True,True,Čepin,Croatia,Općina Sali,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00041000,coarse,Spatial NN,3,41.71,44.72,41.51369504,44.88742272,True,25.896364924113794,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049339,coarse,Spatial NN,3,41.79,44.74,28.58859381,48.469638399999994,False,1506.595501085737,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+Soto_Cano_1,coarse,Spatial NN,3,14.39,-87.61,14.19724694,-87.49897165,True,103.78866304286105,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+10_K,coarse,DeepSpace,4,29.35,47.54,29.79219261,48.469638399999994,False,102.5049966391519,True,True,True,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+13_B,coarse,DeepSpace,4,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+Brazil_11,coarse,DeepSpace,4,-22.55,-42.99,-21.775046600000003,-43.76539416,True,117.5155838838017,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+Brazil_19,coarse,DeepSpace,4,-22.44,-42.98,-21.775046600000003,-43.76539416,True,109.6406566952746,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+DJI_18,coarse,DeepSpace,4,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,False,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_19,coarse,DeepSpace,4,2.02,45.31,24.89578778,50.85778219,False,2613.205506316514,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+LE00031449,coarse,DeepSpace,4,50.16,14.31,49.69142341,12.64748156,True,97.53930145693339,True,True,True,Javorník,Czechia,,,,,Ruda,Czechia,,,,,Velké Přílepy,Czechia,Praha-západ,,,,True,True,True,True,True,True
+LE00049319,coarse,DeepSpace,4,41.82,44.79,41.51369504,44.88742272,True,35.018709145169176,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049643,coarse,DeepSpace,4,50.13,14.33,49.69142341,12.64748156,True,96.46011667172786,True,True,True,Javorník,Czechia,,,,,Ruda,Czechia,,,,,Horoměřice,Czechia,Praha-západ,,,,True,True,True,True,True,True
+LE00099757,coarse,DeepSpace,4,47.05,28.89,42.02783601,22.20005672,False,769.7423023289175,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099760,coarse,DeepSpace,4,47.04,28.87,42.02783601,22.20005672,False,767.8796818158737,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_8,coarse,DeepSpace,4,14.38,-87.62,14.19453194,-88.24463483,False,70.41861842501268,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Tegu_1,coarse,DeepSpace,4,14.1,-87.19,-30.64836014,-49.89740843,False,6378.200376621235,True,True,True,,Brazil,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,False,True,True,True,True
+10_K,coarse,Spatial RF,4,29.35,47.54,29.79219261,48.469638399999994,False,102.5049966391519,True,True,True,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+13_B,coarse,Spatial RF,4,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+Brazil_11,coarse,Spatial RF,4,-22.55,-42.99,-21.775046600000003,-43.76539416,True,117.5155838838017,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+Brazil_19,coarse,Spatial RF,4,-22.44,-42.98,-21.775046600000003,-43.76539416,True,109.6406566952746,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+DJI_18,coarse,Spatial RF,4,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_19,coarse,Spatial RF,4,2.02,45.31,24.89578778,50.85778219,False,2613.205506316514,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+LE00031449,coarse,Spatial RF,4,50.16,14.31,49.69142341,12.64748156,True,97.53930145693339,True,True,True,Javorník,Czechia,,,,,Ruda,Czechia,,,,,Velké Přílepy,Czechia,Praha-západ,,,,True,True,True,True,True,True
+LE00049319,coarse,Spatial RF,4,41.82,44.79,41.51369504,44.88742272,True,35.018709145169176,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049643,coarse,Spatial RF,4,50.13,14.33,49.69142341,12.64748156,True,96.46011667172786,True,True,True,Javorník,Czechia,,,,,Ruda,Czechia,,,,,Horoměřice,Czechia,Praha-západ,,,,True,True,True,True,True,True
+LE00099757,coarse,Spatial RF,4,47.05,28.89,42.02783601,22.20005672,False,769.7423023289175,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099760,coarse,Spatial RF,4,47.04,28.87,42.02783601,22.20005672,False,767.8796818158737,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_8,coarse,Spatial RF,4,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Tegu_1,coarse,Spatial RF,4,14.1,-87.19,14.19724694,-87.49897165,True,35.03589186879657,True,True,True,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,True,True,True,True,True
+10_K,coarse,Spatial KNN,4,29.35,47.54,28.58859381,48.469638399999994,False,123.92067245616794,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+13_B,coarse,Spatial KNN,4,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_11,coarse,Spatial KNN,4,-22.55,-42.99,-21.775046600000003,-43.76539416,True,117.5155838838017,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+Brazil_19,coarse,Spatial KNN,4,-22.44,-42.98,-30.64836014,-49.89740843,False,1142.7347261980979,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+DJI_18,coarse,Spatial KNN,4,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,False,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_19,coarse,Spatial KNN,4,2.02,45.31,24.89578778,50.85778219,False,2613.205506316514,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+LE00031449,coarse,Spatial KNN,4,50.16,14.31,42.02783601,22.20005672,False,1088.8741174695758,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Ruda,Czechia,,,,,Velké Přílepy,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00049319,coarse,Spatial KNN,4,41.82,44.79,41.51369504,44.88742272,True,35.018709145169176,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049643,coarse,Spatial KNN,4,50.13,14.33,42.02783601,22.20005672,False,1085.3491470063848,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Ruda,Czechia,,,,,Horoměřice,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00099757,coarse,Spatial KNN,4,47.05,28.89,42.02783601,22.20005672,False,769.7423023289175,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099760,coarse,Spatial KNN,4,47.04,28.87,41.51369504,44.88742272,False,1412.4232977946092,True,True,True,Marneuli,Georgia,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_8,coarse,Spatial KNN,4,14.38,-87.62,-30.64836014,-49.89740843,False,6431.39022524487,True,True,True,,Brazil,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,False,True,True,True,True
+Tegu_1,coarse,Spatial KNN,4,14.1,-87.19,-30.64836014,-49.89740843,False,6378.200376621235,True,True,True,,Brazil,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,False,True,True,True,True
+10_K,coarse,Spatial NN,4,29.35,47.54,29.79219261,48.469638399999994,False,102.5049966391519,True,True,True,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+13_B,coarse,Spatial NN,4,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+Brazil_11,coarse,Spatial NN,4,-22.55,-42.99,-21.775046600000003,-43.76539416,True,117.5155838838017,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+Brazil_19,coarse,Spatial NN,4,-22.44,-42.98,-21.775046600000003,-43.76539416,True,109.6406566952746,True,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+DJI_18,coarse,Spatial NN,4,2.02,45.32,24.89578778,50.85778219,False,2612.9611910664858,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_19,coarse,Spatial NN,4,2.02,45.31,24.89578778,50.85778219,False,2613.205506316514,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+LE00031449,coarse,Spatial NN,4,50.16,14.31,42.02783601,22.20005672,False,1088.8741174695758,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Ruda,Czechia,,,,,Velké Přílepy,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00049319,coarse,Spatial NN,4,41.82,44.79,41.51369504,44.88742272,True,35.018709145169176,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049643,coarse,Spatial NN,4,50.13,14.33,42.02783601,22.20005672,False,1085.3491470063848,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Ruda,Czechia,,,,,Horoměřice,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00099757,coarse,Spatial NN,4,47.05,28.89,42.02783601,22.20005672,False,769.7423023289175,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00099760,coarse,Spatial NN,4,47.04,28.87,42.02783601,22.20005672,False,767.8796818158737,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_8,coarse,Spatial NN,4,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Tegu_1,coarse,Spatial NN,4,14.1,-87.19,14.19724694,-87.49897165,True,35.03589186879657,True,True,True,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,True,True,True,True,True
+18_B,coarse,DeepSpace,5,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+2_B,coarse,DeepSpace,5,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+5_K,coarse,DeepSpace,5,28.89,48.18,28.58859381,48.469638399999994,True,43.83936365701084,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+Brazil_3,coarse,DeepSpace,5,-10.99,-37.05,-20.44075027,-28.81747822,False,1371.0379385451733,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+Brazil_5,coarse,DeepSpace,5,-10.93,-37.05,-20.44075027,-28.81747822,False,1376.235056747084,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+Brazil_60,coarse,DeepSpace,5,-30.05,-51.18,-30.64836014,-49.89740843,True,139.9493850169292,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00031414,coarse,DeepSpace,5,41.69,44.87,41.51369504,44.88742272,True,19.663841236161808,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00040941,coarse,DeepSpace,5,41.74,44.77,41.51369504,44.88742272,True,26.998808612755063,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049139,coarse,DeepSpace,5,41.73,44.8,46.46893764,21.00598482,False,1963.9313680492075,True,True,True,Magyarbánhegyes,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049602,coarse,DeepSpace,5,41.76,44.77,41.51369504,44.88742272,True,29.08348907666482,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00095074,coarse,DeepSpace,5,47.03,28.88,46.46893764,21.00598482,False,603.0829416309688,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00095584,coarse,DeepSpace,5,47.03,28.88,46.46893764,21.00598482,False,603.0829416309688,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00096500,coarse,DeepSpace,5,47.04,28.87,47.87474004,19.81191293,False,646.5072472335687,True,True,True,Detek,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00096909,coarse,DeepSpace,5,47.04,28.86,46.46893764,21.00598482,False,601.6295898056917,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00098828,coarse,DeepSpace,5,47.06,28.89,49.69142341,17.42376914,False,895.2184841154567,True,True,True,Hlubočky,Czechia,,,,,Nyírcsászári,Hungary,,,,,Chisinau,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_11,coarse,DeepSpace,5,14.37,-87.61,14.92194831,-88.24871993,True,62.190309386836915,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+18_B,coarse,Spatial RF,5,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+2_B,coarse,Spatial RF,5,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+5_K,coarse,Spatial RF,5,28.89,48.18,29.19215876,47.27556651,False,94.15415912879793,True,True,True,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+Brazil_3,coarse,Spatial RF,5,-10.99,-37.05,24.89578778,50.85778219,False,10315.075927434358,True,True,True,,Qatar,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,False,True,True,True,True
+Brazil_5,coarse,Spatial RF,5,-10.93,-37.05,28.58859381,48.469638399999994,False,10159.71550256416,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,False,False,True,True,True,True
+Brazil_60,coarse,Spatial RF,5,-30.05,-51.18,-30.64836014,-49.89740843,True,139.9493850169292,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00031414,coarse,Spatial RF,5,41.69,44.87,29.19215876,47.27556651,False,1406.9512439795947,True,True,True,,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00040941,coarse,Spatial RF,5,41.74,44.77,29.19215876,47.27556651,False,1413.846152509235,True,True,True,,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049139,coarse,Spatial RF,5,41.73,44.8,46.94167413,19.81191293,False,1980.516053972453,True,True,True,Kecskemét,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049602,coarse,Spatial RF,5,41.76,44.77,29.19215876,47.27556651,False,1416.0370836133466,True,True,True,,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00095074,coarse,Spatial RF,5,47.03,28.88,46.94167413,19.81191293,True,598.2714133350618,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095584,coarse,Spatial RF,5,47.03,28.88,46.46893764,21.00598482,False,603.0829416309688,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00096500,coarse,Spatial RF,5,47.04,28.87,46.94167413,19.81191293,True,597.3781039912602,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00096909,coarse,Spatial RF,5,47.04,28.86,46.94167413,19.81191293,True,596.6285273414825,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00098828,coarse,Spatial RF,5,47.06,28.89,28.58859381,48.469638399999994,False,2664.059373632771,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Nyírcsászári,Hungary,,,,,Chisinau,Moldova,,,,,False,False,True,True,True,True
+Soto_Cano_11,coarse,Spatial RF,5,14.37,-87.61,14.92194831,-88.24871993,True,62.190309386836915,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+18_B,coarse,Spatial KNN,5,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+2_B,coarse,Spatial KNN,5,26.22,50.62,29.19215876,47.27556651,False,466.59516184367715,True,True,True,,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,False,True,True,True,True
+5_K,coarse,Spatial KNN,5,28.89,48.18,29.19215876,47.27556651,False,94.15415912879793,True,True,True,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+Brazil_3,coarse,Spatial KNN,5,-10.99,-37.05,24.89578778,50.85778219,False,10315.075927434358,True,True,True,,Qatar,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,False,True,True,True,True
+Brazil_5,coarse,Spatial KNN,5,-10.93,-37.05,28.58859381,48.469638399999994,False,10159.71550256416,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,False,False,True,True,True,True
+Brazil_60,coarse,Spatial KNN,5,-30.05,-51.18,-30.64836014,-49.89740843,True,139.9493850169292,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00031414,coarse,Spatial KNN,5,41.69,44.87,29.19215876,47.27556651,False,1406.9512439795947,True,True,True,,Kuwait,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00040941,coarse,Spatial KNN,5,41.74,44.77,41.51369504,44.88742272,True,26.998808612755063,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049139,coarse,Spatial KNN,5,41.73,44.8,46.94167413,19.81191293,False,1980.516053972453,True,True,True,Kecskemét,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049602,coarse,Spatial KNN,5,41.76,44.77,46.94167413,19.81191293,False,1976.7935633601392,True,True,True,Kecskemét,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00095074,coarse,Spatial KNN,5,47.03,28.88,46.94167413,19.81191293,True,598.2714133350618,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095584,coarse,Spatial KNN,5,47.03,28.88,46.94167413,19.81191293,True,598.2714133350618,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00096500,coarse,Spatial KNN,5,47.04,28.87,46.94167413,19.81191293,True,597.3781039912602,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00096909,coarse,Spatial KNN,5,47.04,28.86,46.94167413,19.81191293,True,596.6285273414825,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00098828,coarse,Spatial KNN,5,47.06,28.89,46.94167413,19.81191293,True,598.5960747666935,True,True,True,Kecskemét,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chisinau,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_11,coarse,Spatial KNN,5,14.37,-87.61,14.92194831,-88.24871993,True,62.190309386836915,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+18_B,coarse,Spatial NN,5,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+2_B,coarse,Spatial NN,5,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+5_K,coarse,Spatial NN,5,28.89,48.18,28.58859381,48.469638399999994,True,43.83936365701084,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+Brazil_3,coarse,Spatial NN,5,-10.99,-37.05,-20.44075027,-28.81747822,False,1371.0379385451733,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+Brazil_5,coarse,Spatial NN,5,-10.93,-37.05,-10.05028823,-38.38395541,True,175.66937506015375,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+Brazil_60,coarse,Spatial NN,5,-30.05,-51.18,-30.64836014,-49.89740843,True,139.9493850169292,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00031414,coarse,Spatial NN,5,41.69,44.87,41.51369504,44.88742272,True,19.663841236161808,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00040941,coarse,Spatial NN,5,41.74,44.77,41.51369504,44.88742272,True,26.998808612755063,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00049139,coarse,Spatial NN,5,41.73,44.8,46.46893764,21.00598482,False,1963.9313680492075,True,True,True,Magyarbánhegyes,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049602,coarse,Spatial NN,5,41.76,44.77,41.51369504,44.88742272,True,29.08348907666482,True,True,True,Marneuli,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,True,True,True,True,True,True
+LE00095074,coarse,Spatial NN,5,47.03,28.88,46.46893764,21.00598482,False,603.0829416309688,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00095584,coarse,Spatial NN,5,47.03,28.88,46.46893764,21.00598482,False,603.0829416309688,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00096500,coarse,Spatial NN,5,47.04,28.87,46.46893764,21.00598482,False,602.3864400453191,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00096909,coarse,Spatial NN,5,47.04,28.86,46.46893764,21.00598482,False,601.6295898056917,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,True,True,True,True,True
+LE00098828,coarse,Spatial NN,5,47.06,28.89,46.46893764,21.00598482,False,604.0265533057529,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chisinau,Moldova,,,,,False,True,True,True,True,True
+Soto_Cano_11,coarse,Spatial NN,5,14.37,-87.61,14.92194831,-88.24871993,True,62.190309386836915,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+12_B,coarse,DeepSpace,6,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+13_K,coarse,DeepSpace,6,29.35,47.54,28.58859381,48.469638399999994,False,123.92067245616794,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+7_B,coarse,DeepSpace,6,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_56,coarse,DeepSpace,6,-30.02,-51.17,-30.64836014,-49.89740843,True,140.7489787538781,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_58,coarse,DeepSpace,6,-27.78,-54.24,-30.64836014,-49.89740843,False,528.6144362293201,True,True,True,,Brazil,,,,,,Argentina,Guaraní,,,,Três de Maio,Brazil,Três de Maio,,,,True,False,False,True,True,True
+Brazil_7,coarse,DeepSpace,6,-10.93,-37.07,-20.44075027,-28.81747822,False,1377.6037743321294,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_10,coarse,DeepSpace,6,11.54,43.16,28.58859381,48.469638399999994,False,1974.9753307398446,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_3,coarse,DeepSpace,6,11.6,43.15,28.58859381,48.469638399999994,False,1968.835062270214,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00094040,coarse,DeepSpace,6,47.04,28.88,46.94167413,17.42376914,True,710.0466882242141,True,True,True,Zalahaláp,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095895,coarse,DeepSpace,6,47.06,28.87,46.94167413,17.42376914,True,709.1453676203249,True,True,True,Zalahaláp,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_12,coarse,DeepSpace,6,14.37,-87.61,14.19453194,-88.24463483,True,52.19992217642517,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_6,coarse,DeepSpace,6,14.38,-87.62,-30.64836014,-49.89740843,False,6431.39022524487,True,True,True,,Brazil,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,False,True,True,True,True
+12_B,coarse,Spatial RF,6,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+13_K,coarse,Spatial RF,6,29.35,47.54,28.58859381,48.469638399999994,False,123.92067245616794,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+7_B,coarse,Spatial RF,6,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_56,coarse,Spatial RF,6,-30.02,-51.17,-30.64836014,-49.89740843,True,140.7489787538781,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_58,coarse,Spatial RF,6,-27.78,-54.24,-30.64836014,-49.89740843,False,528.6144362293201,True,True,True,,Brazil,,,,,,Argentina,Guaraní,,,,Três de Maio,Brazil,Três de Maio,,,,True,False,False,True,True,True
+Brazil_7,coarse,Spatial RF,6,-10.93,-37.07,-9.927745833,-35.53578209,False,201.48090331134176,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_10,coarse,Spatial RF,6,11.54,43.16,24.89578778,50.85778219,False,1692.4195745871114,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+DJI_3,coarse,Spatial RF,6,11.6,43.15,24.89578778,50.85778219,False,1687.0131815655475,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00094040,coarse,Spatial RF,6,47.04,28.88,49.69142341,12.64748156,False,1066.7278144539598,True,True,True,Tutleky,Czechia,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00095895,coarse,Spatial RF,6,47.06,28.87,46.94167413,17.42376914,True,709.1453676203249,True,True,True,Zalahaláp,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_12,coarse,Spatial RF,6,14.37,-87.61,28.58859381,48.469638399999994,False,13303.043728542183,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,False,False,True,True,True,True
+Soto_Cano_6,coarse,Spatial RF,6,14.38,-87.62,28.58859381,48.469638399999994,False,13303.004570037754,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,False,False,True,True,True,True
+12_B,coarse,Spatial KNN,6,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+13_K,coarse,Spatial KNN,6,29.35,47.54,28.58859381,48.469638399999994,False,123.92067245616794,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+7_B,coarse,Spatial KNN,6,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_56,coarse,Spatial KNN,6,-30.02,-51.17,-30.64836014,-49.89740843,True,140.7489787538781,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_58,coarse,Spatial KNN,6,-27.78,-54.24,-30.64836014,-49.89740843,False,528.6144362293201,True,True,True,,Brazil,,,,,,Argentina,Guaraní,,,,Três de Maio,Brazil,Três de Maio,,,,True,False,False,True,True,True
+Brazil_7,coarse,Spatial KNN,6,-10.93,-37.07,-21.775046600000003,-43.76539416,False,1401.3673133237132,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_10,coarse,Spatial KNN,6,11.54,43.16,24.89578778,50.85778219,False,1692.4195745871114,False,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+DJI_3,coarse,Spatial KNN,6,11.6,43.15,28.58859381,48.469638399999994,False,1968.835062270214,False,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00094040,coarse,Spatial KNN,6,47.04,28.88,49.69142341,12.64748156,False,1066.7278144539598,True,True,True,Tutleky,Czechia,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+LE00095895,coarse,Spatial KNN,6,47.06,28.87,46.94167413,17.42376914,True,709.1453676203249,True,True,True,Zalahaláp,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_12,coarse,Spatial KNN,6,14.37,-87.61,-30.64836014,-49.89740843,False,6429.849110308199,True,True,True,,Brazil,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,False,True,True,True,True
+Soto_Cano_6,coarse,Spatial KNN,6,14.38,-87.62,-30.64836014,-49.89740843,False,6431.39022524487,True,True,True,,Brazil,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,False,True,True,True,True
+12_B,coarse,Spatial NN,6,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+13_K,coarse,Spatial NN,6,29.35,47.54,28.58859381,48.469638399999994,False,123.92067245616794,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+7_B,coarse,Spatial NN,6,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_56,coarse,Spatial NN,6,-30.02,-51.17,-30.64836014,-49.89740843,True,140.7489787538781,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_58,coarse,Spatial NN,6,-27.78,-54.24,-30.64836014,-49.89740843,False,528.6144362293201,True,True,True,,Brazil,,,,,,Argentina,Guaraní,,,,Três de Maio,Brazil,Três de Maio,,,,True,False,False,True,True,True
+Brazil_7,coarse,Spatial NN,6,-10.93,-37.07,-20.44075027,-28.81747822,False,1377.6037743321294,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_10,coarse,Spatial NN,6,11.54,43.16,28.58859381,48.469638399999994,False,1974.9753307398446,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_3,coarse,Spatial NN,6,11.6,43.15,28.58859381,48.469638399999994,False,1968.835062270214,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00094040,coarse,Spatial NN,6,47.04,28.88,46.94167413,17.42376914,True,710.0466882242141,True,True,True,Zalahaláp,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095895,coarse,Spatial NN,6,47.06,28.87,46.94167413,17.42376914,True,709.1453676203249,True,True,True,Zalahaláp,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_12,coarse,Spatial NN,6,14.37,-87.61,14.19453194,-88.24463483,True,52.19992217642517,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_6,coarse,Spatial NN,6,14.38,-87.62,14.19453194,-88.24463483,True,52.17272210427751,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+10_B,coarse,DeepSpace,7,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+15_K,coarse,DeepSpace,7,29.38,47.97,29.79219261,48.469638399999994,True,66.61589546062119,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+1_K,coarse,DeepSpace,7,29.24,47.97,28.58859381,48.469638399999994,False,87.27152301196544,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+Brazil_10,coarse,DeepSpace,7,-11.0,-37.52,-9.927745833,-35.53578209,False,247.64197471456748,True,True,True,,Brazil,,,,,,Brazil,,,,,,Brazil,Salgado,,,,True,True,True,True,True,True
+Brazil_54,coarse,DeepSpace,7,-30.06,-51.18,-30.63345306,-53.256040000000006,False,209.2331972463975,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_55,coarse,DeepSpace,7,-30.04,-51.17,-30.63345306,-53.256040000000006,False,210.8527520335601,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+HND_17,coarse,DeepSpace,7,14.69,-87.95,14.19724694,-87.49897165,False,73.24082968502157,True,True,True,,Honduras,,,,,,Honduras,,,,,Jardines,Honduras,,,,,True,True,True,True,True,True
+LE00087028,coarse,DeepSpace,7,49.73,14.14,49.69142341,12.64748156,True,118.33041817343754,True,True,True,Tutleky,Czechia,,,,,Ruda,Czechia,,,,,Dlouhá Lhota,Czechia,Příbram,,,,True,True,True,True,True,True
+Soto_Cano_2,coarse,DeepSpace,7,14.39,-87.61,14.19724694,-87.49897165,True,24.553745733909924,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+Tegu_2,coarse,DeepSpace,7,14.1,-87.19,14.19724694,-87.49897165,True,35.03589186879657,True,True,True,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,True,True,True,True,True
+10_B,coarse,Spatial RF,7,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+15_K,coarse,Spatial RF,7,29.38,47.97,29.79219261,48.469638399999994,True,66.61589546062119,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+1_K,coarse,Spatial RF,7,29.24,47.97,28.58859381,48.469638399999994,False,87.27152301196544,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+Brazil_10,coarse,Spatial RF,7,-11.0,-37.52,24.89578778,50.85778219,False,10362.1292426145,True,True,True,,Qatar,,,,,,Brazil,,,,,,Brazil,Salgado,,,,True,False,True,True,True,True
+Brazil_54,coarse,Spatial RF,7,-30.06,-51.18,-30.63345306,-53.256040000000006,False,209.2331972463975,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_55,coarse,Spatial RF,7,-30.04,-51.17,-30.63345306,-53.256040000000006,False,210.8527520335601,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+HND_17,coarse,Spatial RF,7,14.69,-87.95,14.19724694,-87.49897165,False,73.24082968502157,True,True,True,,Honduras,,,,,,Honduras,,,,,Jardines,Honduras,,,,,True,True,True,True,True,True
+LE00087028,coarse,Spatial RF,7,49.73,14.14,28.58859381,48.469638399999994,False,3726.9102315024666,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Ruda,Czechia,,,,,Dlouhá Lhota,Czechia,Příbram,,,,False,False,True,True,True,True
+Soto_Cano_2,coarse,Spatial RF,7,14.39,-87.61,14.19724694,-87.49897165,True,24.553745733909924,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+Tegu_2,coarse,Spatial RF,7,14.1,-87.19,28.58859381,48.469638399999994,False,13292.581071830416,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,False,False,True,True,True,True
+10_B,coarse,Spatial KNN,7,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+15_K,coarse,Spatial KNN,7,29.38,47.97,29.79219261,48.469638399999994,True,66.61589546062119,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+1_K,coarse,Spatial KNN,7,29.24,47.97,28.58859381,48.469638399999994,False,87.27152301196544,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+Brazil_10,coarse,Spatial KNN,7,-11.0,-37.52,28.58859381,48.469638399999994,False,10208.430031247286,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Brazil,,,,,,Brazil,Salgado,,,,False,False,True,True,True,True
+Brazil_54,coarse,Spatial KNN,7,-30.06,-51.18,-21.775046600000003,-43.76539416,False,1182.2319796226966,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_55,coarse,Spatial KNN,7,-30.04,-51.17,-30.64836014,-49.89740843,True,139.64680076077136,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+HND_17,coarse,Spatial KNN,7,14.69,-87.95,14.19724694,-87.49897165,False,73.24082968502157,True,True,True,,Honduras,,,,,,Honduras,,,,,Jardines,Honduras,,,,,True,True,True,True,True,True
+LE00087028,coarse,Spatial KNN,7,49.73,14.14,28.58859381,48.469638399999994,False,3726.9102315024666,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Ruda,Czechia,,,,,Dlouhá Lhota,Czechia,Příbram,,,,False,False,True,True,True,True
+Soto_Cano_2,coarse,Spatial KNN,7,14.39,-87.61,-21.775046600000003,-43.76539416,False,6249.1241909472565,True,True,True,,Brazil,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,False,True,True,True,True
+Tegu_2,coarse,Spatial KNN,7,14.1,-87.19,14.19724694,-87.49897165,True,35.03589186879657,True,True,True,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,True,True,True,True,True
+10_B,coarse,Spatial NN,7,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+15_K,coarse,Spatial NN,7,29.38,47.97,29.79219261,48.469638399999994,True,66.61589546062119,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+1_K,coarse,Spatial NN,7,29.24,47.97,28.58859381,48.469638399999994,False,87.27152301196544,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+Brazil_10,coarse,Spatial NN,7,-11.0,-37.52,-9.927745833,-35.53578209,False,247.64197471456748,True,True,True,,Brazil,,,,,,Brazil,,,,,,Brazil,Salgado,,,,True,True,True,True,True,True
+Brazil_54,coarse,Spatial NN,7,-30.06,-51.18,-30.63345306,-53.256040000000006,False,209.2331972463975,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_55,coarse,Spatial NN,7,-30.04,-51.17,-30.63345306,-53.256040000000006,False,210.8527520335601,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+HND_17,coarse,Spatial NN,7,14.69,-87.95,14.19724694,-87.49897165,False,73.24082968502157,True,True,True,,Honduras,,,,,,Honduras,,,,,Jardines,Honduras,,,,,True,True,True,True,True,True
+LE00087028,coarse,Spatial NN,7,49.73,14.14,49.69142341,12.64748156,True,118.33041817343754,True,True,True,Tutleky,Czechia,,,,,Ruda,Czechia,,,,,Dlouhá Lhota,Czechia,Příbram,,,,True,True,True,True,True,True
+Soto_Cano_2,coarse,Spatial NN,7,14.39,-87.61,14.19724694,-87.49897165,True,24.553745733909924,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+Tegu_2,coarse,Spatial NN,7,14.1,-87.19,14.19724694,-87.49897165,True,35.03589186879657,True,True,True,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,True,True,True,True,True
+17_B,coarse,DeepSpace,8,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+6_B,coarse,DeepSpace,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+8_B,coarse,DeepSpace,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_13,coarse,DeepSpace,8,-22.95,-43.18,-21.775046600000003,-43.76539416,True,143.89464078966753,True,True,True,,Brazil,,,,,,Brazil,,,,,Rio de Janeiro,Brazil,Rio de Janeiro,,,,True,True,True,True,True,True
+Brazil_59,coarse,DeepSpace,8,-30.02,-51.22,-30.64836014,-49.89740843,True,144.93492012753805,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+DJI_17,coarse,DeepSpace,8,2.02,45.31,11.46876431,43.10734026,False,1078.7150893054397,True,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,True,True,True,True,True
+DJI_4,coarse,DeepSpace,8,11.61,43.15,28.58859381,48.469638399999994,False,1967.7633982785057,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_6,coarse,DeepSpace,8,11.6,43.15,28.58859381,48.469638399999994,False,1968.835062270214,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00099544,coarse,DeepSpace,8,47.05,28.86,42.02783601,22.20005672,False,768.1112882033342,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+17_B,coarse,Spatial RF,8,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+6_B,coarse,Spatial RF,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+8_B,coarse,Spatial RF,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_13,coarse,Spatial RF,8,-22.95,-43.18,28.58859381,48.469638399999994,False,11358.165751312628,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Brazil,,,,,Rio de Janeiro,Brazil,Rio de Janeiro,,,,False,False,True,True,True,True
+Brazil_59,coarse,Spatial RF,8,-30.02,-51.22,-30.64836014,-49.89740843,True,144.93492012753805,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+DJI_17,coarse,Spatial RF,8,2.02,45.31,28.58859381,48.469638399999994,False,2974.171567977077,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,False,False,True,True,True,True
+DJI_4,coarse,Spatial RF,8,11.61,43.15,28.58859381,48.469638399999994,False,1967.7633982785057,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_6,coarse,Spatial RF,8,11.6,43.15,28.58859381,48.469638399999994,False,1968.835062270214,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00099544,coarse,Spatial RF,8,47.05,28.86,47.41027321,21.00598482,True,568.3335962106315,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+17_B,coarse,Spatial KNN,8,26.22,50.62,24.89578778,50.85778219,True,149.21187949195115,True,True,True,,Qatar,,,,,,Qatar,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+6_B,coarse,Spatial KNN,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+8_B,coarse,Spatial KNN,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_13,coarse,Spatial KNN,8,-22.95,-43.18,-21.775046600000003,-43.76539416,True,143.89464078966753,True,True,True,,Brazil,,,,,,Brazil,,,,,Rio de Janeiro,Brazil,Rio de Janeiro,,,,True,True,True,True,True,True
+Brazil_59,coarse,Spatial KNN,8,-30.02,-51.22,-30.64836014,-49.89740843,True,144.93492012753805,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+DJI_17,coarse,Spatial KNN,8,2.02,45.31,29.79219261,48.469638399999994,False,3107.0805919321897,True,True,True,,Kuwait,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_4,coarse,Spatial KNN,8,11.61,43.15,28.58859381,48.469638399999994,False,1967.7633982785057,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_6,coarse,Spatial KNN,8,11.6,43.15,28.58859381,48.469638399999994,False,1968.835062270214,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00099544,coarse,Spatial KNN,8,47.05,28.86,47.41027321,21.00598482,True,568.3335962106315,True,True,True,Magyarbánhegyes,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+17_B,coarse,Spatial NN,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+6_B,coarse,Spatial NN,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+8_B,coarse,Spatial NN,8,26.22,50.62,28.58859381,48.469638399999994,False,338.3596141318883,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Qatar,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_13,coarse,Spatial NN,8,-22.95,-43.18,-21.775046600000003,-43.76539416,True,143.89464078966753,True,True,True,,Brazil,,,,,,Brazil,,,,,Rio de Janeiro,Brazil,Rio de Janeiro,,,,True,True,True,True,True,True
+Brazil_59,coarse,Spatial NN,8,-30.02,-51.22,-30.64836014,-49.89740843,True,144.93492012753805,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+DJI_17,coarse,Spatial NN,8,2.02,45.31,29.79219261,48.469638399999994,False,3107.0805919321897,True,True,True,,Kuwait,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_4,coarse,Spatial NN,8,11.61,43.15,28.58859381,48.469638399999994,False,1967.7633982785057,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_6,coarse,Spatial NN,8,11.6,43.15,29.79219261,48.469638399999994,False,2096.9683357157824,True,True,True,,Kuwait,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00099544,coarse,Spatial NN,8,47.05,28.86,42.02783601,22.20005672,False,768.1112882033342,True,True,True,Dobrevo,Macedonia (FYROM),,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,False,False,True,True,True,True
+11_K,coarse,DeepSpace,9,28.87,48.16,28.58859381,48.469638399999994,True,43.4954664219671,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+14_K,coarse,DeepSpace,9,29.35,47.55,29.19215876,47.27556651,True,31.89459189063661,True,True,True,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+7_K,coarse,DeepSpace,9,29.26,47.97,28.58859381,48.469638399999994,False,89.12450862161066,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+AFG_1,coarse,DeepSpace,9,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_14,coarse,DeepSpace,9,-22.52,-43.0,-21.775046600000003,-43.76539416,True,114.38365763484863,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+DJI_16,coarse,DeepSpace,9,2.02,45.31,11.46876431,43.10734026,False,1078.7150893054397,True,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,True,True,True,True,True
+DJI_20,coarse,DeepSpace,9,11.54,43.15,24.89578778,50.85778219,False,1692.9243528476795,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00031612,coarse,DeepSpace,9,50.73,13.76,47.87474004,22.20005672,False,689.0654692594145,True,True,True,Nyírcsászári,Hungary,,,,,Ruda,Czechia,,,,,Dubí,Czechia,Teplice,,,,False,False,True,True,True,True
+LE00049344,coarse,DeepSpace,9,41.77,44.77,47.87474004,22.20005672,False,1897.219162796633,True,True,True,Nyírcsászári,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049632,coarse,DeepSpace,9,49.84,14.23,47.87474004,22.20005672,False,622.5004601182047,True,True,True,Nyírcsászári,Hungary,,,,,Ruda,Czechia,,,,,Kytín,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00087042,coarse,DeepSpace,9,49.26,13.5,47.87474004,22.20005672,False,658.2350196734649,True,True,True,Nyírcsászári,Hungary,,,,,Drachkov,Czechia,,,,,Hrádek,Czechia,Klatovy,,,,False,False,True,True,True,True
+LE00097237,coarse,DeepSpace,9,47.05,28.86,47.87474004,22.20005672,True,508.9874650220816,True,True,True,Nyírcsászári,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_5,coarse,DeepSpace,9,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_7,coarse,DeepSpace,9,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+11_K,coarse,Spatial RF,9,28.87,48.16,28.58859381,48.469638399999994,True,43.4954664219671,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+14_K,coarse,Spatial RF,9,29.35,47.55,29.19215876,47.27556651,True,31.89459189063661,True,True,True,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+7_K,coarse,Spatial RF,9,29.26,47.97,28.58859381,48.469638399999994,False,89.12450862161066,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+AFG_1,coarse,Spatial RF,9,34.94,69.27,28.58859381,48.469638399999994,False,2085.2133968339504,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,False,False,True,True,True,True
+Brazil_14,coarse,Spatial RF,9,-22.52,-43.0,-21.775046600000003,-43.76539416,True,114.38365763484863,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+DJI_16,coarse,Spatial RF,9,2.02,45.31,1.8665638080000002,45.74822963,False,51.619142953626756,True,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,True,True,True,True,True
+DJI_20,coarse,Spatial RF,9,11.54,43.15,24.89578778,50.85778219,False,1692.9243528476795,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00031612,coarse,Spatial RF,9,50.73,13.76,28.58859381,48.469638399999994,False,3800.9981758781464,False,True,True,Al-Nuwaiseeb,Kuwait,,,,,Ruda,Czechia,,,,,Dubí,Czechia,Teplice,,,,False,False,True,True,True,True
+LE00049344,coarse,Spatial RF,9,41.77,44.77,47.87474004,22.20005672,False,1897.219162796633,True,True,True,Nyírcsászári,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049632,coarse,Spatial RF,9,49.84,14.23,47.87474004,22.20005672,False,622.5004601182047,True,True,True,Nyírcsászári,Hungary,,,,,Ruda,Czechia,,,,,Kytín,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00087042,coarse,Spatial RF,9,49.26,13.5,47.87474004,22.20005672,False,658.2350196734649,True,True,True,Nyírcsászári,Hungary,,,,,Drachkov,Czechia,,,,,Hrádek,Czechia,Klatovy,,,,False,False,True,True,True,True
+LE00097237,coarse,Spatial RF,9,47.05,28.86,47.87474004,22.20005672,True,508.9874650220816,True,True,True,Nyírcsászári,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_5,coarse,Spatial RF,9,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_7,coarse,Spatial RF,9,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+11_K,coarse,Spatial KNN,9,28.87,48.16,28.58859381,48.469638399999994,True,43.4954664219671,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+14_K,coarse,Spatial KNN,9,29.35,47.55,28.58859381,48.469638399999994,False,123.21208436858313,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+7_K,coarse,Spatial KNN,9,29.26,47.97,28.58859381,48.469638399999994,False,89.12450862161066,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+AFG_1,coarse,Spatial KNN,9,34.94,69.27,29.19215876,47.27556651,False,2164.2593289692213,False,True,True,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_14,coarse,Spatial KNN,9,-22.52,-43.0,-24.65879626,-43.60749051,False,245.82389454979827,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+DJI_16,coarse,Spatial KNN,9,2.02,45.31,24.89578778,50.85778219,False,2613.205506316514,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_20,coarse,Spatial KNN,9,11.54,43.15,24.89578778,50.85778219,False,1692.9243528476795,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00031612,coarse,Spatial KNN,9,50.73,13.76,28.58859381,48.469638399999994,False,3800.9981758781464,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Ruda,Czechia,,,,,Dubí,Czechia,Teplice,,,,False,False,True,True,True,True
+LE00049344,coarse,Spatial KNN,9,41.77,44.77,47.87474004,22.20005672,False,1897.219162796633,True,True,True,Nyírcsászári,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049632,coarse,Spatial KNN,9,49.84,14.23,47.87474004,22.20005672,False,622.5004601182047,True,True,True,Nyírcsászári,Hungary,,,,,Ruda,Czechia,,,,,Kytín,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00087042,coarse,Spatial KNN,9,49.26,13.5,47.87474004,22.20005672,False,658.2350196734649,True,True,True,Nyírcsászári,Hungary,,,,,Drachkov,Czechia,,,,,Hrádek,Czechia,Klatovy,,,,False,False,True,True,True,True
+LE00097237,coarse,Spatial KNN,9,47.05,28.86,47.87474004,22.20005672,True,508.9874650220816,True,True,True,Nyírcsászári,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_5,coarse,Spatial KNN,9,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_7,coarse,Spatial KNN,9,14.38,-87.62,-24.65879626,-43.60749051,False,6454.397815616016,True,True,True,,Brazil,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,False,True,True,True,True
+11_K,coarse,Spatial NN,9,28.87,48.16,28.58859381,48.469638399999994,True,43.4954664219671,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+14_K,coarse,Spatial NN,9,29.35,47.55,29.19215876,47.27556651,True,31.89459189063661,True,True,True,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+7_K,coarse,Spatial NN,9,29.26,47.97,28.58859381,48.469638399999994,False,89.12450862161066,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+AFG_1,coarse,Spatial NN,9,34.94,69.27,29.19215876,47.27556651,False,2164.2593289692213,False,True,True,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_14,coarse,Spatial NN,9,-22.52,-43.0,-21.775046600000003,-43.76539416,True,114.38365763484863,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+DJI_16,coarse,Spatial NN,9,2.02,45.31,24.89578778,50.85778219,False,2613.205506316514,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_20,coarse,Spatial NN,9,11.54,43.15,24.89578778,50.85778219,False,1692.9243528476795,True,True,True,,Qatar,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00031612,coarse,Spatial NN,9,50.73,13.76,47.87474004,22.20005672,False,689.0654692594145,True,True,True,Nyírcsászári,Hungary,,,,,Ruda,Czechia,,,,,Dubí,Czechia,Teplice,,,,False,False,True,True,True,True
+LE00049344,coarse,Spatial NN,9,41.77,44.77,47.87474004,22.20005672,False,1897.219162796633,True,True,True,Nyírcsászári,Hungary,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00049632,coarse,Spatial NN,9,49.84,14.23,47.87474004,22.20005672,False,622.5004601182047,True,True,True,Nyírcsászári,Hungary,,,,,Ruda,Czechia,,,,,Kytín,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00087042,coarse,Spatial NN,9,49.26,13.5,47.87474004,22.20005672,False,658.2350196734649,True,True,True,Nyírcsászári,Hungary,,,,,Drachkov,Czechia,,,,,Hrádek,Czechia,Klatovy,,,,False,False,True,True,True,True
+LE00097237,coarse,Spatial NN,9,47.05,28.86,47.87474004,22.20005672,True,508.9874650220816,True,True,True,Nyírcsászári,Hungary,,,,,Nyírcsászári,Hungary,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_5,coarse,Spatial NN,9,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_7,coarse,Spatial NN,9,14.38,-87.62,14.19724694,-87.49897165,True,24.15359752359316,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
