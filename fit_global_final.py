@@ -46,7 +46,7 @@ def fit_global_final(seeds, dnn_epochs, dnn_batch_size):
 
     area_names = ['locality', 'country', 'administrative_area_level_2', 'administrative_area_level_3',
                   'administrative_area_level_4', 'administrative_area_level_5']
-    coord_names = ['lat, lon']
+    coord_names = ['lat', 'lon']
 
     # Load partition data
     partitions_fname = 'partitions/{}-partitions.p'.format(seeds)
@@ -64,11 +64,11 @@ def fit_global_final(seeds, dnn_epochs, dnn_batch_size):
     # Save OTUs that are used in model
     otus_to_keep_fname = 'global-otus.txt'
     otus_to_keep = train_table.ids(axis='observation')
-    with open(otus_to_keep_fname) as file:
+    with open(otus_to_keep_fname, 'w') as file:
         t_separated_otus = ''
         for otu in otus_to_keep:
           t_separated_otus += '{}\t'.format(otu)
-        file.write()
+        file.write(t_separated_otus)
 
     sample_weights = None
 
