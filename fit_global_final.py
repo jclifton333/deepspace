@@ -54,7 +54,7 @@ def fit_global_final(seeds, dnn_epochs, dnn_batch_size):
     part_nums = list(partitions_dict.keys())
     
      # Load biom data
-    train_table = load_table('data/processed/global/final.biom').pa()
+    train_table = load_table('final-global-data/final.biom').pa()
     taxa_threshold = 0.0
     eliminate_exceptionally_rare_taxa = lambda values_, id_, md: np.mean(values_ > 0) > taxa_threshold
     train_table.filter(eliminate_exceptionally_rare_taxa, axis='observation')
