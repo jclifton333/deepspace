@@ -1,0 +1,15 @@
+Seeds,Model,country
+Coarse,Spatial KNN,53.38809035
+Coarse,Spatial RF,57.90554415
+Coarse,Spatial NN,79.26078029
+Coarse,DeepSpace,80.90349076
+Mixed,Spatial KNN,57.28952772
+Mixed,Spatial RF,66.94045175
+Mixed,Spatial NN,79.26078029
+Mixed,DeepSpace,85.21560575
+Fine,Spatial KNN,56.67351129
+Fine,Spatial RF,68.1724846
+Fine,Spatial NN,78.64476386
+Fine,DeepSpace,84.39425051
+None,BDA,60.16427105
+None,DNN,81.724846

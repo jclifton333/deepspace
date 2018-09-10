@@ -28,7 +28,7 @@ def summarize_cross_validation(inputs):
     for input_ in inputs:
         df = pd.read_csv(input_,encoding='utf-8')
         print(df)
-        
+
         if df['seeds'].unique() == 'none':
             df.set_index(['ids', 'seeds', 'model'], inplace=True)
             
@@ -73,7 +73,7 @@ def summarize_cross_validation(inputs):
     print(table.to_latex(index=False, float_format=lambda x: "{0:.1f}".format(x), na_rep='-'))
 
 if __name__ == '__main__':
-    seed_types = ['coarse', 'mixed', 'fine']
+    seed_types = ['coarse', 'mixed', 'fine', 'none']
     inputs = [os.getcwd() + '/final-{}-cross-val.csv'.format(seed_name) for seed_name in seed_types]
     pdb.set_trace()
     summarize_cross_validation(inputs)

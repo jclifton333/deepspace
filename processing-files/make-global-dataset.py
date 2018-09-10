@@ -75,10 +75,10 @@ def main(min_counts):
                 area_name = set(address_component['types']).intersection(area_names)
                 if area_name:
                     areas.set_value(id_, area_name, address_component['long_name'])
-    
+
     df = pd.concat([df, areas], axis=1)
-    
-    # There is disputed territory w/ Turkey on the island of Cyprus and Google 
+
+    # There is disputed territory w/ Turkey on the island of Cyprus and Google
     # Maps does not return 'Cyprus' for lat, lon in this territory. However, we
     # say any points on this island are from Cyprus.
     is_cyprus = df['lat'].between(34.39, 35.85) & df['lon'].between(32.00, 34.89)
@@ -99,7 +99,7 @@ def main(min_counts):
 #            'data2-fungal':'100ITS.biom'
         }
     biom_files = []
-    md_sample_ids = df['SampleID']
+    md_sample_ids = df.index
     for barcode_sequence, biom_file in list(biom_src.items()):
         # Add sample metadata to biom
         raw_biom_fp = os.path.join(raw_dir, biom_file)

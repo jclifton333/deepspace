@@ -1,5 +1,5 @@
 import os
-import click
+# import click
 
 import numpy as np
 import pandas as pd
@@ -127,30 +127,34 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
                 batch_size=area_clf_batch_size, verbose=area_clf_verbose)
         return model
  
-    # model_fitters = {
-    #         'Spatial KNN': fit_knn,
-    #         'Spatial RF': fit_rf,
-    #         'Spatial NN': fit_nn,
-    #         'DeepSpace': fit_dnn,
-    #         }
-    model_fitters = {'Spatial KNN': fit_knn}    
+    model_fitters = {
+            'Spatial KNN': fit_knn,
+            'Spatial RF': fit_rf,
+            'Spatial NN': fit_nn,
+            'DeepSpace': fit_dnn,
+            }
+    #model_fitters = {'Spatial KNN': fit_knn}
 
-    click.echo("Loading domain file")
+    # click.echo("Loading domain file")
+    print("Loading domain file")
     df = pd.read_csv(domain_fp, index_col='domain')
     coord_names = ['lat', 'lon']
     area_names = list(area)
     domain = SpatialPoints(coords=df[coord_names], areas=df[area_names])
     
     if seeds == 'none':
-        click.echo("No seeds, performing {} classification".format(centroids))
-        click.echo("Loading centroids from file")
+        # click.echo("No seeds, performing {} classification".format(centroids))
+        # click.echo("Loading centroids from file")
+        print("No seeds, performing {} classification".format(centroids))
+        print("Loading centroids from file")
         area_centroids = pd.read_csv(centroids_fp, index_col=centroids)
 
     # Load biom data
     table = load_table(input_).pa()  # presence/absence
     eliminate_exceptionally_rare_taxa = lambda values, id_, md: np.mean(values > 0) > taxa_threshold
     table.filter(eliminate_exceptionally_rare_taxa, axis='observation')
-    click.echo("Modeling {} sample points with dimensionality {}.".format(table.shape[1], table.shape[0]))
+    # click.echo("Modeling {} sample points with dimensionality {}.".format(table.shape[1], table.shape[0]))
+    print("Modeling {} sample points with dimensionality {}.".format(table.shape[1], table.shape[0]))
     # pdb.set_trace()
     # Important variables and metrics to calculate
     regions = list(region)
@@ -180,7 +184,8 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
     sample_ids = table.ids(axis='sample')
     assigned_fold = dict(zip(sample_ids, np.random.choice(folds, size=len(sample_ids))))
     for fold in range(folds):
-        click.echo("\n===============\nFold {} of {}\n===============\n".format(fold+1, folds))
+        # click.echo("\n===============\nFold {} of {}\n===============\n".format(fold+1, folds))
+        print("\n===============\nFold {} of {}\n===============\n".format(fold+1, folds))
         # Allocate points in fold to testing set, all other points to training set
         test_train = lambda id_, md: 'test' if assigned_fold[id_] == fold else 'train'
         sub_tables = dict(table.partition(test_train, axis='sample'))
@@ -321,7 +326,8 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
         
         else:
          
-            click.echo("Creating {} Voronoi partitions with {} seeds".format(partitions, seeds))
+            # click.echo("Creating {} Voronoi partitions with {} seeds".format(partitions, seeds))
+            print("Creating {} Voronoi partitions with {} seeds".format(partitions, seeds))
             n_seeds = np.random.choice(seed_vec, size=partitions)
             parts = [domain.sample(n_seed, reset_index=True) for n_seed in n_seeds]
         
@@ -330,12 +336,13 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
                 # Train a model_name classifier on every partition
                 likelihoods = []
                 partition_counter = 0
-                with click.progressbar(parts, label='Fitting {}'.format(model_name)) as bar:
-                    for part in bar:
-                        sp_clf = fit_model(sp_train, part, sample_weights, seeds, partition_counter)
-                        likelihood = sp_clf.evaluate_likelihood(sp_test.values, domain)
-                        likelihoods.append(likelihood)
-                        partition_counter += 1
+                # with click.progressbar(parts, label='Fitting {}'.format(model_name)) as bar:
+                print('Fitting {}'.format(model_name))
+                for part in parts:
+                    sp_clf = fit_model(sp_train, part, sample_weights, seeds, partition_counter)
+                    likelihood = sp_clf.evaluate_likelihood(sp_test.values, domain)
+                    likelihoods.append(likelihood)
+                    partition_counter += 1
                
                 # Predict most likely origin and calculate distance from true origin
                 geo = Geolocator(domain)
@@ -389,7 +396,6 @@ def cross_validate(input_, output, folds, partitions, seeds, region, domain_fp,
                         nearest = near_areas[area].loc[id_]
                         is_pred_over_near_area = pred_ids_area.isin([nearest]).any()
                         over_areas.set_value(id_, area, is_pred_over_near_area)
-                        pdb.set_trace()
                 print(best_pred.to_frame().mean(axis=0))
                 print(over_areas.mean(axis=0))
                 

@@ -1,0 +1,975 @@
+ids,seeds,model,fold,true_lat,true_lon,pred_lat,pred_lon,best_pred,error,0.5,0.75,0.9,pred_locality,pred_country,pred_administrative_area_level_2,pred_administrative_area_level_3,pred_administrative_area_level_4,pred_administrative_area_level_5,near_locality,near_country,near_administrative_area_level_2,near_administrative_area_level_3,near_administrative_area_level_4,near_administrative_area_level_5,true_locality,true_country,true_administrative_area_level_2,true_administrative_area_level_3,true_administrative_area_level_4,true_administrative_area_level_5,over_locality,over_country,over_administrative_area_level_2,over_administrative_area_level_3,over_administrative_area_level_4,over_administrative_area_level_5
+1_B,none,BDA,0,26.22,50.62,24.26891189,56.82814167,False,661.1113339727035,False,True,False,Sohar,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+430786638000,none,BDA,0,37.31,127.07,43.04373744,74.73922009,False,4420.428425880294,False,True,False,Korday,Kazakhstan,Korday District,,,,Gapyeong-gun,South Korea,,,,,Yongin-si,South Korea,,,,,False,False,False,True,True,True
+430786873000,none,BDA,0,-34.77,-55.77,-33.53709715,-55.41461645,False,140.98274563140873,False,False,False,,Uruguay,,,,,,Uruguay,,,,,Atlántida,Uruguay,,,,,True,True,True,True,True,True
+430786881000,none,BDA,0,-45.88,170.36,44.04309155,15.03562535,False,18076.422694817476,False,False,False,Savar,Croatia,Općina Sali,,,,Pukerangi,New Zealand,,,,,Mosgiel,New Zealand,,,,,False,False,False,True,True,True
+430791105000,none,BDA,0,19.42,-99.06,19.79732303,-97.20713277,False,198.6253250256944,False,True,False,,Mexico,Atzalan,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,Nezahualcóyotl,Iztacalco,,,True,True,False,True,True,True
+430791114000,none,BDA,0,19.29,-99.11,20.44460466,-98.40120466,False,148.2931242468127,True,True,False,,Mexico,Zacualpan,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Xochimilco,,,True,True,False,True,True,True
+430791328000,none,BDA,0,20.99,105.79,21.089172100000003,103.3969456,False,248.675983406106,False,True,False,,Vietnam,Điện Biên Đông,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Nam Từ Liêm,Trung Văn,,,True,True,False,True,True,True
+430791344000,none,BDA,0,42.0,21.58,46.46893764,21.00598482,False,499.17567061365173,True,True,False,Magyarbánhegyes,Hungary,,,,,Dobrevo,Macedonia (FYROM),,,,,Ilinden,Macedonia (FYROM),,,,,False,False,True,True,True,True
+430791349000,none,BDA,0,30.49,72.54,32.15614902,74.73922009,False,279.2923126144291,True,True,False,Ali Pur Syedan,Pakistan,Narowal District,,,,,Pakistan,Toba Tek Singh District,,,,Kassowal,Pakistan,Sahiwal District,Chichawatni,,,False,True,False,True,True,True
+430791438000,none,BDA,0,10.53,-61.38,4.224910278,-58.7257182,False,759.9190997124723,False,False,False,,Brazil,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430791451000,none,BDA,0,10.53,-61.38,14.19763969,-86.75321834,False,2785.2487244237623,False,False,False,,Honduras,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430791456000,none,BDA,0,10.64,-61.37,-27.74379159,-49.92805676,False,4443.856009984457,False,False,False,,Brazil,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430791570000,none,BDA,0,-34.911436,-57.928472,-35.80464359,-57.80276024,False,100.00363266439136,True,True,False,,Argentina,Chascomús,,,,Ensenada,Argentina,Ensenada,,,,La Plata,Argentina,La Plata,,,,False,True,False,True,True,True
+430791574000,none,BDA,0,-33.86,151.21,-33.53709715,-57.80276024,False,11935.687756526426,False,False,False,,Uruguay,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,False,False,True,True,True
+430791578000,none,BDA,0,-33.86,151.21,-33.53709715,-55.41461645,False,12025.754826824477,True,True,False,,Uruguay,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,False,False,True,True,True
+430791616000,none,BDA,0,45.72,15.93,46.94167413,17.42376914,False,177.83373199336052,True,True,False,Zalahaláp,Hungary,,,,,Letovanić,Croatia,Općina Lekenik,,,,Odranski Obrež,Croatia,,,,,False,False,False,True,True,True
+430791622000,none,BDA,0,-33.86,151.21,-33.53709715,149.96574950000002,False,120.61323870029823,True,True,True,Sodwalls,Australia,Lithgow City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791665000,none,BDA,0,32.52,35.87,30.38865059,37.72299135,False,295.13891178823235,False,False,False,,Jordan,Jafr Sub-District,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,True,True,False,True,True,True
+430791874000,none,BDA,0,35.21,33.37,36.70268465,34.14077567,False,179.94908725171942,False,True,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430792041000,none,BDA,0,6.62,3.3,47.87474004,48.469638399999994,False,6259.216864614047,False,False,False,,Kazakhstan,Kurmangazy District,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Agege,,,,True,False,False,True,True,True
+430792382000,none,BDA,0,32.51,35.86,36.70268465,34.14077567,False,492.168401826901,False,False,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,True,False,False,True,False,True
+430793987000,none,BDA,0,-43.56,172.47,-44.23333173,171.4590436,False,110.33856938422954,True,True,True,Clandeboye,New Zealand,,,,,Ataahua,New Zealand,,,,,Rolleston,New Zealand,,,,,False,True,True,True,True,True
+430822127000,none,BDA,0,-34.787887,-58.144701,-37.46409433,-58.99683213,False,307.356746429111,False,True,False,,Argentina,Tandil,,,,Ensenada,Argentina,Ensenada,,,,Guillermo Hudson,Argentina,Berazategui,,,,False,True,False,True,True,True
+430822128000,none,BDA,0,4.62,-74.06,5.7174547360000005,-74.51976677,False,132.26860403440784,True,True,False,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430822585000,none,BDA,0,41.98,21.43,46.46893764,21.00598482,False,500.4441094213144,True,True,False,Magyarbánhegyes,Hungary,,,,,Bigor Dolenci,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Centar,,,,False,False,True,True,True,True
+430822658000,none,BDA,0,25.23,51.38,33.82665026,69.94138446,False,2030.4225990816697,False,True,False,,Afghanistan,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,True,False,True,True,True,True
+430822666000,none,BDA,0,19.47,-99.04,44.53655332,13.84155345,False,10186.184319111775,False,False,False,,Croatia,Općina Medulin,,,,,Mexico,Chapa de Mota,,,,Nezahualcóyotl,Mexico,Nezahualcóyotl,Gustavo A. Madero,,,True,False,False,True,True,True
+430822690000,none,BDA,0,19.34,-99.21,19.14739872,-98.40120466,False,87.59550293665332,True,True,False,Huejotzingo,Mexico,Huejotzingo,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Álvaro Obregón,,,False,True,False,True,True,True
+430822950000,none,BDA,0,19.31,-99.21,20.44460466,-98.40120466,False,151.93471431635416,True,True,True,,Mexico,Zacualpan,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Álvaro Obregón,,,True,True,False,True,True,True
+430822974000,none,BDA,0,19.44,-99.3,21.089172100000003,-99.59527656,False,186.00641676847604,True,True,False,,Mexico,Pinal de Amoles,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,Naucalpan,,,,True,True,False,True,True,True
+430829260000,none,BDA,0,41.04,28.98,37.253394,32.94670377,False,542.5262142195998,True,True,True,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Turkey,Pendik,,Kurtdoğmuş Mahallesi,,,Turkey,Beyoğlu,,Bülbül Mahallesi,,True,True,False,True,False,True
+430829289000,none,BDA,0,10.53,-61.38,13.47001241,-86.75398399,False,2778.640129066653,False,False,False,,Honduras,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430829361000,none,BDA,0,9.88,8.87,9.814737486,6.677122084,False,240.42899702406547,True,True,True,,Nigeria,Shiroro,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,True,True,False,True,True,True
+430829363000,none,BDA,0,47.22,19.38,47.41027321,21.00598482,False,124.42616147019736,True,True,True,Karcag,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430829366000,none,BDA,0,6.62,3.51,7.771093114,3.0949063999999997,False,135.98313593798332,True,True,True,,Nigeria,Ibarapa North,,,,,Nigeria,Badagry,,,,Ikorodu,Nigeria,Ikorodu,,,,True,True,False,True,True,True
+430829381000,none,BDA,0,9.95,8.89,8.453545039,-0.487309285,False,1042.9214327237967,True,True,True,,Ghana,East Gonja,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,True,False,False,True,True,True
+430829392000,none,BDA,0,47.22,19.4,48.33508079,21.00598482,False,172.60168792410408,False,False,False,Detek,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430829523000,none,BDA,0,40.37,49.98,38.88146592,48.469638399999994,False,210.12681918323605,False,True,False,Boykəndil,Azerbaijan,Lerik,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430829556000,none,BDA,0,35.21,32.98,37.253394,32.94670377,False,227.30600033999832,False,True,False,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430829562000,none,BDA,0,36.86,30.92,37.253394,32.94670377,False,185.14277956920196,False,True,False,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829621000,none,BDA,0,1.5,103.81,3.6564218489999996,103.3969456,False,244.20974511647958,False,False,False,Kuantan,Malaysia,,,,,,Malaysia,,,,,Masai,Malaysia,,,,,False,True,True,True,True,True
+430829735000,none,BDA,0,4.66,-74.08,3.6564218489999996,-73.32569487,False,139.50983910804112,False,True,False,,Colombia,San Martín,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430829739000,none,BDA,0,43.29,76.95,43.54548524,78.32143578,False,114.38712568263118,False,True,False,,Kazakhstan,Enbekshikazakh District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,True,True,False,True,True,True
+430829745000,none,BDA,0,-33.91,18.4,-36.3617611,-56.60868834,False,6646.976626714825,False,True,False,San Clemente del Tuyu,Argentina,La Costa,,,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,False,False,False,True,True,True
+430829782000,none,BDA,0,3.22,101.74,4.344091825,102.20287370000001,False,135.17492914417357,False,False,False,Kuala Lipis,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Kuala Lumpur,Malaysia,,,,,False,True,True,True,True,True
+430829786000,none,BDA,0,4.69,-74.07,5.0311354889999995,-75.71383866,False,186.09550218503148,False,True,False,,Colombia,Palestina,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+5_B,none,BDA,0,26.22,50.62,23.638928699999997,55.63406977,False,581.468043077983,True,True,False,,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,True,True,True,True
+6_B,none,BDA,0,26.22,50.62,23.00589933,56.82814167,False,722.2840863922953,False,False,False,,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,True,True,True,True
+AFG_2,none,BDA,0,34.94,69.27,39.94661599,43.69335083,False,2317.60613694188,True,True,False,,Turkey,Tuzluca,Küçükova Köyü,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,False,False,True,True
+AFG_5,none,BDA,0,34.94,69.27,41.51369504,42.49927893,False,2439.405153763516,True,True,False,,Georgia,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_11,none,BDA,0,-22.55,-42.99,-24.65879626,-43.60749051,False,242.85636947445292,True,True,True,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+Brazil_18,none,BDA,0,-22.39,-43.13,-27.73055093,-53.19336397,False,1174.437791598198,True,True,False,,Brazil,,,,,,Brazil,,,,,,Brazil,Petrópolis,,,,True,True,True,True,True,True
+Brazil_53,none,BDA,0,-30.05,-51.19,-27.74379159,-49.92805676,False,284.4287678809775,False,True,False,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+DJI_10,none,BDA,0,11.54,43.16,11.46876431,43.10734026,True,9.783968929207397,True,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,True,True,True,True,True
+DJI_16,none,BDA,0,2.02,45.31,2.738871208,43.14279314,False,253.7747807978155,True,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,True,True,True,True,True
+DJI_18,none,BDA,0,2.02,45.32,21.089172100000003,55.63406977,False,2397.692988558505,True,True,False,,Oman,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+LE00031431,none,BDA,0,41.73,44.73,41.51369504,42.49927893,False,187.031294711518,False,False,False,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00095074,none,BDA,0,47.03,28.88,47.53975367,27.86859526,False,95.07045953123202,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00099812,none,BDA,0,47.06,28.87,46.26380043,29.93591319,False,120.26391337523602,False,True,False,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_1,none,BDA,0,14.39,-87.61,14.19763969,-86.75321834,False,94.79554483626394,True,True,True,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+Tegu_1,none,BDA,0,14.1,-87.19,13.47001241,-86.75398399,False,84.43203534156311,True,True,True,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,True,True,True,True,True
+1_B,none,DNN,0,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+430786638000,none,DNN,0,37.31,127.07,36.36770227,127.8293439,,124.71769459233757,,,,,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Yongin-si,South Korea,,,,,,True,,,,
+430786873000,none,DNN,0,-34.77,-55.77,-32.79956993,-56.01217362,,220.31084569345987,,,,,Uruguay,,,,,,Uruguay,,,,,Atlántida,Uruguay,,,,,,True,,,,
+430786881000,none,DNN,0,-45.88,170.36,3.90037408,-73.07576432,,12353.800807885318,,,,,Colombia,,,,,Pukerangi,New Zealand,,,,,Mosgiel,New Zealand,,,,,,False,,,,
+430791105000,none,DNN,0,19.42,-99.06,23.95093185,-102.5349939,,618.7788156348482,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,Nezahualcóyotl,Iztacalco,,,,True,,,,
+430791114000,none,DNN,0,19.29,-99.11,23.95093185,-102.5349939,,627.7708054511858,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Xochimilco,,,,True,,,,
+430791328000,none,DNN,0,20.99,105.79,16.65160969,106.3040354,,485.5817282676374,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Nam Từ Liêm,Trung Văn,,,,True,,,,
+430791344000,none,DNN,0,42.0,21.58,47.1665223,19.41351315,,599.6873254683471,,,,,Hungary,,,,,Dobrevo,Macedonia (FYROM),,,,,Ilinden,Macedonia (FYROM),,,,,,False,,,,
+430791349000,none,DNN,0,30.49,72.54,29.96678854,69.38581312,,308.65863134382187,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,Kassowal,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430791438000,none,DNN,0,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430791451000,none,DNN,0,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430791456000,none,DNN,0,10.64,-61.37,10.406559,-61.28299200000001,,27.654109302941723,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,,True,,,,
+430791570000,none,DNN,0,-34.911436,-57.928472,-35.37667245,-65.16748459,,660.2943497293987,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,La Plata,Argentina,La Plata,,,,,True,,,,
+430791574000,none,DNN,0,-33.86,151.21,-25.73326021,134.490976,,1846.123667571857,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,True,,,,
+430791578000,none,DNN,0,-33.86,151.21,-25.73326021,134.490976,,1846.123667571857,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,True,,,,
+430791616000,none,DNN,0,45.72,15.93,47.1665223,19.41351315,,311.68300409970396,,,,,Hungary,,,,,Letovanić,Croatia,Općina Lekenik,,,,Odranski Obrež,Croatia,,,,,,False,,,,
+430791622000,none,DNN,0,-33.86,151.21,-25.73326021,134.490976,,1846.123667571857,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,True,,,,
+430791665000,none,DNN,0,32.52,35.87,31.25338168,36.78694093,,165.37132075913422,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,,True,,,,
+430791874000,none,DNN,0,35.21,33.37,35.04299176,33.21863701,,23.123368889795692,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430792041000,none,DNN,0,6.62,3.3,9.970521335,-84.18903868,,9610.059277013615,,,,,Costa Rica,,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Agege,,,,,False,,,,
+430792382000,none,DNN,0,32.51,35.86,31.25338168,36.78694093,,164.926631258313,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,,True,,,,
+430793987000,none,DNN,0,-43.56,172.47,-41.83711205,171.60399650000002,,204.2908961826742,,,,,New Zealand,,,,,Ataahua,New Zealand,,,,,Rolleston,New Zealand,,,,,,True,,,,
+430822127000,none,DNN,0,-34.787887,-58.144701,-35.37667245,-65.16748459,,642.4383473491979,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,Guillermo Hudson,Argentina,Berazategui,,,,,True,,,,
+430822128000,none,DNN,0,4.62,-74.06,3.90037408,-73.07576432,,135.37281076281715,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430822585000,none,DNN,0,41.98,21.43,41.59971252,21.69811408,,47.787389489607726,,,,,Macedonia (FYROM),,,,,Bigor Dolenci,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Centar,,,,,True,,,,
+430822658000,none,DNN,0,25.23,51.38,25.31581004,51.19120085,,21.253763069367093,,,,,Qatar,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,,True,,,,
+430822666000,none,DNN,0,19.47,-99.04,-35.37667245,-65.16748459,,7069.514189806672,,,,,Argentina,,,,,,Mexico,Chapa de Mota,,,,Nezahualcóyotl,Mexico,Nezahualcóyotl,Gustavo A. Madero,,,,False,,,,
+430822690000,none,DNN,0,19.34,-99.21,23.95093185,-102.5349939,,617.3416447136831,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Álvaro Obregón,,,,True,,,,
+430822950000,none,DNN,0,19.31,-99.21,23.95093185,-102.5349939,,620.1354705640478,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Álvaro Obregón,,,,True,,,,
+430822974000,none,DNN,0,19.44,-99.3,23.95093185,-102.5349939,,602.8649150345498,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,Naucalpan,,,,,True,,,,
+430829260000,none,DNN,0,41.04,28.98,39.06061961,35.17922138,,571.730799724671,,,,,Turkey,,,,,,Turkey,Pendik,,Kurtdoğmuş Mahallesi,,,Turkey,Beyoğlu,,Bülbül Mahallesi,,,True,,,,
+430829289000,none,DNN,0,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430829361000,none,DNN,0,9.88,8.87,9.593635641,8.105324653,,89.67682121267066,,,,,Nigeria,,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,,True,,,,
+430829363000,none,DNN,0,47.22,19.38,47.1665223,19.41351315,,6.4651987948033725,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430829366000,none,DNN,0,6.62,3.51,3.79382516,109.711555,,11745.881952450287,,,,,Malaysia,,,,,,Nigeria,Badagry,,,,Ikorodu,Nigeria,Ikorodu,,,,,False,,,,
+430829381000,none,DNN,0,9.95,8.89,9.593635641,8.105324653,,94.7069601493015,,,,,Nigeria,,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,,True,,,,
+430829392000,none,DNN,0,47.22,19.4,47.1665223,19.41351315,,6.035367800206169,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430829523000,none,DNN,0,40.37,49.98,40.29221962,47.532327,,207.71764400249285,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,True,,,,
+430829556000,none,DNN,0,35.21,32.98,35.04299176,33.21863701,,28.572399429962214,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430829562000,none,DNN,0,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829621000,none,DNN,0,1.5,103.81,3.79382516,109.711555,,703.5756863363326,,,,,Malaysia,,,,,,Malaysia,,,,,Masai,Malaysia,,,,,,True,,,,
+430829735000,none,DNN,0,4.66,-74.08,3.90037408,-73.07576432,,139.80878811591182,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430829739000,none,DNN,0,43.29,76.95,48.16004265,67.30130047,,923.4054514983034,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,,True,,,,
+430829745000,none,DNN,0,-33.91,18.4,-32.79956993,-56.01217362,,6749.576095547356,,,,,Uruguay,,,,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,,False,,,,
+430829782000,none,DNN,0,3.22,101.74,3.79382516,109.711555,,887.3065384441463,,,,,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Kuala Lumpur,Malaysia,,,,,,True,,,,
+430829786000,none,DNN,0,4.69,-74.07,3.90037408,-73.07576432,,140.97928084105223,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+5_B,none,DNN,0,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+6_B,none,DNN,0,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+AFG_2,none,DNN,0,34.94,69.27,29.34250912,47.59355146,,2129.340771213007,,,,,Kuwait,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,,False,,,,
+AFG_5,none,DNN,0,34.94,69.27,42.17632857,43.51757521,,2369.0822495976586,,,,,Georgia,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,,False,,,,
+Brazil_11,none,DNN,0,-22.55,-42.99,-14.235,-51.9253,,1320.0668296099711,,,,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,,True,,,,
+Brazil_18,none,DNN,0,-22.39,-43.13,-14.235,-51.9253,,1297.4110199227339,,,,,Brazil,,,,,,Brazil,,,,,,Brazil,Petrópolis,,,,,True,,,,
+Brazil_53,none,DNN,0,-30.05,-51.19,-14.235,-51.9253,,1760.714719824643,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+DJI_10,none,DNN,0,11.54,43.16,20.60235698,56.11008927,,1710.6420230542922,,,,,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,False,,,,
+DJI_16,none,DNN,0,2.02,45.31,,,,,,,,,Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,,True,,,,
+DJI_18,none,DNN,0,2.02,45.32,25.930410000000002,50.63777,,2719.735297672266,,,,,Bahrain,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,,False,,,,
+LE00031431,none,DNN,0,41.73,44.73,42.17632857,43.51757521,,111.90575162785979,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00095074,none,DNN,0,47.03,28.88,47.41163,28.36989,,57.33132102329476,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+LE00099812,none,DNN,0,47.06,28.87,47.1665223,19.41351315,,715.4944303152502,,,,,Hungary,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,False,,,,
+Soto_Cano_1,none,DNN,0,14.39,-87.61,15.2,-86.2419,,172.52118619131096,,,,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,,True,,,,
+Tegu_1,none,DNN,0,14.1,-87.19,15.2,-86.2419,,159.30982639681855,,,,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,,True,,,,
+15_B,none,BDA,1,26.22,50.62,24.26891189,56.82814167,False,661.1113339727035,False,True,True,Sohar,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+430785095000,none,BDA,1,-34.63,-58.66,-36.3617611,-56.60868834,False,267.5895116272461,True,True,True,San Clemente del Tuyu,Argentina,La Costa,,,,,Argentina,Zárate,,,,Udaondo,Argentina,Ituzaingó,,,,False,True,False,True,True,True
+430785108000,none,BDA,1,9.9,-84.04,-32.96058619,-54.22054455,False,5719.714342328189,False,True,True,,Uruguay,,,,,,Costa Rica,,,,,San Antonio de Desamparados,Costa Rica,Curridabat,,,,True,False,True,True,True,True
+430785163000,none,BDA,1,30.4,72.47,30.38865059,71.15700441,False,125.97812634951836,True,True,True,,Pakistan,Muzaffargarh District,,,,,Pakistan,Toba Tek Singh District,,,,Chak 20/14 L,Pakistan,Sahiwal District,Chichawatni,,,True,True,False,True,True,True
+430785184000,none,BDA,1,36.96,127.08,36.14800133,126.08431159999999,False,126.77466928393027,True,True,True,Boryeong-si,South Korea,,,,,Cheonan,South Korea,,,,,Pyeongtaek,South Korea,,,,,False,True,True,True,True,True
+430791329000,none,BDA,1,41.99,21.45,45.02586877,15.03562535,False,617.6020716092509,False,False,True,Prokike,Croatia,Općina Brinje,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Gazi Baba,,,,False,False,False,True,True,True
+430791341000,none,BDA,1,20.99,105.79,19.14739872,104.5910175,False,240.19741835193304,True,True,True,,Vietnam,Tương Dương,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Nam Từ Liêm,Trung Văn,,,True,True,False,True,True,True
+430791441000,none,BDA,1,-44.25,169.99,-46.17592266,169.0708998,False,225.99774545749636,True,True,True,Kaiwera,New Zealand,,,,,Otematata,New Zealand,,,,,Ben Ohau,New Zealand,,,,,False,True,True,True,True,True
+430791572000,none,BDA,1,45.26,17.38,45.02586877,15.03562535,False,185.7553444708092,True,True,True,Prokike,Croatia,Općina Brinje,,,,Barcs,Hungary,,,,,Nova Gradiška,Croatia,Općina Nova Gradiška,,,,False,False,False,True,True,True
+430791610000,none,BDA,1,-33.87,151.21,-33.53709715,149.96574950000002,False,120.94272106123887,True,True,True,Sodwalls,Australia,Lithgow City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791649000,none,BDA,1,32.49,35.88,36.70268465,34.14077567,False,494.8681666961284,False,False,True,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,True,False,False,True,False,True
+430792012000,none,BDA,1,40.37,49.98,38.88146592,48.469638399999994,False,210.12681918323605,False,True,True,Boykəndil,Azerbaijan,Lerik,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430792835000,none,BDA,1,37.19,127.01,33.89002723,71.15700441,False,4995.085374976343,True,True,True,,Pakistan,Khyber Agency,,,,Cheonan,South Korea,,,,,Osan,South Korea,,,,,False,False,False,True,True,True
+430793957000,none,BDA,1,6.59,-0.83,7.771093114,-1.68138118,False,161.51242286267612,True,True,True,Senya,Ghana,Nkoranza,,,,,Ghana,,,,,,Ghana,,,,,False,True,False,True,True,True
+430793967000,none,BDA,1,-34.89,-56.08,-36.3617611,-56.60868834,False,170.5385544518478,False,True,True,San Clemente del Tuyu,Argentina,La Costa,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,False,False,False,True,True,True
+430793982000,none,BDA,1,-34.84,-54.63,-33.53709715,-55.41461645,False,161.90530315480748,True,True,True,,Uruguay,,,,,,Uruguay,,,,,José Ignacio,Uruguay,,,,,True,True,True,True,True,True
+430822685000,none,BDA,1,25.27,51.49,24.89578778,50.85778219,True,76.08472758207782,True,True,True,,Qatar,,,,,,Qatar,,,,,Doha,Qatar,,,,,True,True,True,True,True,True
+430829254000,none,BDA,1,40.37,49.98,40.47307452,47.27556651,False,229.28562653625264,True,True,True,,Azerbaijan,Ağdaş,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430829380000,none,BDA,1,47.22,19.4,46.46893764,18.61784103,False,102.56572412291486,True,True,True,Medina,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430829382000,none,BDA,1,6.48,3.38,5.0311354889999995,-1.68138118,False,582.8442442097642,False,True,True,,Ghana,Shama,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Lagos Mainland,,,,True,False,False,True,True,True
+430829386000,none,BDA,1,47.47,19.07,47.41027321,21.00598482,False,145.79455018980175,True,True,True,Karcag,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,False,True,True,True,True,True
+430829390000,none,BDA,1,35.19,33.37,36.70268465,34.14077567,False,182.00694416451168,False,False,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430829391000,none,BDA,1,6.5,3.36,7.771093114,3.0949063999999997,False,144.37893795190556,False,True,True,,Nigeria,Ibarapa North,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Surulere,,,,True,True,False,True,True,True
+430829604000,none,BDA,1,4.8,-74.1,5.7174547360000005,-74.51976677,False,112.14059872635747,True,True,True,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,,Colombia,Cota,,,,True,True,False,True,True,True
+430829619000,none,BDA,1,1.51,103.77,4.344091825,102.20287370000001,False,360.1005279006624,False,False,False,Kuala Lipis,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,False,True,True,True,True,True
+430829729000,none,BDA,1,43.19,76.85,43.54548524,78.32143578,False,125.37607898333974,False,True,True,,Kazakhstan,Enbekshikazakh District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,True,True,False,True,True,True
+430829738000,none,BDA,1,43.19,76.85,43.54548524,78.32143578,False,125.37607898333974,False,True,True,,Kazakhstan,Enbekshikazakh District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,True,True,False,True,True,True
+430829740000,none,BDA,1,43.19,76.85,43.54548524,78.32143578,False,125.37607898333974,False,True,True,,Kazakhstan,Enbekshikazakh District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,True,True,False,True,True,True
+430829766000,none,BDA,1,-25.75,28.53,-25.13599904,30.55855998,False,214.8904389140905,True,True,True,,South Africa,Ehlanzeni,,,,,South Africa,,,,,Rayton,South Africa,Pretoria,,,,True,True,False,True,True,True
+430829770000,none,BDA,1,43.19,76.85,43.54548524,78.32143578,False,125.37607898333974,False,True,True,,Kazakhstan,Enbekshikazakh District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,True,True,False,True,True,True
+4_B,none,BDA,1,26.22,50.62,26.01200203,50.37415407,False,33.73620068074325,True,True,True,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+4_K,none,BDA,1,29.38,47.97,26.19680233,50.37316951,False,425.7423184314749,True,True,True,,Bahrain,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,False,True,True,True,True
+7_K,none,BDA,1,29.26,47.97,26.01200203,50.37415407,False,431.9883487003047,False,False,True,,Bahrain,,,,,,Kuwait,,,,,,Kuwait,,,,,True,False,True,True,True,True
+Brazil_10,none,BDA,1,-11.0,-37.52,-9.927745833,-35.53578209,False,247.64197471456748,True,True,True,,Brazil,,,,,,Brazil,,,,,,Brazil,Salgado,,,,True,True,True,True,True,True
+Brazil_17,none,BDA,1,-22.18,-42.98,-21.88217846,-46.86424463,False,401.85248795301544,True,True,True,,Brazil,,,,,,Brazil,,,,,São José do Vale do Rio Preto,Brazil,São José do Vale do Rio Preto,,,,True,True,True,True,True,True
+Brazil_54,none,BDA,1,-30.06,-51.18,-30.63345306,-53.256040000000006,False,209.2331972463975,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+DJI_12,none,BDA,1,11.54,43.16,30.38865059,68.76886062,False,3370.839743834117,False,True,True,,Pakistan,Loralai District,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,False,True,True,True
+DJI_14,none,BDA,1,11.54,43.17,24.26891189,56.82814167,False,2020.4315340431954,True,True,True,Sohar,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+DJI_19,none,BDA,1,2.02,45.31,2.7403123289999995,44.87995966,False,93.29147498664423,True,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,True,True,True,True,True
+DJI_20,none,BDA,1,11.54,43.15,22.36988671,58.02221356,False,1985.9732282326906,True,True,True,ابوعيد,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+LE00049139,none,BDA,1,41.73,44.8,42.02783601,43.69335083,False,97.45204531678681,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00049344,none,BDA,1,41.77,44.77,44.04309155,15.03562535,False,2422.4122612469637,False,True,True,Savar,Croatia,Općina Sali,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,False,True,True,True
+LE00087028,none,BDA,1,49.73,14.14,44.04309155,15.03562535,False,636.1942173945766,False,False,False,Savar,Croatia,Općina Sali,,,,Ruda,Czechia,,,,,Dlouhá Lhota,Czechia,Příbram,,,,False,False,False,True,True,True
+LE00099544,none,BDA,1,47.05,28.86,46.23361158,28.96481879,False,91.15883716186791,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+15_B,none,DNN,1,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+430785095000,none,DNN,1,-34.63,-58.66,-35.37667245,-65.16748459,,598.5741619354293,,,,,Argentina,,,,,,Argentina,Zárate,,,,Udaondo,Argentina,Ituzaingó,,,,,True,,,,
+430785108000,none,DNN,1,9.9,-84.04,9.970521335,-84.18903868,,18.115290747294008,,,,,Costa Rica,,,,,,Costa Rica,,,,,San Antonio de Desamparados,Costa Rica,Curridabat,,,,,True,,,,
+430785163000,none,DNN,1,30.4,72.47,29.96678854,69.38581312,,300.4216721677588,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,Chak 20/14 L,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430785184000,none,DNN,1,36.96,127.08,-35.37667245,-65.16748459,,18908.415157158786,,,,,Argentina,,,,,Cheonan,South Korea,,,,,Pyeongtaek,South Korea,,,,,,False,,,,
+430791329000,none,DNN,1,41.99,21.45,41.59971252,21.69811408,,48.04056044884497,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Gazi Baba,,,,,True,,,,
+430791341000,none,DNN,1,20.99,105.79,16.65160969,106.3040354,,485.5817282676374,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Nam Từ Liêm,Trung Văn,,,,True,,,,
+430791441000,none,DNN,1,-44.25,169.99,-41.83711205,171.60399650000002,,298.722324959964,,,,,New Zealand,,,,,Otematata,New Zealand,,,,,Ben Ohau,New Zealand,,,,,,True,,,,
+430791572000,none,DNN,1,45.26,17.38,45.044154,16.40686578,,80.02081168455169,,,,,Croatia,,,,,Barcs,Hungary,,,,,Nova Gradiška,Croatia,Općina Nova Gradiška,,,,,True,,,,
+430791610000,none,DNN,1,-33.87,151.21,-25.73326021,134.490976,,1846.59178379979,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,True,,,,
+430791649000,none,DNN,1,32.49,35.88,31.25338168,36.78694093,,162.04418111302633,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,,True,,,,
+430792012000,none,DNN,1,40.37,49.98,40.29221962,47.532327,,207.71764400249285,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,True,,,,
+430792835000,none,DNN,1,37.19,127.01,29.96678854,69.38581312,,5318.901963852009,,,,,Pakistan,,,,,Cheonan,South Korea,,,,,Osan,South Korea,,,,,,False,,,,
+430793957000,none,DNN,1,6.59,-0.83,7.959643881,-1.207046214,,157.92292640557943,,,,,Ghana,,,,,,Ghana,,,,,,Ghana,,,,,,True,,,,
+430793967000,none,DNN,1,-34.89,-56.08,-35.37667245,-65.16748459,,828.1244940027472,,,,,Argentina,,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,,False,,,,
+430793982000,none,DNN,1,-34.84,-54.63,-32.79956993,-56.01217362,,260.42035335326034,,,,,Uruguay,,,,,,Uruguay,,,,,José Ignacio,Uruguay,,,,,,True,,,,
+430822685000,none,DNN,1,25.27,51.49,25.31581004,51.19120085,,30.47823216412452,,,,,Qatar,,,,,,Qatar,,,,,Doha,Qatar,,,,,,True,,,,
+430829254000,none,DNN,1,40.37,49.98,40.29221962,47.532327,,207.71764400249285,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,True,,,,
+430829380000,none,DNN,1,47.22,19.4,47.1665223,19.41351315,,6.035367800206169,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430829382000,none,DNN,1,6.48,3.38,9.593635641,8.105324653,,625.0781613655184,,,,,Nigeria,,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Lagos Mainland,,,,,True,,,,
+430829386000,none,DNN,1,47.47,19.07,47.1665223,19.41351315,,42.54877991643163,,,,,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,,True,,,,
+430829390000,none,DNN,1,35.19,33.37,35.04299176,33.21863701,,21.37840288531139,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430829391000,none,DNN,1,6.5,3.36,9.593635641,8.105324653,,625.6765728600868,,,,,Nigeria,,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Surulere,,,,,True,,,,
+430829604000,none,DNN,1,4.8,-74.1,3.90037408,-73.07576432,,151.38407890747735,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,,Colombia,Cota,,,,,True,,,,
+430829619000,none,DNN,1,1.51,103.77,3.79382516,109.711555,,707.3167804118751,,,,,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,,True,,,,
+430829729000,none,DNN,1,43.19,76.85,48.16004265,67.30130047,,924.2628016315826,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,True,,,,
+430829738000,none,DNN,1,43.19,76.85,48.16004265,67.30130047,,924.2628016315826,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,True,,,,
+430829740000,none,DNN,1,43.19,76.85,48.16004265,67.30130047,,924.2628016315826,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,True,,,,
+430829766000,none,DNN,1,-25.75,28.53,-28.99951076,25.0931782,,495.7992001632457,,,,,South Africa,,,,,,South Africa,,,,,Rayton,South Africa,Pretoria,,,,,True,,,,
+430829770000,none,DNN,1,43.19,76.85,48.16004265,67.30130047,,924.2628016315826,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,True,,,,
+4_B,none,DNN,1,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+4_K,none,DNN,1,29.38,47.97,29.34250912,47.59355146,,36.73109315518759,,,,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,,True,,,,
+7_K,none,DNN,1,29.26,47.97,29.34250912,47.59355146,,37.6507282530935,,,,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+Brazil_10,none,DNN,1,-11.0,-37.52,-14.235,-51.9253,,1604.0470271223724,,,,,Brazil,,,,,,Brazil,,,,,,Brazil,Salgado,,,,,True,,,,
+Brazil_17,none,DNN,1,-22.18,-42.98,-14.235,-51.9253,,1293.1460775938447,,,,,Brazil,,,,,,Brazil,,,,,São José do Vale do Rio Preto,Brazil,São José do Vale do Rio Preto,,,,,True,,,,
+Brazil_54,none,DNN,1,-30.06,-51.18,-14.235,-51.9253,,1761.8700330152776,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+DJI_12,none,DNN,1,11.54,43.16,25.930410000000002,50.63777,,1782.6966000025493,,,,,Bahrain,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,False,,,,
+DJI_14,none,DNN,1,11.54,43.17,20.60235698,56.11008927,,1709.7801377835442,,,,,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,False,,,,
+DJI_19,none,DNN,1,2.02,45.31,,,,,,,,,Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,,True,,,,
+DJI_20,none,DNN,1,11.54,43.15,25.930410000000002,50.63777,,1783.158836208846,,,,,Bahrain,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,False,,,,
+LE00049139,none,DNN,1,41.73,44.8,42.17632857,43.51757521,,117.1231912987652,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00049344,none,DNN,1,41.77,44.77,42.17632857,43.51757521,,112.99930367219729,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00087028,none,DNN,1,49.73,14.14,49.743036100000005,15.33833999,,86.15783570405557,,,,,Czechia,,,,,Ruda,Czechia,,,,,Dlouhá Lhota,Czechia,Příbram,,,,,True,,,,
+LE00099544,none,DNN,1,47.05,28.86,47.41163,28.36989,,54.66525740197577,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+12_K,none,BDA,2,29.38,47.97,26.01200203,50.37415407,False,443.1395637352533,True,True,True,,Bahrain,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,False,True,True,True,True
+14_B,none,BDA,2,26.22,50.62,37.80010735,29.36448809,False,2373.8786780310884,False,False,False,,Turkey,Honaz,,Dereçiftlik Mahallesi,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,False,True,False,True
+3_B,none,BDA,2,26.22,50.62,24.26891189,56.82814167,False,661.1113339727035,False,False,True,Sohar,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+3_K,none,BDA,2,28.92,48.18,23.638928699999997,55.63406977,False,947.0474204769389,False,False,False,,Oman,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,False,True,True,True,True
+430573219000,none,BDA,2,3.25,3.25,6.402951979,0.70676261,False,449.920353091166,True,True,True,,Ghana,Adaklu-Anyigbe,,,,,Nigeria,Ekeremor,,,,,,,,,,True,False,False,True,True,True
+430785066000,none,BDA,2,4.67,-74.1,5.7174547360000005,-74.51976677,False,125.44420821036421,True,True,True,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430785077000,none,BDA,2,-34.7,-58.38,-36.3617611,-56.60868834,False,244.67886585074842,True,True,True,San Clemente del Tuyu,Argentina,La Costa,,,,Ensenada,Argentina,Ensenada,,,,Lanús Este,Argentina,Lanús,,,,False,True,False,True,True,True
+430785088000,none,BDA,2,-33.87,151.21,-35.243591200000004,151.15982140000003,False,152.85344225741733,False,True,True,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430785110000,none,BDA,2,9.94,-84.05,13.46818517,-86.01058826,False,446.7575922858899,False,False,True,,Honduras,,,,,,Costa Rica,,,,,San Pedro,Costa Rica,Montes de Oca,,,,True,False,True,True,True,True
+430785171000,none,BDA,2,31.04,73.49,30.38865059,71.15700441,False,234.5602074475306,True,True,True,,Pakistan,Muzaffargarh District,,,,,Pakistan,Nankana Sahib District,,,,,Pakistan,Okara,Okara,,,True,True,False,True,True,True
+430785542000,none,BDA,2,48.31,17.49,49.24341381,16.22969724,False,138.96861320055535,False,True,True,Krokočín,Czechia,,,,,Darnózseli,Hungary,,,,,Cífer,Slovakia,Trnava,,,,False,False,True,True,True,True
+430785549000,none,BDA,2,23.6,58.24,23.00589933,59.21628546,False,119.63880749265958,True,True,True,,Oman,,,,,Ar Rumays,Oman,,,,,Sib,Oman,,,,,False,True,True,True,True,True
+430785573000,none,BDA,2,32.26,35.9,30.38865059,37.72299135,False,270.7829548431253,False,False,True,,Jordan,Jafr Sub-District,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,Jerash,Jordan,Jarash Qasabah District,,,,True,True,False,True,True,True
+430785576000,none,BDA,2,23.59,58.37,11.45195076,41.33890495,False,2251.238319756871,False,True,True,,Djibouti-Somalia,,,,,Ar Rumays,Oman,,,,,Matrah,Oman,,,,,False,False,True,True,True,True
+430786339000,none,BDA,2,51.5,-0.09,49.24341381,16.22969724,False,1181.9936022434686,False,False,False,Krokočín,Czechia,,,,,Přimda,Czechia,,,,,London,United Kingdom,Greater London,,,,False,True,True,True,True,True
+430791112000,none,BDA,2,25.31,51.4,23.638928699999997,55.63406977,False,467.16545272768104,True,True,True,,Oman,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,True,False,True,True,True,True
+430791336000,none,BDA,2,30.55,72.69,30.38865059,71.15700441,False,148.05739274593228,True,True,True,,Pakistan,Muzaffargarh District,,,,,Pakistan,Toba Tek Singh District,,,,Chichawatni,Pakistan,Sahiwal District,Chichawatni,,,True,True,False,True,True,True
+430791462000,none,BDA,2,6.6,-0.91,7.771093114,-1.68138118,False,155.60878087078163,True,True,True,Senya,Ghana,Nkoranza,,,,,Ghana,,,,,,Ghana,Asante Akim South,,,,False,True,False,True,True,True
+430791591000,none,BDA,2,-33.86,151.21,-32.96058619,151.15982140000003,False,100.15007192029215,True,True,True,Wollombi,Australia,Cessnock City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791613000,none,BDA,2,-33.86,151.21,-34.67863032,149.96574950000002,False,146.1897946389022,False,False,True,Brayton,Australia,Goulburn Mulwaree Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791617000,none,BDA,2,-45.54,169.32,-44.23333173,171.4590436,False,222.5613517382344,True,True,True,Clandeboye,New Zealand,,,,,Nevis,New Zealand,,,,,Roxburgh East,New Zealand,,,,,False,True,True,True,True,True
+430791872000,none,BDA,2,35.24,32.95,37.253394,35.33484756,False,309.68605994317494,False,False,False,,Turkey,Sarıçam,,Kösefakılı Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430791880000,none,BDA,2,47.59,19.1,46.94167413,17.42376914,False,145.62571594491496,True,True,True,Zalahaláp,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,False,True,True,True,True,True
+430792021000,none,BDA,2,47.22,19.4,46.46893764,18.61784103,False,102.56572412291486,True,True,True,Medina,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430792373000,none,BDA,2,32.47,35.89,36.70268465,34.14077567,False,497.27484433368807,False,True,True,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,True,False,False,True,False,True
+430792837000,none,BDA,2,30.55,72.73,29.79219261,72.35107629999999,False,91.82925176646103,True,True,True,,Pakistan,Bahawalpur,,,,,Pakistan,Toba Tek Singh District,,,,,Pakistan,Sahiwal District,Chichawatni,,,True,True,False,True,True,True
+430793970000,none,BDA,2,-44.95,171.08,49.24341381,16.22969724,False,18067.99515459868,True,True,True,Krokočín,Czechia,,,,,Otematata,New Zealand,,,,,Waitaki Bridge,New Zealand,,,,,False,False,True,True,True,True
+430822691000,none,BDA,2,19.33,-99.81,17.83991633,-98.40120466,False,222.55171437234446,True,True,True,,Mexico,Zapotitlán Lagunas,,,,,Mexico,Chapa de Mota,,,,,Mexico,Almoloya de Juárez,,,,True,True,False,True,True,True
+430829251000,none,BDA,2,47.22,19.4,46.46893764,18.61784103,False,102.56572412291486,True,True,True,Medina,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430829299000,none,BDA,2,4.69,-74.06,5.0311354889999995,-75.71383866,False,187.1806515790651,False,False,True,,Colombia,Palestina,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430829357000,none,BDA,2,36.97,30.38,38.34280426,30.55855998,False,153.5041264079038,False,False,True,,Turkey,Şuhut,Kulak Köyü,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Korkuteli,,Söğütcük Mahallesi,,True,True,False,False,False,True
+430829520000,none,BDA,2,40.37,49.98,38.88146592,48.469638399999994,False,210.12681918323605,False,False,True,Boykəndil,Azerbaijan,Lerik,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430829522000,none,BDA,2,40.47,49.77,40.99543794,46.08149462,False,316.30824241813843,False,False,True,,Azerbaijan,Şəmkir,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,False,True,False,True,True,True
+430829555000,none,BDA,2,9.88,8.87,10.49329094,10.25933777,False,166.6959498387766,True,True,True,,Nigeria,Kirfi,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,True,True,False,True,True,True
+430829605000,none,BDA,2,-32.34,22.58,39.41607506,32.94670377,False,8052.783855304733,False,True,True,,Turkey,Gölbaşı,,Yeniyapançarşak Mahallesi,,,South Africa,,,,,Beaufort West,South Africa,Central Karoo DC,,,,True,False,False,True,False,True
+430829610000,none,BDA,2,10.52,-61.4,7.771093114,5.483050189,False,7338.268310257524,False,False,False,Ikole,Nigeria,Ikole,,,,,Trinidad and Tobago,,,,,Chaguanas,Trinidad and Tobago,,,,,False,False,False,True,True,True
+430829736000,none,BDA,2,43.19,76.85,43.04373744,74.73922009,False,172.14726739043056,False,False,False,Korday,Kazakhstan,Korday District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,False,True,False,True,True,True
+AFG_1,none,BDA,2,34.94,69.27,41.51369504,42.49927893,False,2439.405153763516,True,True,True,,Georgia,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,True,True,True,True
+Brazil_3,none,BDA,2,-10.99,-37.05,-9.927745833,-35.53578209,False,203.45055412464535,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+Brazil_55,none,BDA,2,-30.04,-51.17,-30.63345306,-53.256040000000006,False,210.8527520335601,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00094387,none,BDA,2,47.04,28.87,47.53975367,27.86859526,False,93.79678219858076,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_5,none,BDA,2,14.38,-87.62,14.19763969,-86.75321834,False,95.60577951938237,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_9,none,BDA,2,14.37,-87.61,15.64931685,-88.25303329,False,158.1807940209971,False,False,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+12_K,none,DNN,2,29.38,47.97,29.34250912,47.59355146,,36.73109315518759,,,,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,,True,,,,
+14_B,none,DNN,2,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+3_B,none,DNN,2,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+3_K,none,DNN,2,28.92,48.18,29.34250912,47.59355146,,73.85932108634768,,,,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+430573219000,none,DNN,2,3.25,3.25,7.959643881,-1.207046214,,719.5205085768504,,,,,Ghana,,,,,,Nigeria,Ekeremor,,,,,,,,,,,False,,,,
+430785066000,none,DNN,2,4.67,-74.1,3.90037408,-73.07576432,,142.24854387854262,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430785077000,none,DNN,2,-34.7,-58.38,-32.79956993,-56.01217362,,304.3458391389273,,,,,Uruguay,,,,,Ensenada,Argentina,Ensenada,,,,Lanús Este,Argentina,Lanús,,,,,False,,,,
+430785088000,none,DNN,2,-33.87,151.21,-25.73326021,134.490976,,1846.59178379979,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,True,,,,
+430785110000,none,DNN,2,9.94,-84.05,9.970521335,-84.18903868,,15.606117880842822,,,,,Costa Rica,,,,,,Costa Rica,,,,,San Pedro,Costa Rica,Montes de Oca,,,,,True,,,,
+430785171000,none,DNN,2,31.04,73.49,29.96678854,69.38581312,,411.0105954910132,,,,,Pakistan,,,,,,Pakistan,Nankana Sahib District,,,,,Pakistan,Okara,Okara,,,,True,,,,
+430785542000,none,DNN,2,48.31,17.49,47.1665223,19.41351315,,192.0315931999576,,,,,Hungary,,,,,Darnózseli,Hungary,,,,,Cífer,Slovakia,Trnava,,,,,False,,,,
+430785549000,none,DNN,2,23.6,58.24,20.60235698,56.11008927,,399.1711054009918,,,,,Oman,,,,,Ar Rumays,Oman,,,,,Sib,Oman,,,,,,True,,,,
+430785573000,none,DNN,2,32.26,35.9,31.25338168,36.78694093,,139.9021793287392,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,Jerash,Jordan,Jarash Qasabah District,,,,,True,,,,
+430785576000,none,DNN,2,23.59,58.37,20.60235698,56.11008927,,405.782878868074,,,,,Oman,,,,,Ar Rumays,Oman,,,,,Matrah,Oman,,,,,,True,,,,
+430786339000,none,DNN,2,51.5,-0.09,49.743036100000005,15.33833999,,1103.9896746483234,,,,,Czechia,,,,,Přimda,Czechia,,,,,London,United Kingdom,Greater London,,,,,False,,,,
+430791112000,none,DNN,2,25.31,51.4,25.930410000000002,50.63777,,102.98607658945762,,,,,Bahrain,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,,False,,,,
+430791336000,none,DNN,2,30.55,72.69,29.96678854,69.38581312,,323.99987662189847,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,Chichawatni,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430791462000,none,DNN,2,6.6,-0.91,7.959643881,-1.207046214,,154.74332087562016,,,,,Ghana,,,,,,Ghana,,,,,,Ghana,Asante Akim South,,,,,True,,,,
+430791591000,none,DNN,2,-33.86,151.21,-25.73326021,134.490976,,1846.123667571857,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,True,,,,
+430791613000,none,DNN,2,-33.86,151.21,-25.73326021,134.490976,,1846.123667571857,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,True,,,,
+430791617000,none,DNN,2,-45.54,169.32,-41.83711205,171.60399650000002,,450.93155530401606,,,,,New Zealand,,,,,Nevis,New Zealand,,,,,Roxburgh East,New Zealand,,,,,,True,,,,
+430791872000,none,DNN,2,35.24,32.95,35.04299176,33.21863701,,32.820998024352605,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430791880000,none,DNN,2,47.59,19.1,47.1665223,19.41351315,,52.690830807043355,,,,,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,,True,,,,
+430792021000,none,DNN,2,47.22,19.4,47.1665223,19.41351315,,6.035367800206169,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430792373000,none,DNN,2,32.47,35.89,31.25338168,36.78694093,,159.6618983946497,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,,True,,,,
+430792837000,none,DNN,2,30.55,72.73,29.96678854,69.38581312,,327.7655709066204,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430793970000,none,DNN,2,-44.95,171.08,-41.83711205,171.60399650000002,,348.8242782843073,,,,,New Zealand,,,,,Otematata,New Zealand,,,,,Waitaki Bridge,New Zealand,,,,,,True,,,,
+430822691000,none,DNN,2,19.33,-99.81,23.95093185,-102.5349939,,586.0813823811185,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,,Mexico,Almoloya de Juárez,,,,,True,,,,
+430829251000,none,DNN,2,47.22,19.4,47.1665223,19.41351315,,6.035367800206169,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430829299000,none,DNN,2,4.69,-74.06,3.90037408,-73.07576432,,140.11337073190734,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430829357000,none,DNN,2,36.97,30.38,39.06061961,35.17922138,,480.473630213919,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Korkuteli,,Söğütcük Mahallesi,,,True,,,,
+430829520000,none,DNN,2,40.37,49.98,40.29221962,47.532327,,207.71764400249285,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,True,,,,
+430829522000,none,DNN,2,40.47,49.77,40.29221962,47.532327,,190.62016307912518,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,,True,,,,
+430829555000,none,DNN,2,9.88,8.87,9.593635641,8.105324653,,89.67682121267066,,,,,Nigeria,,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,,True,,,,
+430829605000,none,DNN,2,-32.34,22.58,-28.99951076,25.0931782,,442.53031749378664,,,,,South Africa,,,,,,South Africa,,,,,Beaufort West,South Africa,Central Karoo DC,,,,,True,,,,
+430829610000,none,DNN,2,10.52,-61.4,10.406559,-61.28299200000001,,17.97255069859991,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Chaguanas,Trinidad and Tobago,,,,,,True,,,,
+430829736000,none,DNN,2,43.19,76.85,20.60235698,56.11008927,,3166.696884362179,,,,,Oman,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,False,,,,
+AFG_1,none,DNN,2,34.94,69.27,33.93911,67.70995,,181.3084049745642,,,,,Afghanistan,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,,True,,,,
+Brazil_3,none,DNN,2,-10.99,-37.05,-14.235,-51.9253,,1654.046565898207,,,,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,,True,,,,
+Brazil_55,none,DNN,2,-30.04,-51.17,-14.235,-51.9253,,1759.6926448100048,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+LE00094387,none,DNN,2,47.04,28.87,47.41163,28.36989,,55.99791861062788,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+Soto_Cano_5,none,DNN,2,14.38,-87.62,15.2,-86.2419,,174.02248081562794,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+Soto_Cano_9,none,DNN,2,14.37,-87.61,15.2,-86.2419,,173.698984529549,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+430785075000,none,BDA,3,45.16,18.02,45.02586877,15.03562535,False,234.8050768656276,False,False,True,Prokike,Croatia,Općina Brinje,,,,Čepin,Croatia,,,,,Slavonski Brod,Croatia,Općina Slavonski Brod,,,,False,True,False,True,True,True
+430785105000,none,BDA,3,9.93,-84.09,5.0311354889999995,-75.71383866,False,1072.2202782139789,False,False,True,,Colombia,Palestina,,,,,Costa Rica,,,,,San José,Costa Rica,,,,,True,False,False,True,True,True
+430785179000,none,BDA,3,20.98,105.79,22.36988671,105.7850894,False,154.5977001721038,True,True,True,,Vietnam,Ba Bể,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hà Đông,P. Văn Quán,,,True,True,False,True,True,True
+430785664000,none,BDA,3,41.98,21.44,45.02586877,15.03562535,False,617.5716717969285,False,False,True,Prokike,Croatia,Općina Brinje,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),,,,,False,False,False,True,True,True
+430785741000,none,BDA,3,30.45,72.76,29.79219261,72.35107629999999,False,83.07425306882081,True,True,True,,Pakistan,Bahawalpur,,,,,Pakistan,Toba Tek Singh District,,,,,Pakistan,Sahiwal District,Chichawatni,,,True,True,False,True,True,True
+430786617000,none,BDA,3,41.98,21.43,46.94167413,17.42376914,False,636.7620041382976,True,True,True,Zalahaláp,Hungary,,,,,Bigor Dolenci,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Centar,,,,False,False,True,True,True,True
+430786877000,none,BDA,3,-34.9,-54.81,-33.53709715,-55.41461645,False,161.47230645625075,False,False,True,,Uruguay,,,,,,Uruguay,,,,,El Chorro,Uruguay,,,,,True,True,True,True,True,True
+430791331000,none,BDA,3,37.35,127.11,37.253394,128.4724554,False,121.02474764931958,True,True,True,Yeongweol,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Seongnam-si,South Korea,,,,,False,True,True,True,True,True
+430791342000,none,BDA,3,41.99,21.44,45.02586877,15.03562535,False,616.9275586067253,False,True,True,Prokike,Croatia,Općina Brinje,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Chair,,,,False,False,False,True,True,True
+430791579000,none,BDA,3,-33.86,151.21,-33.53709715,149.96574950000002,False,120.61323870029823,False,True,True,Sodwalls,Australia,Lithgow City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791615000,none,BDA,3,9.84,-83.95,14.92194831,-88.24871993,False,733.1224119125748,False,True,True,,Honduras,,,,,,Costa Rica,,,,,Cartago,Costa Rica,,,,,True,False,True,True,True,True
+430791677000,none,BDA,3,32.53,35.87,36.70268465,36.52891946,False,468.02575972557474,False,False,True,,Turkey,Hassa,,Buhara Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Irbid Qasabah District,,,,True,False,False,True,False,True
+430791683000,none,BDA,3,23.59,58.24,37.80010735,36.52891946,False,2598.2985521091755,False,True,True,,Turkey,Onikişubat,,Kaynar Mahallesi,,Ar Rumays,Oman,,,,,Seeb,Oman,,,,,False,False,False,True,False,True
+430792019000,none,BDA,3,40.47,49.77,39.94661599,48.469638399999994,False,124.86102439299819,True,True,True,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,False,True,False,True,True,True
+430792023000,none,BDA,3,40.47,49.77,38.88146592,48.469638399999994,False,208.83162859811347,False,True,True,Boykəndil,Azerbaijan,Lerik,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,False,True,False,True,True,True
+430792808000,none,BDA,3,30.47,72.6,30.38865059,71.15700441,False,138.68996794264666,True,True,True,,Pakistan,Muzaffargarh District,,,,,Pakistan,Toba Tek Singh District,,,,Chak No 114 / 12 L,Pakistan,Sahiwal District,Chichawatni,,,True,True,False,True,True,True
+430793961000,none,BDA,3,-43.42,172.58,45.02586877,15.03562535,False,18228.33206219367,False,True,True,Prokike,Croatia,Općina Brinje,,,,Ataahua,New Zealand,,,,,Clarkville,New Zealand,,,,,False,False,False,True,True,True
+430822669000,none,BDA,3,25.18,51.62,23.638928699999997,55.63406977,False,441.201097398656,True,True,True,,Oman,,,,,,Qatar,,,,,Al Wakrah,Qatar,,,,,True,False,True,True,True,True
+430822680000,none,BDA,3,25.19,51.37,25.64355985,50.78388042,False,77.53973509511755,True,True,True,,Bahrain,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,True,False,True,True,True,True
+430822949000,none,BDA,3,19.43,-99.21,17.83991633,-100.7893485,False,242.8740446498479,False,True,True,,Mexico,Ajuchitlán del Progreso,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Miguel Hidalgo,,,True,True,False,True,True,True
+430822976000,none,BDA,3,25.37,51.24,25.64355985,50.78388042,True,54.97738462037144,True,True,True,,Bahrain,,,,,,Bahrain,,,,,Ash-Shahaniyah,Qatar,,,,,True,True,True,True,True,True
+430829252000,none,BDA,3,40.37,49.98,40.47307452,47.27556651,False,229.28562653625264,True,True,True,,Azerbaijan,Ağdaş,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430829291000,none,BDA,3,10.54,-61.38,14.19570986,-86.00750961,False,2704.995225829909,False,False,False,,Honduras,,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430829374000,none,BDA,3,36.86,30.92,37.80010735,31.75263188,False,127.89549944840616,True,True,True,,Turkey,Beyşehir,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829552000,none,BDA,3,35.13,33.89,37.253394,32.94670377,False,250.90099873959417,False,False,False,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430829565000,none,BDA,3,36.86,30.92,38.34280426,30.55855998,False,167.97905621098263,False,True,True,,Turkey,Şuhut,Kulak Köyü,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829624000,none,BDA,3,10.64,-61.37,14.92318924,-86.00425172,False,2712.584501934716,False,False,False,,Honduras,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430829759000,none,BDA,3,43.29,76.95,43.54548524,75.93329199,False,86.91896646159346,True,True,True,,Kazakhstan,Jambıl awdanı,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,True,True,False,True,True,True
+430829765000,none,BDA,3,-25.47,28.25,-25.75847523,26.976344300000004,False,131.71351469927745,True,True,True,,South Africa,Bojanala,,,,,South Africa,,,,,,South Africa,Pretoria,,,,True,True,False,True,True,True
+430829778000,none,BDA,3,1.5,103.82,3.6564218489999996,103.3969456,False,244.42099346257584,False,False,True,Kuantan,Malaysia,,,,,,Malaysia,,,,,Masai,Malaysia,,,,,False,True,True,True,True,True
+9_K,none,BDA,3,29.24,47.97,26.19680233,50.37316951,False,412.97227167905186,True,True,True,,Bahrain,,,,,,Kuwait,,,,,,Kuwait,,,,,True,False,True,True,True,True
+AFG_4,none,BDA,3,34.94,69.27,33.82665026,69.94138446,False,138.3247762593066,True,True,True,,Afghanistan,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,True,True,True,True,True
+Brazil_19,none,BDA,3,-22.44,-42.98,-24.65879626,-43.60749051,False,254.9537630069993,False,True,True,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+Brazil_59,none,BDA,3,-30.02,-51.22,-30.63345306,-53.256040000000006,False,207.04103081909284,True,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+LE00049319,none,BDA,3,41.82,44.79,44.04309155,15.03562535,False,2422.4723137973074,False,True,True,Savar,Croatia,Općina Sali,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,False,True,True,True
+LE00049643,none,BDA,3,50.13,14.33,50.13534151,16.22969724,False,135.44542802819265,False,False,True,Tutleky,Czechia,,,,,Ruda,Czechia,,,,,Horoměřice,Czechia,Praha-západ,,,,False,True,True,True,True,True
+LE00087042,none,BDA,3,49.26,13.5,46.26380043,29.93591319,False,1270.439393178435,False,True,True,,Moldova,,,,,Drachkov,Czechia,,,,,Hrádek,Czechia,Klatovy,,,,False,False,True,True,True,True
+LE00095622,none,BDA,3,47.04,28.89,47.61163141,29.85796286,False,96.79071224943472,False,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Tegu_2,none,BDA,3,14.1,-87.19,15.64374144,-89.00349514,False,259.7881700728749,False,True,True,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,True,True,True,True,True,True
+430785075000,none,DNN,3,45.16,18.02,41.59971252,21.69811408,,495.09932624037,,,,,Macedonia (FYROM),,,,,Čepin,Croatia,,,,,Slavonski Brod,Croatia,Općina Slavonski Brod,,,,,False,,,,
+430785105000,none,DNN,3,9.93,-84.09,9.970521335,-84.18903868,,11.74924908798545,,,,,Costa Rica,,,,,,Costa Rica,,,,,San José,Costa Rica,,,,,,True,,,,
+430785179000,none,DNN,3,20.98,105.79,16.65160969,106.3040354,,484.4765600392673,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hà Đông,P. Văn Quán,,,,True,,,,
+430785664000,none,DNN,3,41.98,21.44,41.59971252,21.69811408,,47.4071973710072,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),,,,,,True,,,,
+430785741000,none,DNN,3,30.45,72.76,29.96678854,69.38581312,,328.7530417946458,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430786617000,none,DNN,3,41.98,21.43,41.59971252,21.69811408,,47.787389489607726,,,,,Macedonia (FYROM),,,,,Bigor Dolenci,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Centar,,,,,True,,,,
+430786877000,none,DNN,3,-34.9,-54.81,-32.79956993,-56.01217362,,258.674480410874,,,,,Uruguay,,,,,,Uruguay,,,,,El Chorro,Uruguay,,,,,,True,,,,
+430791331000,none,DNN,3,37.35,127.11,36.36770227,127.8293439,,126.63372899826213,,,,,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Seongnam-si,South Korea,,,,,,True,,,,
+430791342000,none,DNN,3,41.99,21.44,41.59971252,21.69811408,,48.401515426633736,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Chair,,,,,True,,,,
+430791579000,none,DNN,3,-33.86,151.21,-25.73326021,134.490976,,1846.123667571857,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,True,,,,
+430791615000,none,DNN,3,9.84,-83.95,9.593635641,8.105324653,,10051.224240207446,,,,,Nigeria,,,,,,Costa Rica,,,,,Cartago,Costa Rica,,,,,,False,,,,
+430791677000,none,DNN,3,32.53,35.87,31.25338168,36.78694093,,166.31746753843566,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Irbid Qasabah District,,,,,True,,,,
+430791683000,none,DNN,3,23.59,58.24,25.930410000000002,50.63777,,810.6096341711972,,,,,Bahrain,,,,,Ar Rumays,Oman,,,,,Seeb,Oman,,,,,,False,,,,
+430792019000,none,DNN,3,40.47,49.77,40.29221962,47.532327,,190.62016307912518,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,,True,,,,
+430792023000,none,DNN,3,40.47,49.77,40.29221962,47.532327,,190.62016307912518,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,,True,,,,
+430792808000,none,DNN,3,30.47,72.6,29.96678854,69.38581312,,313.9496181244715,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,Chak No 114 / 12 L,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430793961000,none,DNN,3,-43.42,172.58,-41.83711205,171.60399650000002,,193.33158406296334,,,,,New Zealand,,,,,Ataahua,New Zealand,,,,,Clarkville,New Zealand,,,,,,True,,,,
+430822669000,none,DNN,3,25.18,51.62,25.31581004,51.19120085,,45.70735612774677,,,,,Qatar,,,,,,Qatar,,,,,Al Wakrah,Qatar,,,,,,True,,,,
+430822680000,none,DNN,3,25.19,51.37,25.31581004,51.19120085,,22.78960515453895,,,,,Qatar,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,,True,,,,
+430822949000,none,DNN,3,19.43,-99.21,23.95093185,-102.5349939,,608.9928673227939,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Miguel Hidalgo,,,,True,,,,
+430822976000,none,DNN,3,25.37,51.24,25.31581004,51.19120085,,7.7714647069454825,,,,,Qatar,,,,,,Bahrain,,,,,Ash-Shahaniyah,Qatar,,,,,,True,,,,
+430829252000,none,DNN,3,40.37,49.98,40.29221962,47.532327,,207.71764400249285,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,True,,,,
+430829291000,none,DNN,3,10.54,-61.38,10.406559,-61.28299200000001,,18.24511616370053,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,,True,,,,
+430829374000,none,DNN,3,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829552000,none,DNN,3,35.13,33.89,25.31581004,51.19120085,,1984.345566105347,,,,,Qatar,,,,,,Cyprus,,,,,,Cyprus,,,,,,False,,,,
+430829565000,none,DNN,3,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829624000,none,DNN,3,10.64,-61.37,10.406559,-61.28299200000001,,27.654109302941723,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,,True,,,,
+430829759000,none,DNN,3,43.29,76.95,48.16004265,67.30130047,,923.4054514983034,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,,True,,,,
+430829765000,none,DNN,3,-25.47,28.25,-28.99951076,25.0931782,,501.5340848894709,,,,,South Africa,,,,,,South Africa,,,,,,South Africa,Pretoria,,,,,True,,,,
+430829778000,none,DNN,3,1.5,103.82,3.79382516,109.711555,,702.5403951783902,,,,,Malaysia,,,,,,Malaysia,,,,,Masai,Malaysia,,,,,,True,,,,
+9_K,none,DNN,3,29.24,47.97,29.34250912,47.59355146,,38.257279835238286,,,,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+AFG_4,none,DNN,3,34.94,69.27,33.93911,67.70995,,181.3084049745642,,,,,Afghanistan,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,,True,,,,
+Brazil_19,none,DNN,3,-22.44,-42.98,-14.235,-51.9253,,1312.5191309210982,,,,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,,True,,,,
+Brazil_59,none,DNN,3,-30.02,-51.22,-14.235,-51.9253,,1757.2519924663393,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+LE00049319,none,DNN,3,41.82,44.79,42.17632857,43.51757521,,112.39976341584793,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00049643,none,DNN,3,50.13,14.33,49.743036100000005,15.33833999,,84.04533441347705,,,,,Czechia,,,,,Ruda,Czechia,,,,,Horoměřice,Czechia,Praha-západ,,,,,True,,,,
+LE00087042,none,DNN,3,49.26,13.5,49.743036100000005,15.33833999,,143.24631472440853,,,,,Czechia,,,,,Drachkov,Czechia,,,,,Hrádek,Czechia,Klatovy,,,,,True,,,,
+LE00095622,none,DNN,3,47.04,28.89,47.41163,28.36989,,57.02797166198906,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+Tegu_2,none,DNN,3,14.1,-87.19,15.2,-86.2419,,159.30982639681855,,,,,Honduras,,,,,,Honduras,,,,,Tegucigalpa,Honduras,,,,,,True,,,,
+10_K,none,BDA,4,29.35,47.54,37.253394,35.33484756,False,1433.2041070554203,False,True,False,,Turkey,Sarıçam,,Kösefakılı Mahallesi,,,Kuwait,,,,,,Kuwait,,,,,True,False,False,True,False,True
+13_B,none,BDA,4,26.22,50.62,26.19680233,50.37316951,False,24.76714474361842,True,True,True,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+430785068000,none,BDA,4,-34.61,-58.39,-35.80464359,-57.80276024,False,143.19630043653927,True,True,True,,Argentina,Chascomús,,,,Ensenada,Argentina,Ensenada,,,,Buenos Aires,Argentina,Comuna 1,,,,False,True,False,True,True,True
+430785091000,none,BDA,4,4.6,-74.07,6.402951979,-75.71383866,False,270.81154152796245,False,False,False,,Colombia,San Jerónimo,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430785565000,none,BDA,4,23.58,58.39,23.00589933,56.82814167,False,171.86736214406028,True,True,True,,Oman,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,False,True,True,True,True,True
+430785730000,none,BDA,4,42.01,21.51,48.33508079,21.00598482,False,704.6423482223846,False,False,False,Detek,Hungary,,,,,Dobrevo,Macedonia (FYROM),,,,,Chento,Macedonia (FYROM),Gazi Baba,,,,False,False,True,True,True,True
+430785758000,none,BDA,4,41.99,21.45,45.02586877,15.03562535,False,617.6020716092509,False,False,False,Prokike,Croatia,Općina Brinje,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Gazi Baba,,,,False,False,False,True,True,True
+430786872000,none,BDA,4,5.56,-0.19,7.087530219,4.288978295,False,523.4881402230045,False,False,False,,Nigeria,Aiyedade,,,,,Ghana,Ga West,,,,Accra,Ghana,Accra Metropolis,,,,True,False,False,True,True,True
+430791452000,none,BDA,4,10.53,-61.38,4.190900806,-61.58851605,False,705.4716385143944,False,False,False,,Brazil,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430791575000,none,BDA,4,-34.685356,-58.305645,-36.3617611,-56.60868834,False,241.5869263448003,False,True,False,San Clemente del Tuyu,Argentina,La Costa,,,,Ensenada,Argentina,Ensenada,,,,Zona de Reserva,Argentina,Avellaneda,,,,False,True,False,True,True,True
+430791611000,none,BDA,4,-33.87,151.21,-35.243591200000004,151.15982140000003,False,152.85344225741733,False,False,False,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791612000,none,BDA,4,9.94,-84.1,15.60149534,-82.25265306,False,660.8156994794099,False,False,False,,Honduras,,,,,,Costa Rica,,,,,San José,Costa Rica,,,,,True,False,True,True,True,True
+430791664000,none,BDA,4,32.01,35.84,37.253394,32.94670377,False,640.4245534794875,False,True,False,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,Amman,Jordan,,,,,True,False,False,True,False,True
+430791871000,none,BDA,4,36.86,30.92,37.80010735,31.75263188,False,127.89549944840616,True,True,False,,Turkey,Beyşehir,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430792013000,none,BDA,4,37.56,31.01,37.80010735,29.36448809,False,147.29590172933857,False,False,False,,Turkey,Honaz,,Dereçiftlik Mahallesi,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Sütçüler,,,,True,True,False,False,False,True
+430792387000,none,BDA,4,32.49,35.88,37.253394,32.94670377,False,593.5226727368007,False,False,False,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,True,False,False,True,False,True
+430792831000,none,BDA,4,37.56,126.98,37.253394,128.4724554,False,136.2023774756498,True,True,True,Yeongweol,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Seoul,South Korea,,,,,False,True,True,True,True,True
+430792838000,none,BDA,4,37.56,126.92,38.34280426,30.55855998,False,8006.778629584017,False,True,False,,Turkey,Şuhut,Kulak Köyü,,,Gapyeong-gun,South Korea,,,,,Seoul,South Korea,,,,,False,False,False,False,True,True
+430793973000,none,BDA,4,-34.91,-55.04,-33.53709715,-55.41461645,False,156.54575033090987,True,True,False,,Uruguay,,,,,,Uruguay,,,,,Punta Ballena,Uruguay,,,,,True,True,True,True,True,True
+430822624000,none,BDA,4,19.37,-99.06,19.79732303,-97.20713277,False,199.90356710818622,True,True,False,,Mexico,Atzalan,,,,Huejotzingo,Mexico,Huejotzingo,,,,Ciudad de México,Mexico,,Iztapalapa,,,False,True,False,True,True,True
+430822670000,none,BDA,4,25.34,51.31,33.82665026,69.94138446,False,2029.8513997425043,False,True,False,,Afghanistan,,,,,,Bahrain,,,,,,Qatar,,,,,True,False,True,True,True,True
+430822963000,none,BDA,4,25.22,51.59,25.82793162,50.57933432,False,121.91531758743359,True,True,False,,Bahrain,,,,,,Qatar,,,,,Doha,Qatar,,,,,True,False,True,True,True,True
+430822969000,none,BDA,4,19.59,-99.26,20.44460466,-98.40120466,False,130.7337414173109,True,True,False,,Mexico,Zacualpan,,,,,Mexico,Chapa de Mota,,,,Ciudad López Mateos,Mexico,Atizapán de Zaragoza,,,,True,True,False,True,True,True
+430829250000,none,BDA,4,9.01,7.57,7.771093114,3.0949063999999997,False,511.341724779378,True,True,True,,Nigeria,Ibarapa North,,,,,Nigeria,Karu,,,,New Karu,Nigeria,Municipal Area Coun,,,,True,True,False,True,True,True
+430829263000,none,BDA,4,40.37,49.98,39.41607506,47.27556651,False,254.003409806734,False,False,False,,Azerbaijan,Füzuli,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430829290000,none,BDA,4,1.56,103.66,4.344091825,102.20287370000001,False,349.41631366310384,False,False,False,Kuala Lipis,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,False,True,True,True,True,True
+430829293000,none,BDA,4,-33.9,18.4,41.51369504,42.49927893,False,8742.603884491882,True,True,True,,Georgia,,,,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,True,False,False,True,True,True
+430829358000,none,BDA,4,47.22,19.4,46.46893764,18.61784103,False,102.56572412291486,True,True,True,Medina,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430829360000,none,BDA,4,9.04,7.42,7.771093114,-1.68138118,False,1011.3235142898425,True,True,True,Senya,Ghana,Nkoranza,,,,,Nigeria,Karu,,,,Abuja,Nigeria,Municipal Area Coun,,,,False,False,False,True,True,True
+430829375000,none,BDA,4,47.22,19.4,46.94167413,17.42376914,False,152.85037436406168,True,True,False,Zalahaláp,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430829389000,none,BDA,4,35.24,32.95,37.253394,35.33484756,False,309.68605994317494,False,False,False,,Turkey,Sarıçam,,Kösefakılı Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430829521000,none,BDA,4,36.86,30.92,37.253394,32.94670377,False,185.14277956920196,True,True,False,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829564000,none,BDA,4,36.86,30.92,36.70268465,31.75263188,False,76.21226754499659,True,True,True,,Turkey,Alanya,,Saburlar Mahallesi,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829566000,none,BDA,4,36.86,30.92,36.70268465,29.36448809,False,139.6745088591454,True,True,True,,Turkey,Fethiye,,Atlıdere Mahallesi,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829568000,none,BDA,4,6.45,3.48,7.087530219,4.288978295,False,114.07389587385765,False,True,False,,Nigeria,Aiyedade,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Eti Osa,,,,True,True,False,True,True,True
+430829623000,none,BDA,4,2.12,102.79,4.344091825,102.20287370000001,False,255.83254365954178,True,True,False,Kuala Lipis,Malaysia,,,,,,Malaysia,,,,,Pagoh,Malaysia,,,,,False,True,True,True,True,True
+430829733000,none,BDA,4,2.5,102.09,3.6564218489999996,103.3969456,False,193.94969288788207,True,True,True,Kuantan,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Linggi,Malaysia,,,,,False,True,True,True,True,True
+430829746000,none,BDA,4,-25.82,28.26,-25.75847523,26.976344300000004,False,128.7414066283246,True,True,True,,South Africa,Bojanala,,,,Katlehong,South Africa,East Rand,,,,Pretoria,South Africa,Pretoria,,,,False,True,False,True,True,True
+430829758000,none,BDA,4,4.65,-74.06,5.7174547360000005,-74.51976677,False,129.19493885583262,True,True,False,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430829773000,none,BDA,4,43.19,76.85,43.54548524,75.93329199,False,84.0108631626323,True,True,True,,Kazakhstan,Jambıl awdanı,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,True,True,False,True,True,True
+430829779000,none,BDA,4,1.54,103.73,4.344091825,102.20287370000001,False,355.03813190351207,False,False,False,Kuala Lipis,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,False,True,True,True,True,True
+430829787000,none,BDA,4,43.29,76.95,43.04373744,74.73922009,False,181.42809819503165,True,True,False,Korday,Kazakhstan,Korday District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,False,True,False,True,True,True
+Brazil_14,none,BDA,4,-22.52,-43.0,-24.65879626,-43.60749051,False,245.82389454979827,True,True,False,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,True,True,True,True,True,True
+Brazil_5,none,BDA,4,-10.93,-37.05,-12.88976632,-38.25508775,False,254.39588669660353,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_15,none,BDA,4,2.02,45.32,21.089172100000003,55.63406977,False,2397.692988558505,False,True,False,,Oman,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,False,True,True,True,True
+DJI_5,none,BDA,4,11.61,43.15,32.55957132,64.70552383,False,3205.418947371905,False,True,False,,Afghanistan,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+DJI_6,none,BDA,4,11.6,43.15,17.83991633,56.82814167,False,1625.9566029499163,False,True,False,,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00049339,none,BDA,4,41.79,44.74,41.51369504,42.49927893,False,188.7408358994015,False,True,False,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00095584,none,BDA,4,47.03,28.88,47.61163141,29.85796286,False,98.09563239942207,True,True,False,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00096909,none,BDA,4,47.04,28.86,47.61163141,29.85796286,False,98.50721723601274,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_7,none,BDA,4,14.38,-87.62,13.46964054,-87.49742363,False,102.12018429374294,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_8,none,BDA,4,14.38,-87.62,14.19763969,-86.75321834,False,95.60577951938237,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+10_K,none,DNN,4,29.35,47.54,29.34250912,47.59355146,,5.258572699026873,,,,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+13_B,none,DNN,4,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+430785068000,none,DNN,4,-34.61,-58.39,-35.37667245,-65.16748459,,623.306174915487,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,Buenos Aires,Argentina,Comuna 1,,,,,True,,,,
+430785091000,none,DNN,4,4.6,-74.07,3.90037408,-73.07576432,,134.97542277697391,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430785565000,none,DNN,4,23.58,58.39,20.60235698,56.11008927,,406.06622760332584,,,,,Oman,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,,True,,,,
+430785730000,none,DNN,4,42.01,21.51,41.59971252,21.69811408,,48.22788403100342,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Chento,Macedonia (FYROM),Gazi Baba,,,,,True,,,,
+430785758000,none,DNN,4,41.99,21.45,41.59971252,21.69811408,,48.04056044884497,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Gazi Baba,,,,,True,,,,
+430786872000,none,DNN,4,5.56,-0.19,9.593635641,8.105324653,,1018.556709672581,,,,,Nigeria,,,,,,Ghana,Ga West,,,,Accra,Ghana,Accra Metropolis,,,,,False,,,,
+430791452000,none,DNN,4,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430791575000,none,DNN,4,-34.685356,-58.305645,-32.79956993,-56.01217362,,298.30289285451494,,,,,Uruguay,,,,,Ensenada,Argentina,Ensenada,,,,Zona de Reserva,Argentina,Avellaneda,,,,,False,,,,
+430791611000,none,DNN,4,-33.87,151.21,-25.73326021,134.490976,,1846.59178379979,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,True,,,,
+430791612000,none,DNN,4,9.94,-84.1,9.970521335,-84.18903868,,10.328512602082801,,,,,Costa Rica,,,,,,Costa Rica,,,,,San José,Costa Rica,,,,,,True,,,,
+430791664000,none,DNN,4,32.01,35.84,31.25338168,36.78694093,,122.98333390178222,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,Amman,Jordan,,,,,,True,,,,
+430791871000,none,DNN,4,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430792013000,none,DNN,4,37.56,31.01,39.06061961,35.17922138,,400.2823936158939,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Sütçüler,,,,,True,,,,
+430792387000,none,DNN,4,32.49,35.88,31.25338168,36.78694093,,162.04418111302633,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,,True,,,,
+430792831000,none,DNN,4,37.56,126.98,36.36770227,127.8293439,,152.59485615997815,,,,,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Seoul,South Korea,,,,,,True,,,,
+430792838000,none,DNN,4,37.56,126.92,36.36770227,127.8293439,,155.3015515968876,,,,,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Seoul,South Korea,,,,,,True,,,,
+430793973000,none,DNN,4,-34.91,-55.04,-32.79956993,-56.01217362,,251.32874618222706,,,,,Uruguay,,,,,,Uruguay,,,,,Punta Ballena,Uruguay,,,,,,True,,,,
+430822624000,none,DNN,4,19.37,-99.06,23.95093185,-102.5349939,,623.3509910707498,,,,,Mexico,,,,,Huejotzingo,Mexico,Huejotzingo,,,,Ciudad de México,Mexico,,Iztapalapa,,,,True,,,,
+430822670000,none,DNN,4,25.34,51.31,25.31581004,51.19120085,,12.243120818975505,,,,,Qatar,,,,,,Bahrain,,,,,,Qatar,,,,,,True,,,,
+430822963000,none,DNN,4,25.22,51.59,25.31581004,51.19120085,,41.505665414430965,,,,,Qatar,,,,,,Qatar,,,,,Doha,Qatar,,,,,,True,,,,
+430822969000,none,DNN,4,19.59,-99.26,23.95093185,-102.5349939,,591.3093672587158,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad López Mateos,Mexico,Atizapán de Zaragoza,,,,,True,,,,
+430829250000,none,DNN,4,9.01,7.57,9.593635641,8.105324653,,87.5622142487649,,,,,Nigeria,,,,,,Nigeria,Karu,,,,New Karu,Nigeria,Municipal Area Coun,,,,,True,,,,
+430829263000,none,DNN,4,40.37,49.98,40.29221962,47.532327,,207.71764400249285,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,True,,,,
+430829290000,none,DNN,4,1.56,103.66,3.79382516,109.711555,,716.7783533833908,,,,,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,,True,,,,
+430829293000,none,DNN,4,-33.9,18.4,-28.99951076,25.0931782,,836.562763447372,,,,,South Africa,,,,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,,True,,,,
+430829358000,none,DNN,4,47.22,19.4,47.1665223,19.41351315,,6.035367800206169,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430829360000,none,DNN,4,9.04,7.42,7.959643881,-1.207046214,,956.5883351134823,,,,,Ghana,,,,,,Nigeria,Karu,,,,Abuja,Nigeria,Municipal Area Coun,,,,,False,,,,
+430829375000,none,DNN,4,47.22,19.4,47.1665223,19.41351315,,6.035367800206169,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430829389000,none,DNN,4,35.24,32.95,35.04299176,33.21863701,,32.820998024352605,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430829521000,none,DNN,4,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829564000,none,DNN,4,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829566000,none,DNN,4,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829568000,none,DNN,4,6.45,3.48,9.593635641,8.105324653,,617.837914495252,,,,,Nigeria,,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Eti Osa,,,,,True,,,,
+430829623000,none,DNN,4,2.12,102.79,3.79382516,109.711555,,791.0509796354625,,,,,Malaysia,,,,,,Malaysia,,,,,Pagoh,Malaysia,,,,,,True,,,,
+430829733000,none,DNN,4,2.5,102.09,3.79382516,109.711555,,858.5926387996151,,,,,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Linggi,Malaysia,,,,,,True,,,,
+430829746000,none,DNN,4,-25.82,28.26,-28.99951076,25.0931782,,472.02136203308277,,,,,South Africa,,,,,Katlehong,South Africa,East Rand,,,,Pretoria,South Africa,Pretoria,,,,,True,,,,
+430829758000,none,DNN,4,4.65,-74.06,3.90037408,-73.07576432,,137.37048252713194,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430829773000,none,DNN,4,43.19,76.85,48.16004265,67.30130047,,924.2628016315826,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,True,,,,
+430829779000,none,DNN,4,1.54,103.73,3.79382516,109.711555,,710.2750948618042,,,,,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,,True,,,,
+430829787000,none,DNN,4,43.29,76.95,48.16004265,67.30130047,,923.4054514983034,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,,True,,,,
+Brazil_14,none,DNN,4,-22.52,-43.0,-14.235,-51.9253,,1317.042550922039,,,,,Brazil,,,,,,Brazil,,,,,Guapimirim,Brazil,Guapimirim,,,,,True,,,,
+Brazil_5,none,DNN,4,-10.93,-37.05,-14.235,-51.9253,,1655.6919919583586,,,,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,,True,,,,
+DJI_15,none,DNN,4,2.02,45.32,,,,,,,,,Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,,True,,,,
+DJI_5,none,DNN,4,11.61,43.15,,,,,,,,,Djibouti,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,True,,,,
+DJI_6,none,DNN,4,11.6,43.15,20.60235698,56.11008927,,1707.4304637947084,,,,,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,False,,,,
+LE00049339,none,DNN,4,41.79,44.74,42.17632857,43.51757521,,109.82629419677173,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00095584,none,DNN,4,47.03,28.88,47.41163,28.36989,,57.33132102329476,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+LE00096909,none,DNN,4,47.04,28.86,47.41163,28.36989,,55.49114580291438,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+Soto_Cano_7,none,DNN,4,14.38,-87.62,15.2,-86.2419,,174.02248081562794,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+Soto_Cano_8,none,DNN,4,14.38,-87.62,15.2,-86.2419,,174.02248081562794,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+18_B,none,BDA,5,26.22,50.62,23.638928699999997,55.63406977,False,581.468043077983,False,False,False,,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,True,True,True,True
+2_B,none,BDA,5,26.22,50.62,26.19680233,50.37316951,False,24.76714474361842,True,True,True,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,True,True,True,True,True
+430785065000,none,BDA,5,9.97,-84.01,13.47001241,-86.75398399,False,490.7526165184918,False,True,False,,Honduras,,,,,,Costa Rica,,,,,Ipis,Costa Rica,Goicoechea,,,,True,False,True,True,True,True
+430785083000,none,BDA,5,-34.35,-58.3,-33.53709715,-57.80276024,False,101.39401249762925,True,True,True,,Uruguay,,,,,Ensenada,Argentina,Ensenada,,,,,Argentina,,,,,False,False,False,True,True,True
+430785104000,none,BDA,5,9.92,-84.05,12.5196783,-81.68419814,False,387.59065977264845,False,False,False,San Luis,Colombia,San Andrés,,,,,Costa Rica,,,,,,Costa Rica,,,,,False,False,False,True,True,True
+430785109000,none,BDA,5,9.9,-84.06,13.46964054,-87.49742363,False,545.6986046146599,False,True,False,,Honduras,,,,,,Costa Rica,,,,,Desamparados,Costa Rica,,,,,True,False,True,True,True,True
+430785180000,none,BDA,5,30.53,72.48,30.38865059,71.15700441,False,127.81725046513459,True,True,True,,Pakistan,Muzaffargarh District,,,,,Pakistan,Toba Tek Singh District,,,,Chak 39/14 L Judge Wala,Pakistan,Sahiwal District,Mian Channu,,,True,True,False,True,True,True
+430785188000,none,BDA,5,37.25,127.06,37.253394,126.08431159999999,False,86.38513785944318,True,True,True,Incheon,South Korea,,,,,Cheonan,South Korea,,,,,Suwon,South Korea,,,,,False,True,True,True,True,True
+430785543000,none,BDA,5,50.86,14.84,45.02586877,15.03562535,False,649.0924593431621,True,True,False,Prokike,Croatia,Općina Brinje,,,,Loukov,Czechia,,,,,Hrádek nad Nisou,Czechia,Liberec,,,,False,False,False,True,True,True
+430785566000,none,BDA,5,23.59,58.2,22.36988671,58.02221356,False,136.92863365701314,True,True,True,ابوعيد,Oman,,,,,Ar Rumays,Oman,,,,,Seeb,Oman,,,,,False,True,True,True,True,True
+430785673000,none,BDA,5,21.06,105.83,19.79732303,105.7850894,False,140.5253372151889,True,True,True,Thành phố Thanh Hoá,Vietnam,Thành phố Thanh Hóa,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Tây Hồ,Quảng An,,,False,True,False,True,True,True
+430786332000,none,BDA,5,9.86,-84.05,13.46964054,-87.49742363,False,549.7050251020061,True,True,False,,Honduras,,,,,,Costa Rica,,,,,,Costa Rica,,,,,True,False,True,True,True,True
+430786340000,none,BDA,5,-34.84,-58.07,-34.67863032,-60.19090403,False,194.63669345260692,True,True,False,,Argentina,Chacabuco,,,,Ensenada,Argentina,Ensenada,,,,Villa Elisa,Argentina,La Plata,,,,False,True,False,True,True,True
+430786608000,none,BDA,5,41.99,21.44,45.02586877,15.03562535,False,616.9275586067253,False,False,False,Prokike,Croatia,Općina Brinje,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Chair,,,,False,False,False,True,True,True
+430791347000,none,BDA,5,21.06,105.84,20.44460466,104.5910175,False,146.83991389335648,False,True,False,,Vietnam,Mường Lát,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Tây Hồ,Tứ Liên,,,True,True,False,True,True,True
+430791371000,none,BDA,5,30.53,70.71,29.79219261,72.35107629999999,False,177.882526544477,True,True,True,,Pakistan,Bahawalpur,,,,,Pakistan,Muzaffargarh District,,,,,Pakistan,Dera Ghazi Khan,Taunsa,,,True,True,False,True,True,True
+430791479000,none,BDA,5,-34.88,-56.03,-35.80464359,-57.80276024,False,190.91016560047845,False,False,False,,Argentina,Chascomús,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,True,False,False,True,True,True
+430791581000,none,BDA,5,-33.86,151.21,-33.53709715,149.96574950000002,False,120.61323870029823,True,True,True,Sodwalls,Australia,Lithgow City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791584000,none,BDA,5,-33.86,151.21,-35.243591200000004,151.15982140000003,False,153.96524936037602,False,False,False,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791587000,none,BDA,5,9.89,-84.06,13.47001241,-86.75398399,False,494.61626889190285,True,True,False,,Honduras,,,,,,Costa Rica,,,,,Desamparados,Costa Rica,,,,,True,False,True,True,True,True
+430791614000,none,BDA,5,46.17,15.75,46.94167413,17.42376914,False,154.12698230937443,True,True,False,Zalahaláp,Hungary,,,,,Letovanić,Croatia,Općina Lekenik,,,,Vrhi Pregradski,Croatia,Općina Pregrada,,,,False,False,False,True,True,True
+430791644000,none,BDA,5,32.39,35.95,36.70268465,34.14077567,False,507.4975547209417,False,True,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Jarash Qasabah District,,,,True,False,False,True,False,True
+430791844000,none,BDA,5,37.33,127.09,33.82665026,69.94138446,False,5105.550435942661,False,True,False,,Afghanistan,,,,,Gapyeong-gun,South Korea,,,,,Yongin-si,South Korea,,,,,False,False,True,True,True,True
+430791850000,none,BDA,5,20.97,105.79,20.44460466,104.5910175,False,137.7564641256154,False,True,False,,Vietnam,Mường Lát,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hà Đông,P. Phúc La,,,True,True,False,True,True,True
+430791882000,none,BDA,5,35.21,32.98,37.253394,32.94670377,False,227.30600033999832,False,True,False,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430792010000,none,BDA,5,40.47,49.77,38.88146592,48.469638399999994,False,208.83162859811347,False,True,False,Boykəndil,Azerbaijan,Lerik,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,False,True,False,True,True,True
+430792042000,none,BDA,5,35.13,33.89,36.70268465,34.14077567,False,176.38185092704865,False,True,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430792799000,none,BDA,5,30.5,72.72,30.38865059,71.15700441,False,150.3910190602553,True,True,True,,Pakistan,Muzaffargarh District,,,,,Pakistan,Toba Tek Singh District,,,,,Pakistan,Sahiwal District,Chichawatni,,,True,True,False,True,True,True
+430792823000,none,BDA,5,21.01,105.82,4.344091825,102.20287370000001,False,1894.516801359588,False,True,False,Kuala Lipis,Malaysia,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Đống Đa,Trung Liệt,,,False,False,False,True,True,True
+430793984000,none,BDA,5,-34.91,-56.14,-35.80464359,-57.80276024,False,180.69973258982273,False,False,False,,Argentina,Chascomús,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,True,False,False,True,True,True
+430822667000,none,BDA,5,52.21,51.52,36.70268465,34.14077567,False,2196.931491475097,False,True,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Kazakhstan,Zelenov District,,,,Tyul'pan,Russia,,,,,True,False,False,True,False,True
+430822675000,none,BDA,5,24.29,51.3,23.638928699999997,55.63406977,False,446.413592599256,True,True,True,,Oman,,,,,,Qatar,,,,,,Saudi Arabia,Al Ahsa,,,,True,False,True,True,True,True
+430822684000,none,BDA,5,25.23,51.41,23.638928699999997,55.63406977,False,462.8891449975454,True,True,False,,Oman,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,True,False,True,True,True,True
+430822688000,none,BDA,5,19.38,-99.19,19.14739872,-98.40120466,False,86.77184782145856,True,True,True,Huejotzingo,Mexico,Huejotzingo,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Benito Juarez,,,False,True,False,True,True,True
+430822689000,none,BDA,5,19.63,-99.21,20.44460466,-98.40120466,False,123.906287643788,True,True,True,,Mexico,Zacualpan,,,,,Mexico,Chapa de Mota,,,,Cuautitlán Izcalli,Mexico,Cuautitlán Izcalli,,,,True,True,False,True,True,True
+430829253000,none,BDA,5,36.86,30.92,38.34280426,30.55855998,False,167.97905621098263,False,True,False,,Turkey,Şuhut,Kulak Köyü,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829557000,none,BDA,5,36.86,30.92,41.51369504,42.49927893,False,1123.1724405717268,False,False,False,,Georgia,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,False,False,False,False,True
+430829608000,none,BDA,5,3.14,101.63,3.6564218489999996,101.00880179999999,False,89.76049420152813,False,False,False,Sungai Besar,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Kuala Lumpur,Malaysia,,,,,False,True,True,True,True,True
+430829622000,none,BDA,5,10.53,-61.38,5.0311354889999995,-1.68138118,False,6598.715006286496,False,False,False,,Ghana,Shama,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,True,False,False,True,True,True
+430829763000,none,BDA,5,-25.65,28.21,-25.75847523,26.976344300000004,False,124.22762373653975,True,True,True,,South Africa,Bojanala,,,,,South Africa,,,,,Pretoria,South Africa,Pretoria,,,,True,True,False,True,True,True
+430829784000,none,BDA,5,3.16,101.59,4.344091825,102.20287370000001,False,148.23501250790216,False,False,False,Kuala Lipis,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Petaling Jaya,Malaysia,,,,,False,True,True,True,True,True
+6_K,none,BDA,5,28.87,48.17,26.19680233,50.37316951,False,368.25885999017044,False,True,False,,Bahrain,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,False,True,True,True,True
+Brazil_51,none,BDA,5,-30.151059999999998,-51.223222,-32.38028946,-55.41461645,False,469.2803895200713,False,True,False,,Uruguay,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,False,True,True,True,True
+Brazil_52,none,BDA,5,-30.06,-51.15,-27.73055093,-53.19336397,False,326.67954466094744,False,True,False,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_8,none,BDA,5,-10.95,-37.07,-12.88976632,-38.25508775,False,251.36626108943358,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+LE00040997,none,BDA,5,47.7,44.85,40.99543794,46.08149462,False,752.124802817234,True,True,False,,Azerbaijan,Şəmkir,,,,,Kazakhstan,Kurmangazy District,,,,Khanata,Russia,Maloderbetovsky District,,,,True,False,False,True,True,True
+LE00049228,none,BDA,5,41.78,44.83,40.99543794,46.08149462,False,136.09549738417945,False,True,False,,Azerbaijan,Şəmkir,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,False,True,True,True
+LE00049632,none,BDA,5,49.84,14.23,49.69142341,15.03562535,False,60.19287316061044,False,True,False,Javorník,Czechia,,,,,Ruda,Czechia,,,,,Kytín,Czechia,Praha-západ,,,,False,True,True,True,True,True
+LE00094040,none,BDA,5,47.04,28.88,48.25300129,28.80820423,False,135.02913672260487,True,True,False,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00095895,none,BDA,5,47.06,28.87,46.86755372,27.93318333,False,74.26498905185379,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00099757,none,BDA,5,47.05,28.89,47.61163141,29.85796286,False,96.05848484694141,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00099760,none,BDA,5,47.04,28.87,46.86755372,27.93318333,False,73.66745448525856,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_11,none,BDA,5,14.37,-87.61,13.46964054,-87.49742363,False,100.88164969358836,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_12,none,BDA,5,14.37,-87.61,14.92318924,-86.00425172,False,183.43003883552794,False,True,False,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+Soto_Cano_2,none,BDA,5,14.39,-87.61,14.9252223,-86.75240812,False,109.82096374742373,True,True,False,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,True,True,True,True,True,True
+18_B,none,DNN,5,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+2_B,none,DNN,5,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+430785065000,none,DNN,5,9.97,-84.01,-14.235,-51.9253,,4446.921156751462,,,,,Brazil,,,,,,Costa Rica,,,,,Ipis,Costa Rica,Goicoechea,,,,,False,,,,
+430785083000,none,DNN,5,-34.35,-58.3,-35.37667245,-65.16748459,,636.9456079264829,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,,Argentina,,,,,,True,,,,
+430785104000,none,DNN,5,9.92,-84.05,9.970521335,-84.18903868,,16.236330714761998,,,,,Costa Rica,,,,,,Costa Rica,,,,,,Costa Rica,,,,,,True,,,,
+430785109000,none,DNN,5,9.9,-84.06,9.970521335,-84.18903868,,16.167998935733042,,,,,Costa Rica,,,,,,Costa Rica,,,,,Desamparados,Costa Rica,,,,,,True,,,,
+430785180000,none,DNN,5,30.53,72.48,29.96678854,69.38581312,,303.82464454400656,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,Chak 39/14 L Judge Wala,Pakistan,Sahiwal District,Mian Channu,,,,True,,,,
+430785188000,none,DNN,5,37.25,127.06,36.36770227,127.8293439,,119.68671131573943,,,,,South Korea,,,,,Cheonan,South Korea,,,,,Suwon,South Korea,,,,,,True,,,,
+430785543000,none,DNN,5,50.86,14.84,45.044154,16.40686578,,657.30013587494,,,,,Croatia,,,,,Loukov,Czechia,,,,,Hrádek nad Nisou,Czechia,Liberec,,,,,False,,,,
+430785566000,none,DNN,5,23.59,58.2,20.60235698,56.11008927,,395.99044531978046,,,,,Oman,,,,,Ar Rumays,Oman,,,,,Seeb,Oman,,,,,,True,,,,
+430785673000,none,DNN,5,21.06,105.83,16.65160969,106.3040354,,492.8750619739946,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Tây Hồ,Quảng An,,,,True,,,,
+430786332000,none,DNN,5,9.86,-84.05,9.970521335,-84.18903868,,19.575669724832014,,,,,Costa Rica,,,,,,Costa Rica,,,,,,Costa Rica,,,,,,True,,,,
+430786340000,none,DNN,5,-34.84,-58.07,-35.37667245,-65.16748459,,648.4348421965622,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,Villa Elisa,Argentina,La Plata,,,,,True,,,,
+430786608000,none,DNN,5,41.99,21.44,41.59971252,21.69811408,,48.401515426633736,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Chair,,,,,True,,,,
+430791347000,none,DNN,5,21.06,105.84,16.65160969,106.3040354,,492.76968210709356,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Tây Hồ,Tứ Liên,,,,True,,,,
+430791371000,none,DNN,5,30.53,70.71,29.96678854,69.38581312,,141.8201960313977,,,,,Pakistan,,,,,,Pakistan,Muzaffargarh District,,,,,Pakistan,Dera Ghazi Khan,Taunsa,,,,True,,,,
+430791479000,none,DNN,5,-34.88,-56.03,-32.79956993,-56.01217362,,231.4117488015532,,,,,Uruguay,,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,,True,,,,
+430791581000,none,DNN,5,-33.86,151.21,-25.73326021,134.490976,,1846.123667571857,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,True,,,,
+430791584000,none,DNN,5,-33.86,151.21,25.31581004,51.19120085,,12418.15551019641,,,,,Qatar,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,The Rocks,Australia,Council of the City of Sydney,,,,,False,,,,
+430791587000,none,DNN,5,9.89,-84.06,9.970521335,-84.18903868,,16.736110774409696,,,,,Costa Rica,,,,,,Costa Rica,,,,,Desamparados,Costa Rica,,,,,,True,,,,
+430791614000,none,DNN,5,46.17,15.75,45.044154,16.40686578,,135.25588778720578,,,,,Croatia,,,,,Letovanić,Croatia,Općina Lekenik,,,,Vrhi Pregradski,Croatia,Općina Pregrada,,,,,True,,,,
+430791644000,none,DNN,5,32.39,35.95,31.25338168,36.78694093,,149.13043302716147,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Jarash Qasabah District,,,,,True,,,,
+430791844000,none,DNN,5,37.33,127.09,33.93911,67.70995,,5292.2455057254265,,,,,Afghanistan,,,,,Gapyeong-gun,South Korea,,,,,Yongin-si,South Korea,,,,,,False,,,,
+430791850000,none,DNN,5,20.97,105.79,16.65160969,106.3040354,,483.37142445705564,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hà Đông,P. Phúc La,,,,True,,,,
+430791882000,none,DNN,5,35.21,32.98,35.04299176,33.21863701,,28.572399429962214,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430792010000,none,DNN,5,40.47,49.77,48.16004265,67.30130047,,1630.8384969716649,,,,,Kazakhstan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,,False,,,,
+430792042000,none,DNN,5,35.13,33.89,35.04299176,33.21863701,,61.86744934561859,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430792799000,none,DNN,5,30.5,72.72,29.96678854,69.38581312,,325.8463140377244,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430792823000,none,DNN,5,21.01,105.82,16.65160969,106.3040354,,487.4521079623789,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Đống Đa,Trung Liệt,,,,True,,,,
+430793984000,none,DNN,5,-34.91,-56.14,-35.37667245,-65.16748459,,822.4403459421368,,,,,Argentina,,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,,False,,,,
+430822667000,none,DNN,5,52.21,51.52,25.31581004,51.19120085,,2991.564762996043,,,,,Qatar,,,,,,Kazakhstan,Zelenov District,,,,Tyul'pan,Russia,,,,,,False,,,,
+430822675000,none,DNN,5,24.29,51.3,25.31581004,51.19120085,,114.6282639622866,,,,,Qatar,,,,,,Qatar,,,,,,Saudi Arabia,Al Ahsa,,,,,False,,,,
+430822684000,none,DNN,5,25.23,51.41,25.31581004,51.19120085,,23.98818071735957,,,,,Qatar,,,,,,Qatar,,,,,Ar-Rayyan,Qatar,,,,,,True,,,,
+430822688000,none,DNN,5,19.38,-99.19,23.95093185,-102.5349939,,614.7843882166469,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Benito Juarez,,,,True,,,,
+430822689000,none,DNN,5,19.63,-99.21,23.95093185,-102.5349939,,590.6244424794544,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Cuautitlán Izcalli,Mexico,Cuautitlán Izcalli,,,,,True,,,,
+430829253000,none,DNN,5,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829557000,none,DNN,5,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829608000,none,DNN,5,3.14,101.63,3.79382516,109.711555,,900.199696563436,,,,,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Kuala Lumpur,Malaysia,,,,,,True,,,,
+430829622000,none,DNN,5,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430829763000,none,DNN,5,-25.65,28.21,-28.99951076,25.0931782,,483.33801443846477,,,,,South Africa,,,,,,South Africa,,,,,Pretoria,South Africa,Pretoria,,,,,True,,,,
+430829784000,none,DNN,5,3.16,101.59,16.65160969,106.3040354,,1586.6488516789507,,,,,Vietnam,,,,,Simpang Pertang,Malaysia,,,,,Petaling Jaya,Malaysia,,,,,,False,,,,
+6_K,none,DNN,5,28.87,48.17,29.34250912,47.59355146,,76.8153788805679,,,,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+Brazil_51,none,DNN,5,-30.151059999999998,-51.223222,-14.235,-51.9253,,1771.8024388710905,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+Brazil_52,none,DNN,5,-30.06,-51.15,-14.235,-51.9253,,1762.006119817993,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+Brazil_8,none,DNN,5,-10.95,-37.07,-14.235,-51.9253,,1653.0245124411942,,,,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,,True,,,,
+LE00040997,none,DNN,5,47.7,44.85,42.17632857,43.51757521,,623.2620679207937,,,,,Georgia,,,,,,Kazakhstan,Kurmangazy District,,,,Khanata,Russia,Maloderbetovsky District,,,,,False,,,,
+LE00049228,none,DNN,5,41.78,44.83,42.17632857,43.51757521,,117.13245694008545,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00049632,none,DNN,5,49.84,14.23,45.044154,16.40686578,,557.9466985008895,,,,,Croatia,,,,,Ruda,Czechia,,,,,Kytín,Czechia,Praha-západ,,,,,False,,,,
+LE00094040,none,DNN,5,47.04,28.88,47.41163,28.36989,,56.51024378079527,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+LE00095895,none,DNN,5,47.06,28.87,47.41163,28.36989,,54.37155746211856,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+LE00099757,none,DNN,5,47.05,28.89,47.41163,28.36989,,56.224373530484904,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+LE00099760,none,DNN,5,47.04,28.87,47.41163,28.36989,,55.99791861062788,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+Soto_Cano_11,none,DNN,5,14.37,-87.61,15.2,-86.2419,,173.698984529549,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+Soto_Cano_12,none,DNN,5,14.37,-87.61,15.2,-86.2419,,173.698984529549,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+Soto_Cano_2,none,DNN,5,14.39,-87.61,15.2,-86.2419,,172.52118619131096,,,,,Honduras,,,,,,Honduras,,,,,Palmerola,Honduras,,,,,,True,,,,
+12_B,none,BDA,6,26.22,50.62,24.26891189,56.82814167,False,661.1113339727035,True,True,True,Sohar,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+13_K,none,BDA,6,29.35,47.54,38.88146592,46.08149462,False,1068.6106800385858,False,False,True,,Azerbaijan,Ordubad,,,,,Kuwait,,,,,,Kuwait,,,,,True,False,False,True,True,True
+430785072000,none,BDA,6,45.35,17.68,45.02586877,15.03562535,False,210.40190944330575,True,True,True,Prokike,Croatia,Općina Brinje,,,,Barcs,Hungary,,,,,Požega,Croatia,Općina Požega,,,,False,False,False,True,True,True
+430785161000,none,BDA,6,21.02,105.8,19.14739872,104.5910175,False,243.5845398683065,False,False,True,,Vietnam,Tương Dương,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Cầu Giấy,Yên Hoà,,,True,True,False,True,True,True
+430785177000,none,BDA,6,41.98,21.44,44.04309155,15.03562535,False,568.9869569723206,False,False,False,Savar,Croatia,Općina Sali,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),,,,,False,False,False,True,True,True
+430785579000,none,BDA,6,23.59,58.2,29.79219261,69.96293251,False,1356.1290636859899,True,True,True,,Pakistan,Dera Ghazi Khan District,,,,Ar Rumays,Oman,,,,,Seeb,Oman,,,,,False,False,False,True,True,True
+430786335000,none,BDA,6,4.67,-74.1,3.6564218489999996,-73.32569487,False,141.734628346024,False,False,True,,Colombia,San Martín,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430786341000,none,BDA,6,43.83,18.31,50.13534151,16.22969724,False,718.8095169240735,True,True,True,Tutleky,Czechia,,,,,Ploče,Croatia,Općina Ploče,,,,Ilidža,Bosnia and Herzegovina,Kanton Sarajevo,,,,False,False,False,True,True,True
+430786637000,none,BDA,6,42.02,21.45,50.13534151,16.22969724,False,987.8464181246322,False,False,False,Tutleky,Czechia,,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Butel,,,,False,False,True,True,True,True
+430786655000,none,BDA,6,30.52,73.36,31.57066902,73.54514820000001,False,118.19009027054997,True,True,True,,Pakistan,Nankana Sahib District,,,,Farid Kot,Pakistan,Pakpattan District,,,,,Pakistan,,,,,False,True,False,True,True,True
+430786878000,none,BDA,6,6.62,-1.18,7.771093114,-1.68138118,False,139.4790941840179,True,True,True,Senya,Ghana,Nkoranza,,,,Anwia,Ghana,Amansie Central,,,,,Ghana,Asante Akim South,,,,False,True,False,True,True,True
+430786879000,none,BDA,6,5.59,-0.18,6.402951979,0.70676261,False,133.4129149574613,False,False,False,,Ghana,Adaklu-Anyigbe,,,,,Ghana,Ga West,,,,Accra,Ghana,Accra Metropolis,,,,True,True,False,True,True,True
+430791348000,none,BDA,6,31.34,74.26,30.38865059,71.15700441,False,314.58268700005317,True,True,True,,Pakistan,Muzaffargarh District,,,,,Pakistan,Nankana Sahib District,,,,Lahore,Pakistan,Lahore,Lahore City,,,True,True,False,True,True,True
+430791445000,none,BDA,6,-44.69,169.14,50.13534151,16.22969724,False,17907.56516625093,False,False,True,Tutleky,Czechia,,,,,Makarora,New Zealand,,,,,Wanaka,New Zealand,,,,,False,False,True,True,True,True
+430791480000,none,BDA,6,-34.79,-55.32,-34.10978903,-56.60868834,False,140.3404898196033,False,True,True,,Uruguay,,,,,,Uruguay,,,,,,Uruguay,,,,,True,True,True,True,True,True
+430791483000,none,BDA,6,5.59,-0.27,7.771093114,-1.68138118,False,288.3826634415383,True,True,True,Senya,Ghana,Nkoranza,,,,,Ghana,Ga West,,,,Accra,Ghana,Accra Metropolis,,,,False,True,False,True,True,True
+430791912000,none,BDA,6,37.28,127.03,50.57517907,50.85778219,False,5999.532441073953,False,False,True,,Kazakhstan,Zelenov District,,,,Gapyeong-gun,South Korea,,,,,Suwon,South Korea,,,,,False,False,False,True,True,True
+430792009000,none,BDA,6,35.19,33.37,37.253394,35.33484756,False,289.39830751642796,False,False,False,,Turkey,Sarıçam,,Kösefakılı Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430792449000,none,BDA,6,51.75,-1.27,45.02586877,15.03562535,False,1412.9983411050227,False,False,True,Prokike,Croatia,Općina Brinje,,,,Přimda,Czechia,,,,,Oxford,United Kingdom,Oxfordshire,,,,False,False,False,True,True,True
+430792821000,none,BDA,6,20.96,105.84,19.79732303,105.7850894,False,129.45103485810012,False,True,True,Thành phố Thanh Hoá,Vietnam,Thành phố Thanh Hóa,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hoàng Mai,Hoàng Liệt,,,False,True,False,True,True,True
+430793959000,none,BDA,6,5.69,-0.14,7.771093114,-1.68138118,False,287.3499478360937,False,True,True,Senya,Ghana,Nkoranza,,,,,Ghana,Ga West,,,,,Ghana,,,,,False,True,False,True,True,True
+430793960000,none,BDA,6,-34.88,-56.13,-34.10978903,-56.60868834,False,96.25513690882612,False,True,True,,Uruguay,,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,True,True,True,True,True,True
+430793988000,none,BDA,6,-45.83,170.62,50.13534151,16.22969724,False,18066.05931919582,False,False,True,Tutleky,Czechia,,,,,Pukerangi,New Zealand,,,,,Port Chalmers,New Zealand,,,,,False,False,True,True,True,True
+430822668000,none,BDA,6,25.34,51.46,23.00589933,56.82814167,False,603.3596998632604,False,False,True,,Oman,,,,,,Bahrain,,,,,Doha,Qatar,,,,,True,False,True,True,True,True
+430822676000,none,BDA,6,25.09,51.57,26.01200203,50.37415407,False,157.85431078572105,False,True,True,,Bahrain,,,,,,Qatar,,,,,,Qatar,,,,,True,False,True,True,True,True
+430829355000,none,BDA,6,35.24,32.95,36.70268465,34.14077567,False,194.82810241351214,False,False,True,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430829376000,none,BDA,6,6.52,3.4,6.402951979,0.70676261,False,297.9495911795748,False,False,False,,Ghana,Adaklu-Anyigbe,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Lagos Mainland,,,,True,False,False,True,True,True
+430829569000,none,BDA,6,36.71,30.76,37.80010735,29.36448809,False,173.10407906093377,False,False,True,,Turkey,Honaz,,Dereçiftlik Mahallesi,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,,,,,True,True,False,False,False,True
+430829609000,none,BDA,6,1.54,103.74,5.0311354889999995,103.3969456,False,390.1819856079369,False,False,False,Marang,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,False,True,True,True,True,True
+430829762000,none,BDA,6,4.63,-74.09,3.6564218489999996,-73.32569487,False,137.53662947929547,False,False,True,,Colombia,San Martín,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430829768000,none,BDA,6,1.52,103.77,3.6564218489999996,103.3969456,False,241.22178584194322,False,False,False,Kuantan,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,False,True,True,True,True,True
+5_K,none,BDA,6,28.89,48.18,26.19680233,50.37316951,False,369.4674279047021,True,True,True,,Bahrain,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,False,False,True,True,True,True
+8_B,none,BDA,6,26.22,50.62,24.26891189,56.82814167,False,661.1113339727035,True,True,True,Sohar,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,False,False,True,True,True,True
+Brazil_58,none,BDA,6,-27.78,-54.24,-32.96058619,-56.60868834,False,619.3917544180324,True,True,True,,Uruguay,,,,,,Argentina,Guaraní,,,,Três de Maio,Brazil,Três de Maio,,,,True,False,False,True,True,True
+Brazil_60,none,BDA,6,-30.05,-51.18,-27.73055093,-53.19336397,False,324.02835814470956,False,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_9,none,BDA,6,-10.95,-37.07,-9.927745833,-35.53578209,False,202.71571029776374,False,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_17,none,BDA,6,2.02,45.31,11.45491264,48.41691112,False,1104.0094831142426,False,True,True,,Djibouti-Somalia,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,True,True,True,True,True,True
+HND_17,none,BDA,6,14.69,-87.95,13.46818517,-86.01058826,False,249.49698041585663,True,True,True,,Honduras,,,,,,Honduras,,,,,Jardines,Honduras,,,,,True,True,True,True,True,True
+LE00041000,none,BDA,6,41.71,44.72,41.51369504,42.49927893,False,185.96096038880543,False,True,True,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00099527,none,BDA,6,47.05,28.86,47.61163141,29.85796286,False,97.78752144738628,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_10,none,BDA,6,14.37,-87.61,14.19763969,-86.75321834,False,94.3223644504046,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+12_B,none,DNN,6,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+13_K,none,DNN,6,29.35,47.54,29.34250912,47.59355146,,5.258572699026873,,,,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+430785072000,none,DNN,6,45.35,17.68,45.044154,16.40686578,,105.42673046674501,,,,,Croatia,,,,,Barcs,Hungary,,,,,Požega,Croatia,Općina Požega,,,,,True,,,,
+430785161000,none,DNN,6,21.02,105.8,16.65160969,106.3040354,,488.78209916435986,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Cầu Giấy,Yên Hoà,,,,True,,,,
+430785177000,none,DNN,6,41.98,21.44,41.59971252,21.69811408,,47.4071973710072,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),,,,,,True,,,,
+430785579000,none,DNN,6,23.59,58.2,20.60235698,56.11008927,,395.99044531978046,,,,,Oman,,,,,Ar Rumays,Oman,,,,,Seeb,Oman,,,,,,True,,,,
+430786335000,none,DNN,6,4.67,-74.1,3.90037408,-73.07576432,,142.24854387854262,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430786341000,none,DNN,6,43.83,18.31,45.044154,16.40686578,,202.68141349529512,,,,,Croatia,,,,,Ploče,Croatia,Općina Ploče,,,,Ilidža,Bosnia and Herzegovina,Kanton Sarajevo,,,,,False,,,,
+430786637000,none,DNN,6,42.02,21.45,41.59971252,21.69811408,,51.07397820760022,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Butel,,,,,True,,,,
+430786655000,none,DNN,6,30.52,73.36,29.96678854,69.38581312,,386.786174529377,,,,,Pakistan,,,,,Farid Kot,Pakistan,Pakpattan District,,,,,Pakistan,,,,,,True,,,,
+430786878000,none,DNN,6,6.62,-1.18,7.959643881,-1.207046214,,149.03824001307422,,,,,Ghana,,,,,Anwia,Ghana,Amansie Central,,,,,Ghana,Asante Akim South,,,,,True,,,,
+430786879000,none,DNN,6,5.59,-0.18,9.593635641,8.105324653,,1016.0743037252153,,,,,Nigeria,,,,,,Ghana,Ga West,,,,Accra,Ghana,Accra Metropolis,,,,,False,,,,
+430791348000,none,DNN,6,31.34,74.26,29.96678854,69.38581312,,490.7157208236808,,,,,Pakistan,,,,,,Pakistan,Nankana Sahib District,,,,Lahore,Pakistan,Lahore,Lahore City,,,,True,,,,
+430791445000,none,DNN,6,-44.69,169.14,-41.83711205,171.60399650000002,,374.82688599733706,,,,,New Zealand,,,,,Makarora,New Zealand,,,,,Wanaka,New Zealand,,,,,,True,,,,
+430791480000,none,DNN,6,-34.79,-55.32,-32.79956993,-56.01217362,,230.45284263396474,,,,,Uruguay,,,,,,Uruguay,,,,,,Uruguay,,,,,,True,,,,
+430791483000,none,DNN,6,5.59,-0.27,7.959643881,-1.207046214,,283.16501735185705,,,,,Ghana,,,,,,Ghana,Ga West,,,,Accra,Ghana,Accra Metropolis,,,,,True,,,,
+430791912000,none,DNN,6,37.28,127.03,9.593635641,8.105324653,,11809.422627251362,,,,,Nigeria,,,,,Gapyeong-gun,South Korea,,,,,Suwon,South Korea,,,,,,False,,,,
+430792009000,none,DNN,6,35.19,33.37,9.593635641,8.105324653,,3830.063131162449,,,,,Nigeria,,,,,,Cyprus,,,,,,Cyprus,,,,,,False,,,,
+430792449000,none,DNN,6,51.75,-1.27,49.743036100000005,15.33833999,,1187.2965527323504,,,,,Czechia,,,,,Přimda,Czechia,,,,,Oxford,United Kingdom,Oxfordshire,,,,,False,,,,
+430792821000,none,DNN,6,20.96,105.84,16.65160969,106.3040354,,481.70425122777556,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hoàng Mai,Hoàng Liệt,,,,True,,,,
+430793959000,none,DNN,6,5.69,-0.14,7.959643881,-1.207046214,,278.5999545183004,,,,,Ghana,,,,,,Ghana,Ga West,,,,,Ghana,,,,,,True,,,,
+430793960000,none,DNN,6,-34.88,-56.13,-32.79956993,-56.01217362,,231.66172054841005,,,,,Uruguay,,,,,,Uruguay,,,,,Montevideo,Uruguay,,,,,,True,,,,
+430793988000,none,DNN,6,-45.83,170.62,-41.83711205,171.60399650000002,,451.08067118306235,,,,,New Zealand,,,,,Pukerangi,New Zealand,,,,,Port Chalmers,New Zealand,,,,,,True,,,,
+430822668000,none,DNN,6,25.34,51.46,25.930410000000002,50.63777,,105.41001569991614,,,,,Bahrain,,,,,,Bahrain,,,,,Doha,Qatar,,,,,,False,,,,
+430822676000,none,DNN,6,25.09,51.57,25.930410000000002,50.63777,,132.2712655759202,,,,,Bahrain,,,,,,Qatar,,,,,,Qatar,,,,,,False,,,,
+430829355000,none,DNN,6,35.24,32.95,35.04299176,33.21863701,,32.820998024352605,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430829376000,none,DNN,6,6.52,3.4,9.593635641,8.105324653,,620.7646208448829,,,,,Nigeria,,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Lagos Mainland,,,,,True,,,,
+430829569000,none,DNN,6,36.71,30.76,39.06061961,35.17922138,,467.7384705717626,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,,,,,,True,,,,
+430829609000,none,DNN,6,1.54,103.74,3.79382516,109.711555,,709.2356883720121,,,,,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,,True,,,,
+430829762000,none,DNN,6,4.63,-74.09,3.90037408,-73.07576432,,138.71764434189004,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430829768000,none,DNN,6,1.52,103.77,3.79382516,109.711555,,706.9159277535929,,,,,Malaysia,,,,,,Malaysia,,,,,Johor Bahru,Malaysia,,,,,,True,,,,
+5_K,none,DNN,6,28.89,48.18,29.34250912,47.59355146,,76.03233615996913,,,,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+8_B,none,DNN,6,26.22,50.62,20.60235698,56.11008927,,839.0726554573359,,,,,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,False,,,,
+Brazil_58,none,DNN,6,-27.78,-54.24,-14.235,-51.9253,,1525.5315911482094,,,,,Brazil,,,,,,Argentina,Guaraní,,,,Três de Maio,Brazil,Três de Maio,,,,,True,,,,
+Brazil_60,none,DNN,6,-30.05,-51.18,-14.235,-51.9253,,1760.7589227136555,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+Brazil_9,none,DNN,6,-10.95,-37.07,-14.235,-51.9253,,1653.0245124411942,,,,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,,True,,,,
+DJI_17,none,DNN,6,2.02,45.31,,,,,,,,,Djibouti,,,,,,Djibouti-Somalia,,,,,Muqdisho,Somalia,Mogadisho,,,,,False,,,,
+HND_17,none,DNN,6,14.69,-87.95,15.2,-86.2419,,192.12924148837791,,,,,Honduras,,,,,,Honduras,,,,,Jardines,Honduras,,,,,,True,,,,
+LE00041000,none,DNN,6,41.71,44.72,42.17632857,43.51757521,,112.1899385396942,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00099527,none,DNN,6,47.05,28.86,47.41163,28.36989,,54.66525740197577,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+Soto_Cano_10,none,DNN,6,14.37,-87.61,15.2,-86.2419,,173.698984529549,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+10_B,none,BDA,7,26.22,50.62,23.638928699999997,55.63406977,False,581.468043077983,False,True,True,,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,True,True,True,True
+15_K,none,BDA,7,29.38,47.97,29.79219261,48.469638399999994,True,66.61589546062119,True,True,True,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,True,True,True,True,True,True
+1_K,none,BDA,7,29.24,47.97,42.53785248,73.54514820000001,False,2721.587963747847,False,False,False,,Kazakhstan,Merki District,,,,,Kuwait,,,,,,Kuwait,,,,,True,False,False,True,True,True
+430785074000,none,BDA,7,9.92,-84.03,13.47001241,-86.75398399,False,493.8801924191668,False,False,True,,Honduras,,,,,,Costa Rica,,,,,San Pedro,Costa Rica,Curridabat,,,,True,False,True,True,True,True
+430785082000,none,BDA,7,-34.81,-58.11,-35.80464359,-57.80276024,False,114.09470337173039,True,True,True,,Argentina,Chascomús,,,,Ensenada,Argentina,Ensenada,,,,Pereyra,Argentina,Berazategui,,,,False,True,False,True,True,True
+430785084000,none,BDA,7,-33.87,151.21,-32.96058619,151.15982140000003,False,101.26116682946905,True,True,True,Wollombi,Australia,Cessnock City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430785085000,none,BDA,7,46.33,16.26,46.46893764,18.61784103,False,181.5151257008897,False,True,True,Medina,Hungary,,,,,Letovanić,Croatia,Općina Lekenik,,,,Sračinec,Croatia,Općina Sračinec,,,,False,False,False,True,True,True
+430785094000,none,BDA,7,-34.53,-58.52,-27.64054522,-56.44999942,False,791.2125306176089,False,True,True,,Brazil,,,,,,Argentina,Zárate,,,,Munro,Argentina,Vicente López,,,,True,False,False,True,True,True
+430785099000,none,BDA,7,45.36,19.0,45.02586877,15.03562535,False,312.9335900674673,True,True,True,Prokike,Croatia,Općina Brinje,,,,Čepin,Croatia,,,,,Vukovar,Croatia,Općina Vukovar,,,,False,True,False,True,True,True
+430785192000,none,BDA,7,21.0,105.84,19.14739872,104.5910175,False,243.89895698300157,False,False,True,,Vietnam,Tương Dương,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Đống Đa,Phương Đình,,,True,True,False,True,True,True
+430785546000,none,BDA,7,32.18,35.85,30.38865059,37.72299135,False,267.19582659617583,False,False,True,,Jordan,Jafr Sub-District,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Mestabah Sub-District,,,,True,True,False,True,True,True
+430785555000,none,BDA,7,23.58,58.4,22.36988671,58.02221356,False,140.05002517626684,True,True,True,ابوعيد,Oman,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,False,True,True,True,True,True
+430785983000,none,BDA,7,41.99,21.45,45.02586877,15.03562535,False,617.6020716092509,False,False,True,Prokike,Croatia,Općina Brinje,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Gazi Baba,,,,False,False,False,True,True,True
+430786354000,none,BDA,7,-34.72,-58.24,-32.96058619,-54.22054455,False,419.7044622062659,True,True,True,,Uruguay,,,,,Ensenada,Argentina,Ensenada,,,,Quilmes,Argentina,Quilmes,,,,False,False,False,True,True,True
+430786492000,none,BDA,7,6.63,-1.3,7.771093114,-1.68138118,False,133.71912379420772,False,False,True,Senya,Ghana,Nkoranza,,,,Anwia,Ghana,Amansie Central,,,,Nobewa,Ghana,Ejisu-Juaben,,,,False,True,False,True,True,True
+430786614000,none,BDA,7,21.03,105.85,19.14739872,104.5910175,False,247.27188353206486,True,True,True,,Vietnam,Tương Dương,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hoàn Kiếm,Hàng Trống,,,True,True,False,True,True,True
+430791118000,none,BDA,7,19.57,-99.02,18.49490489,-97.20713277,False,225.02202702586092,False,True,True,,Mexico,Vicente Guerrero,,,,,Mexico,Chapa de Mota,,,,Ecatepec de Morelos,Mexico,Ecatepec,,,,True,True,False,True,True,True
+430791439000,none,BDA,7,-34.8,-55.95,-36.91491903,-57.80276024,False,288.49120451687423,False,False,False,,Argentina,Maipú,,,,,Uruguay,,,,,Ciudad de la Costa,Uruguay,,,,,True,False,False,True,True,True
+430791444000,none,BDA,7,6.32,-0.48,7.771093114,-1.68138118,False,208.89877491673323,True,True,True,Senya,Ghana,Nkoranza,,,,,Ghana,Ga West,,,,,Ghana,Fanteakwa,,,,False,True,False,True,True,True
+430791472000,none,BDA,7,6.7,-1.41,7.771093114,-1.68138118,False,122.84315180619687,True,True,True,Senya,Ghana,Nkoranza,,,,Anwia,Ghana,Amansie Central,,,,,Ghana,Ejisu-Juaben,,,,False,True,False,True,True,True
+430791474000,none,BDA,7,5.79,-0.34,7.771093114,-1.68138118,False,265.5288427938388,False,False,False,Senya,Ghana,Nkoranza,,,,,Ghana,Ga West,,,,Nsawam,Ghana,Akuapim South,,,,False,True,False,True,True,True
+430791573000,none,BDA,7,-33.87,151.21,-33.53709715,149.96574950000002,False,120.94272106123887,True,True,True,Sodwalls,Australia,Lithgow City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430791577000,none,BDA,7,4.67,-74.06,5.7174547360000005,-74.51976677,False,127.15320069635307,True,True,True,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430791582000,none,BDA,7,45.55,18.72,46.46893764,18.61784103,False,102.5174859079281,True,True,True,Medina,Hungary,,,,,Čepin,Croatia,,,,,Osijek,Croatia,Općina Osijek,,,,False,False,True,True,True,True
+430791590000,none,BDA,7,-34.743078999999994,-58.412064,-35.243591200000004,-58.99683213,False,77.06228901505452,True,True,True,,Argentina,Lobos,,,,Ensenada,Argentina,Ensenada,,,,Banfield,Argentina,Lomas de Zamora,,,,False,True,False,True,True,True
+430791629000,none,BDA,7,9.93,-84.04,13.46818517,-86.01058826,False,448.2570240570899,False,True,True,,Honduras,,,,,,Costa Rica,,,,,Curridabat,Costa Rica,Curridabat,,,,True,False,True,True,True,True
+430791646000,none,BDA,7,32.3,35.91,30.38865059,37.72299135,False,273.59525082179357,False,False,True,,Jordan,Jafr Sub-District,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,Jerash,Jordan,Jarash Qasabah District,,,,True,True,False,True,True,True
+430791679000,none,BDA,7,32.5,35.88,36.70268465,34.14077567,False,493.812132601797,False,False,True,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,True,False,False,True,False,True
+430791848000,none,BDA,7,30.38,73.35,30.38865059,71.15700441,False,210.4226437466827,True,True,True,,Pakistan,Muzaffargarh District,,,,Farid Kot,Pakistan,Pakpattan District,,,,,Pakistan,Pakpattan,Pakpattan,,,False,True,False,True,True,True
+430791875000,none,BDA,7,40.47,49.77,40.99543794,48.469638399999994,False,124.20883181400053,True,True,True,,Azerbaijan,Quba,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,False,True,False,True,True,True
+430791879000,none,BDA,7,35.13,33.89,37.253394,32.94670377,False,250.90099873959417,False,False,True,,Turkey,Kazımkarabekir,,Emsalhayat Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430791881000,none,BDA,7,40.47,49.77,39.94661599,48.469638399999994,False,124.86102439299819,True,True,True,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,False,True,False,True,True,True
+430792836000,none,BDA,7,21.02,105.8,20.44460466,104.5910175,False,141.1141560331989,True,True,True,,Vietnam,Mường Lát,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Cầu Giấy,Yên Hoà,,,True,True,False,True,True,True
+430792839000,none,BDA,7,31.2,74.66,31.57066902,71.15700441,False,335.15775423457154,True,True,True,,Pakistan,Bhakkar District,,,,Ali Pur Syedan,Pakistan,Narowal District,,,,Dassuwal,India,Tarn Taran,,,,False,True,False,True,True,True
+430793980000,none,BDA,7,6.45,-0.61,7.771093114,-1.68138118,False,188.61587775836747,True,True,True,Senya,Ghana,Nkoranza,,,,,Ghana,,,,,Kankan,Ghana,Kwahu South,,,,False,True,False,True,True,True
+430822971000,none,BDA,7,25.23,51.31,38.88146592,48.469638399999994,False,1541.6367462211845,False,True,True,Boykəndil,Azerbaijan,Lerik,,,,,Qatar,,,,,,Qatar,,,,,False,False,False,True,True,True
+430829249000,none,BDA,7,47.59,19.1,46.94167413,17.42376914,False,145.62571594491496,True,True,True,Zalahaláp,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,False,True,True,True,True,True
+430829256000,none,BDA,7,40.37,49.98,40.99543794,48.469638399999994,False,145.15106295401594,True,True,True,,Azerbaijan,Quba,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430829288000,none,BDA,7,10.64,-61.37,4.224910278,-58.7257182,False,770.7916670595338,False,False,False,,Brazil,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430829295000,none,BDA,7,10.52,-61.4,-18.88936531,-43.89911043,False,3792.773076456601,False,False,False,,Brazil,,,,,,Trinidad and Tobago,,,,,Chaguanas,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430829364000,none,BDA,7,40.37,49.98,40.99543794,48.469638399999994,False,145.15106295401594,True,True,True,,Azerbaijan,Quba,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430829661000,none,BDA,7,-25.84,28.22,-25.75847523,26.976344300000004,False,124.87255518641697,True,True,True,,South Africa,Bojanala,,,,Katlehong,South Africa,East Rand,,,,Centurion,South Africa,Pretoria,,,,False,True,False,True,True,True
+Brazil_13,none,BDA,7,-22.95,-43.18,-25.75847523,-54.22054455,False,1161.0948132174892,False,False,True,,Argentina,General Manuel Belgrano,,,,,Brazil,,,,,Rio de Janeiro,Brazil,Rio de Janeiro,,,,True,False,False,True,True,True
+Brazil_56,none,BDA,7,-30.02,-51.17,-33.53492544,-53.32852269,False,441.0006356103152,False,True,True,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,True,True,True,True,True
+Brazil_57,none,BDA,7,-30.01,-51.17,-31.20848067,-55.41461645,False,427.6123194038531,False,True,True,,Uruguay,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,True,False,True,True,True,True
+LE00040972,none,BDA,7,41.74,44.83,42.02783601,43.69335083,False,99.42143908999368,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00049140,none,BDA,7,41.75,44.76,42.02783601,43.69335083,False,93.57246484202562,True,True,True,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00097237,none,BDA,7,47.05,28.86,46.23361158,28.96481879,False,91.15883716186791,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+10_B,none,DNN,7,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+15_K,none,DNN,7,29.38,47.97,29.34250912,47.59355146,,36.73109315518759,,,,,Kuwait,,,,,,Kuwait,,,,,Kuwait City,Kuwait,,,,,,True,,,,
+1_K,none,DNN,7,29.24,47.97,25.930410000000002,50.63777,,452.3818884694808,,,,,Bahrain,,,,,,Kuwait,,,,,,Kuwait,,,,,,False,,,,
+430785074000,none,DNN,7,9.92,-84.03,9.970521335,-84.18903868,,18.307789102665836,,,,,Costa Rica,,,,,,Costa Rica,,,,,San Pedro,Costa Rica,Curridabat,,,,,True,,,,
+430785082000,none,DNN,7,-34.81,-58.11,-35.37667245,-65.16748459,,645.2474648507854,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,Pereyra,Argentina,Berazategui,,,,,True,,,,
+430785084000,none,DNN,7,-33.87,151.21,-25.73326021,134.490976,,1846.59178379979,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,True,,,,
+430785085000,none,DNN,7,46.33,16.26,47.1665223,19.41351315,,257.704208291652,,,,,Hungary,,,,,Letovanić,Croatia,Općina Lekenik,,,,Sračinec,Croatia,Općina Sračinec,,,,,False,,,,
+430785094000,none,DNN,7,-34.53,-58.52,20.60235698,56.11008927,,13502.024143728704,,,,,Oman,,,,,,Argentina,Zárate,,,,Munro,Argentina,Vicente López,,,,,False,,,,
+430785099000,none,DNN,7,45.36,19.0,47.1665223,19.41351315,,203.43876880733734,,,,,Hungary,,,,,Čepin,Croatia,,,,,Vukovar,Croatia,Općina Vukovar,,,,,False,,,,
+430785192000,none,DNN,7,21.0,105.84,3.79382516,109.711555,,1959.1202001213123,,,,,Malaysia,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Đống Đa,Phương Đình,,,,False,,,,
+430785546000,none,DNN,7,32.18,35.85,31.25338168,36.78694093,,135.94737843178453,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Mestabah Sub-District,,,,,True,,,,
+430785555000,none,DNN,7,23.58,58.4,,,,,,,,,Djibouti,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,,False,,,,
+430785983000,none,DNN,7,41.99,21.45,49.743036100000005,15.33833999,,982.9612315905789,,,,,Czechia,,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Gazi Baba,,,,,False,,,,
+430786354000,none,DNN,7,-34.72,-58.24,-35.37667245,-65.16748459,,634.8988822423757,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,Quilmes,Argentina,Quilmes,,,,,True,,,,
+430786492000,none,DNN,7,6.63,-1.3,7.959643881,-1.207046214,,148.25119890842538,,,,,Ghana,,,,,Anwia,Ghana,Amansie Central,,,,Nobewa,Ghana,Ejisu-Juaben,,,,,True,,,,
+430786614000,none,DNN,7,21.03,105.85,16.65160969,106.3040354,,489.34590508932945,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hoàn Kiếm,Hàng Trống,,,,True,,,,
+430791118000,none,DNN,7,19.57,-99.02,23.95093185,-102.5349939,,607.6196911554625,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ecatepec de Morelos,Mexico,Ecatepec,,,,,True,,,,
+430791439000,none,DNN,7,-34.8,-55.95,-35.37667245,-65.16748459,,841.0768073861434,,,,,Argentina,,,,,,Uruguay,,,,,Ciudad de la Costa,Uruguay,,,,,,False,,,,
+430791444000,none,DNN,7,6.32,-0.48,7.959643881,-1.207046214,,199.2481536968196,,,,,Ghana,,,,,,Ghana,Ga West,,,,,Ghana,Fanteakwa,,,,,True,,,,
+430791472000,none,DNN,7,6.7,-1.41,7.959643881,-1.207046214,,141.88762766010444,,,,,Ghana,,,,,Anwia,Ghana,Amansie Central,,,,,Ghana,Ejisu-Juaben,,,,,True,,,,
+430791474000,none,DNN,7,5.79,-0.34,7.959643881,-1.207046214,,259.62719514706384,,,,,Ghana,,,,,,Ghana,Ga West,,,,Nsawam,Ghana,Akuapim South,,,,,True,,,,
+430791573000,none,DNN,7,-33.87,151.21,-25.73326021,134.490976,,1846.59178379979,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,True,,,,
+430791577000,none,DNN,7,4.67,-74.06,3.90037408,-73.07576432,,138.73087153927295,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430791582000,none,DNN,7,45.55,18.72,47.1665223,19.41351315,,187.51912819622794,,,,,Hungary,,,,,Čepin,Croatia,,,,,Osijek,Croatia,Općina Osijek,,,,,False,,,,
+430791590000,none,DNN,7,-34.743078999999994,-58.412064,-35.37667245,-65.16748459,,618.9633790302026,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,Banfield,Argentina,Lomas de Zamora,,,,,True,,,,
+430791629000,none,DNN,7,9.93,-84.04,9.970521335,-84.18903868,,16.93884475298387,,,,,Costa Rica,,,,,,Costa Rica,,,,,Curridabat,Costa Rica,Curridabat,,,,,True,,,,
+430791646000,none,DNN,7,32.3,35.91,31.25338168,36.78694093,,142.92641427791884,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,Jerash,Jordan,Jarash Qasabah District,,,,,True,,,,
+430791679000,none,DNN,7,32.5,35.88,31.25338168,36.78694093,,162.98692589672325,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,,True,,,,
+430791848000,none,DNN,7,30.38,73.35,29.96678854,69.38581312,,383.9328158846304,,,,,Pakistan,,,,,Farid Kot,Pakistan,Pakpattan District,,,,,Pakistan,Pakpattan,Pakpattan,,,,True,,,,
+430791875000,none,DNN,7,40.47,49.77,40.29221962,47.532327,,190.62016307912518,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,,True,,,,
+430791879000,none,DNN,7,35.13,33.89,35.04299176,33.21863701,,61.86744934561859,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430791881000,none,DNN,7,40.47,49.77,40.29221962,47.532327,,190.62016307912518,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Abşeron,,,,,True,,,,
+430792836000,none,DNN,7,21.02,105.8,16.65160969,106.3040354,,488.78209916435986,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Cầu Giấy,Yên Hoà,,,,True,,,,
+430792839000,none,DNN,7,31.2,74.66,29.96678854,69.38581312,,523.2708106397976,,,,,Pakistan,,,,,Ali Pur Syedan,Pakistan,Narowal District,,,,Dassuwal,India,Tarn Taran,,,,,False,,,,
+430793980000,none,DNN,7,6.45,-0.61,7.959643881,-1.207046214,,180.3796943683425,,,,,Ghana,,,,,,Ghana,,,,,Kankan,Ghana,Kwahu South,,,,,True,,,,
+430822971000,none,DNN,7,25.23,51.31,40.29221962,47.532327,,1711.7489650024681,,,,,Azerbaijan,,,,,,Qatar,,,,,,Qatar,,,,,,False,,,,
+430829249000,none,DNN,7,47.59,19.1,47.1665223,19.41351315,,52.690830807043355,,,,,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,,True,,,,
+430829256000,none,DNN,7,40.37,49.98,31.25338168,36.78694093,,1560.3303323681173,,,,,Jordan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,False,,,,
+430829288000,none,DNN,7,10.64,-61.37,10.406559,-61.28299200000001,,27.654109302941723,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,,True,,,,
+430829295000,none,DNN,7,10.52,-61.4,10.406559,-61.28299200000001,,17.97255069859991,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Chaguanas,Trinidad and Tobago,,,,,,True,,,,
+430829364000,none,DNN,7,40.37,49.98,31.25338168,36.78694093,,1560.3303323681173,,,,,Jordan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,False,,,,
+430829661000,none,DNN,7,-25.84,28.22,-28.99951076,25.0931782,,467.7240171761924,,,,,South Africa,,,,,Katlehong,South Africa,East Rand,,,,Centurion,South Africa,Pretoria,,,,,True,,,,
+Brazil_13,none,DNN,7,-22.95,-43.18,-14.235,-51.9253,,1336.9140095149476,,,,,Brazil,,,,,,Brazil,,,,,Rio de Janeiro,Brazil,Rio de Janeiro,,,,,True,,,,
+Brazil_56,none,DNN,7,-30.02,-51.17,-14.235,-51.9253,,1757.4704958282955,,,,,Brazil,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,True,,,,
+Brazil_57,none,DNN,7,-30.01,-51.17,-35.37667245,-65.16748459,,1438.0013785350177,,,,,Argentina,,,,,,Brazil,,,,,Porto Alegre,Brazil,Porto Alegre,,,,,False,,,,
+LE00040972,none,DNN,7,41.74,44.83,42.17632857,43.51757521,,118.90939171273143,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00049140,none,DNN,7,41.75,44.76,42.17632857,43.51757521,,113.17056203863582,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00097237,none,DNN,7,47.05,28.86,47.41163,28.36989,,54.66525740197577,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+17_B,none,BDA,8,26.22,50.62,23.638928699999997,55.63406977,False,581.468043077983,False,False,False,,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,True,True,True,True
+430511021000,none,BDA,8,6.64,3.22,7.771093114,3.0949063999999997,False,126.5663215973221,False,True,False,,Nigeria,Ibarapa North,,,,,Nigeria,Badagry,,,,Ota,Nigeria,Ado Odo/Ota,,,,True,True,False,True,True,True
+430785073000,none,BDA,8,4.74,-74.07,3.6564218489999996,-73.32569487,False,146.09461776030932,True,True,False,,Colombia,San Martín,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430785102000,none,BDA,8,-34.65,-58.53,-34.67863032,-60.19090403,False,151.98171329506357,False,False,False,,Argentina,Chacabuco,,,,Ensenada,Argentina,Ensenada,,,,Ciudadela,Argentina,Tres de Febrero,,,,False,True,False,True,True,True
+430785190000,none,BDA,8,21.03,105.85,21.089172100000003,103.3969456,False,254.7107566591432,True,True,False,,Vietnam,Điện Biên Đông,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hoàn Kiếm,Hàng Trống,,,True,True,False,True,True,True
+430785550000,none,BDA,8,50.73,13.75,49.24341381,16.22969724,False,242.4437303243319,True,True,True,Krokočín,Czechia,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,False,True,True,True,True,True
+430785567000,none,BDA,8,23.59,58.55,42.53785248,73.54514820000001,False,2520.2490915417,True,True,False,,Kazakhstan,Merki District,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,False,False,False,True,True,True
+430785572000,none,BDA,8,50.58,15.08,46.46893764,18.61784103,False,526.1844695831143,True,True,True,Medina,Hungary,,,,,Loukov,Czechia,,,,,Příšovice,Czechia,Liberec,,,,False,False,True,True,True,True
+430786338000,none,BDA,8,4.86,-74.06,5.7174547360000005,-74.51976677,False,108.11712113656837,True,True,False,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,Chía,Colombia,Chía,,,,True,True,False,True,True,True
+430786621000,none,BDA,8,37.38,127.13,37.253394,128.4724554,False,119.58559058547316,True,True,True,Yeongweol,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Seongnam-si,South Korea,,,,,False,True,True,True,True,True
+430791330000,none,BDA,8,-43.21,172.43,-43.73731882,170.2649717,False,184.33121825825623,True,True,True,Mount Cook National Park,New Zealand,,,,,Tekoa Range,New Zealand,,,,,Okuku,New Zealand,,,,,False,True,True,True,True,True
+430791332000,none,BDA,8,-45.11,170.97,48.33508079,21.00598482,False,17718.353088698506,True,True,True,Detek,Hungary,,,,,Otematata,New Zealand,,,,,Oamaru,New Zealand,,,,,False,False,True,True,True,True
+430791449000,none,BDA,8,-34.88,-55.13,-33.53709715,-55.41461645,False,151.64768237366332,False,False,False,,Uruguay,,,,,,Uruguay,,,,,,Uruguay,,,,,True,True,True,True,True,True
+430791473000,none,BDA,8,6.6,-1.06,7.771093114,-1.68138118,False,147.20707143546772,True,True,True,Senya,Ghana,Nkoranza,,,,Anwia,Ghana,Amansie Central,,,,,Ghana,Asante Akim South,,,,False,True,False,True,True,True
+430791658000,none,BDA,8,32.05,35.84,30.98148977,36.52891946,False,135.61898794692394,True,True,True,,Jordan,Jafr Sub-District,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Ain Albasha District,,,,True,True,False,True,True,True
+430791883000,none,BDA,8,47.22,19.38,47.41027321,21.00598482,False,124.42616147019736,False,True,False,Karcag,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430792448000,none,BDA,8,46.02,15.94,46.94167413,17.42376914,False,153.04777322449053,True,True,False,Zalahaláp,Hungary,,,,,Letovanić,Croatia,Općina Lekenik,,,,Zabok,Croatia,Općina Zabok,,,,False,False,False,True,True,True
+430792592000,none,BDA,8,41.98,21.44,44.04309155,15.03562535,False,568.9869569723206,False,False,False,Savar,Croatia,Općina Sali,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),,,,,False,False,False,True,True,True
+430793986000,none,BDA,8,-34.8,-55.49,-33.53709715,-55.41461645,False,140.64366699288334,False,False,False,,Uruguay,,,,,,Uruguay,,,,,,Uruguay,,,,,True,True,True,True,True,True
+430793989000,none,BDA,8,-34.77,-55.58,-36.3617611,-56.60868834,False,200.02173370768747,False,False,False,San Clemente del Tuyu,Argentina,La Costa,,,,,Uruguay,,,,,San Luis,Uruguay,,,,,False,False,False,True,True,True
+430822964000,none,BDA,8,19.29,-99.16,20.44460466,-98.40120466,False,150.9762106391937,True,True,True,,Mexico,Zacualpan,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Tlalpan,,,True,True,False,True,True,True
+430829255000,none,BDA,8,41.04,28.98,44.04309155,15.03562535,False,1188.9135321189708,True,True,False,Savar,Croatia,Općina Sali,,,,,Turkey,Pendik,,Kurtdoğmuş Mahallesi,,,Turkey,Beyoğlu,,Bülbül Mahallesi,,False,False,False,True,False,True
+430829292000,none,BDA,8,2.76,101.83,3.6564218489999996,103.3969456,False,200.5578958305701,True,True,False,Kuantan,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Labu,Malaysia,,,,,False,True,True,True,True,True
+430829393000,none,BDA,8,9.06,0.0,9.814737486,6.677122084,False,737.420275320035,True,True,True,,Nigeria,Shiroro,,,,,Ghana,East Gonja,,,,Lepusi,Ghana,Nanumba North,,,,True,False,False,True,True,True
+430829570000,none,BDA,8,47.52,18.93,45.02586877,15.03562535,False,408.08738722811245,False,False,False,Prokike,Croatia,Općina Brinje,,,,Tabajd,Hungary,,,,,Budakeszi,Hungary,,,,,False,False,False,True,True,True
+430829620000,none,BDA,8,10.64,-61.37,4.146854462,-64.4245056,False,796.8753396220387,False,False,False,,Brazil,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430829626000,none,BDA,8,1.9,103.22,3.6564218489999996,103.3969456,False,196.35299586142506,False,True,False,Kuantan,Malaysia,,,,,,Malaysia,,,,,Ayer Hitam,Malaysia,,,,,False,True,True,True,True,True
+430829730000,none,BDA,8,43.29,76.95,43.54548524,75.93329199,False,86.91896646159346,True,True,False,,Kazakhstan,Jambıl awdanı,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,True,True,False,True,True,True
+430829751000,none,BDA,8,-33.89,18.56,38.34280426,32.94670377,False,8170.620528213929,False,True,False,,Turkey,Altınekin,,Yenice Mahallesi,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,True,False,False,True,False,True
+430829754000,none,BDA,8,43.19,76.85,43.04373744,74.73922009,False,172.14726739043056,False,False,False,Korday,Kazakhstan,Korday District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,False,True,False,True,True,True
+430829767000,none,BDA,8,4.73,-74.03,5.7174547360000005,-74.51976677,False,122.50156967176738,True,True,False,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+430829775000,none,BDA,8,4.67,-74.1,5.7174547360000005,-74.51976677,False,125.44420821036421,True,True,False,,Colombia,Puerto Salgar,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,True,True,False,True,True,True
+7_B,none,BDA,8,26.22,50.62,38.88146592,43.69335083,False,1549.5738254806192,False,False,False,,Turkey,Muradiye,,Ovapınar Mahallesi,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,False,True,False,True
+9_B,none,BDA,8,26.22,50.62,23.638928699999997,55.63406977,False,581.468043077983,False,True,False,,Oman,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,True,False,True,True,True,True
+Brazil_15,none,BDA,8,-22.4,-42.96,-21.61108694,-40.69065462,False,249.93545641238086,True,True,False,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,True,True,True,True,True,True
+Brazil_7,none,BDA,8,-10.93,-37.07,-10.149252800000001,-41.26536872,False,466.91682167185996,True,True,True,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,True,True,True,True,True,True
+DJI_4,none,BDA,8,11.61,43.15,19.14739872,56.82814167,False,1688.2736971312622,True,True,False,,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,True,False,True,True,True,True
+LE00031414,none,BDA,8,41.69,44.87,49.69142341,17.42376914,False,2294.3828057078867,False,False,False,Hlubočky,Czechia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,True,True,True,True
+LE00031449,none,BDA,8,50.16,14.31,46.46893764,21.00598482,False,642.9116167768447,True,True,True,Magyarbánhegyes,Hungary,,,,,Ruda,Czechia,,,,,Velké Přílepy,Czechia,Praha-západ,,,,False,False,True,True,True,True
+LE00031608,none,BDA,8,50.73,13.75,49.69142341,15.03562535,False,147.37236217842192,True,True,True,Javorník,Czechia,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,False,True,True,True,True,True
+Soto_Cano_6,none,BDA,8,14.38,-87.62,13.46964054,-87.49742363,False,102.12018429374294,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+17_B,none,DNN,8,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+430511021000,none,DNN,8,6.64,3.22,9.593635641,8.105324653,,630.2797144679315,,,,,Nigeria,,,,,,Nigeria,Badagry,,,,Ota,Nigeria,Ado Odo/Ota,,,,,True,,,,
+430785073000,none,DNN,8,4.74,-74.07,3.90037408,-73.07576432,,144.50672644762926,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430785102000,none,DNN,8,-34.65,-58.53,-32.79956993,-56.01217362,,310.8129795563855,,,,,Uruguay,,,,,Ensenada,Argentina,Ensenada,,,,Ciudadela,Argentina,Tres de Febrero,,,,,False,,,,
+430785190000,none,DNN,8,21.03,105.85,16.65160969,106.3040354,,489.34590508932945,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Hoàn Kiếm,Hàng Trống,,,,True,,,,
+430785550000,none,DNN,8,50.73,13.75,49.743036100000005,15.33833999,,157.54025106326822,,,,,Czechia,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,,False,,,,
+430785567000,none,DNN,8,23.59,58.55,25.930410000000002,50.63777,,840.3071824029946,,,,,Bahrain,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,,False,,,,
+430785572000,none,DNN,8,50.58,15.08,49.743036100000005,15.33833999,,94.89775428567445,,,,,Czechia,,,,,Loukov,Czechia,,,,,Příšovice,Czechia,Liberec,,,,,True,,,,
+430786338000,none,DNN,8,4.86,-74.06,3.90037408,-73.07576432,,152.66991211329332,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Chía,Colombia,Chía,,,,,True,,,,
+430786621000,none,DNN,8,37.38,127.13,36.36770227,127.8293439,,128.6474567808875,,,,,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Seongnam-si,South Korea,,,,,,True,,,,
+430791330000,none,DNN,8,-43.21,172.43,-41.83711205,171.60399650000002,,167.0429826094474,,,,,New Zealand,,,,,Tekoa Range,New Zealand,,,,,Okuku,New Zealand,,,,,,True,,,,
+430791332000,none,DNN,8,-45.11,170.97,-41.83711205,171.60399650000002,,367.6185698983308,,,,,New Zealand,,,,,Otematata,New Zealand,,,,,Oamaru,New Zealand,,,,,,True,,,,
+430791449000,none,DNN,8,-34.88,-55.13,-32.79956993,-56.01217362,,245.33537183677697,,,,,Uruguay,,,,,,Uruguay,,,,,,Uruguay,,,,,,True,,,,
+430791473000,none,DNN,8,6.6,-1.06,7.959643881,-1.207046214,,152.10067962266407,,,,,Ghana,,,,,Anwia,Ghana,Amansie Central,,,,,Ghana,Asante Akim South,,,,,True,,,,
+430791658000,none,DNN,8,32.05,35.84,31.25338168,36.78694093,,126.05587846658028,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Ain Albasha District,,,,,True,,,,
+430791883000,none,DNN,8,47.22,19.38,47.1665223,19.41351315,,6.4651987948033725,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430792448000,none,DNN,8,46.02,15.94,45.044154,16.40686578,,114.47610511203919,,,,,Croatia,,,,,Letovanić,Croatia,Općina Lekenik,,,,Zabok,Croatia,Općina Zabok,,,,,True,,,,
+430792592000,none,DNN,8,41.98,21.44,41.59971252,21.69811408,,47.4071973710072,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),,,,,,True,,,,
+430793986000,none,DNN,8,-34.8,-55.49,-32.79956993,-56.01217362,,227.68073443187524,,,,,Uruguay,,,,,,Uruguay,,,,,,Uruguay,,,,,,True,,,,
+430793989000,none,DNN,8,-34.77,-55.58,-32.79956993,-56.01217362,,222.78157109652227,,,,,Uruguay,,,,,,Uruguay,,,,,San Luis,Uruguay,,,,,,True,,,,
+430822964000,none,DNN,8,19.29,-99.16,23.95093185,-102.5349939,,624.8711883216185,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Ciudad de México,Mexico,,Tlalpan,,,,True,,,,
+430829255000,none,DNN,8,41.04,28.98,47.41163,28.36989,,710.375202755279,,,,,Moldova,,,,,,Turkey,Pendik,,Kurtdoğmuş Mahallesi,,,Turkey,Beyoğlu,,Bülbül Mahallesi,,,False,,,,
+430829292000,none,DNN,8,2.76,101.83,3.79382516,109.711555,,882.7383157862131,,,,,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Labu,Malaysia,,,,,,True,,,,
+430829393000,none,DNN,8,9.06,0.0,9.593635641,8.105324653,,891.5903053461782,,,,,Nigeria,,,,,,Ghana,East Gonja,,,,Lepusi,Ghana,Nanumba North,,,,,False,,,,
+430829570000,none,DNN,8,47.52,18.93,47.1665223,19.41351315,,53.608451180846515,,,,,Hungary,,,,,Tabajd,Hungary,,,,,Budakeszi,Hungary,,,,,,True,,,,
+430829620000,none,DNN,8,10.64,-61.37,10.406559,-61.28299200000001,,27.654109302941723,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Tacarigua,Trinidad and Tobago,,,,,,True,,,,
+430829626000,none,DNN,8,1.9,103.22,3.79382516,109.711555,,751.2662375770669,,,,,Malaysia,,,,,,Malaysia,,,,,Ayer Hitam,Malaysia,,,,,,True,,,,
+430829730000,none,DNN,8,43.29,76.95,48.16004265,67.30130047,,923.4054514983034,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,,True,,,,
+430829751000,none,DNN,8,-33.89,18.56,31.25338168,36.78694093,,7493.803296205009,,,,,Jordan,,,,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,,False,,,,
+430829754000,none,DNN,8,43.19,76.85,48.16004265,67.30130047,,924.2628016315826,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,True,,,,
+430829767000,none,DNN,8,4.73,-74.03,3.90037408,-73.07576432,,140.41741156112502,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+430829775000,none,DNN,8,4.67,-74.1,3.90037408,-73.07576432,,142.24854387854262,,,,,Colombia,,,,,,Colombia,Ricaurte,,,,Bogotá,Colombia,,,,,,True,,,,
+7_B,none,DNN,8,26.22,50.62,25.31581004,51.19120085,,115.70892549626161,,,,,Qatar,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,False,,,,
+9_B,none,DNN,8,26.22,50.62,25.930410000000002,50.63777,,32.25993682977338,,,,,Bahrain,,,,,,Bahrain,,,,,Manama,Bahrain,,,,,,True,,,,
+Brazil_15,none,DNN,8,-22.4,-42.96,-14.235,-51.9253,,1311.0361541070276,,,,,Brazil,,,,,,Brazil,,,,,Teresópolis,Brazil,Teresópolis,,,,,True,,,,
+Brazil_7,none,DNN,8,-10.93,-37.07,-14.235,-51.9253,,1653.5762793071713,,,,,Brazil,,,,,,Brazil,,,,,Aracaju,Brazil,Aracaju,,,,,True,,,,
+DJI_4,none,DNN,8,11.61,43.15,,,,,,,,,Djibouti,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,True,,,,
+LE00031414,none,DNN,8,41.69,44.87,31.25338168,36.78694093,,1366.087204851369,,,,,Jordan,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,False,,,,
+LE00031449,none,DNN,8,50.16,14.31,49.743036100000005,15.33833999,,86.99067410415405,,,,,Czechia,,,,,Ruda,Czechia,,,,,Velké Přílepy,Czechia,Praha-západ,,,,,True,,,,
+LE00031608,none,DNN,8,50.73,13.75,49.743036100000005,15.33833999,,157.54025106326822,,,,,Czechia,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,,False,,,,
+Soto_Cano_6,none,DNN,8,14.38,-87.62,15.2,-86.2419,,174.02248081562794,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,
+11_K,none,BDA,9,28.87,48.16,28.58859381,48.469638399999994,True,43.4954664219671,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,True,True,True,True,True,True
+14_K,none,BDA,9,29.35,47.55,28.58859381,48.469638399999994,False,123.21208436858313,True,True,True,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,False,True,True,True,True,True
+430511009000,none,BDA,9,6.62,3.25,6.402951979,0.70676261,False,282.09353310093354,True,True,True,,Ghana,Adaklu-Anyigbe,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Alimosho,,,,True,False,False,True,True,True
+430785067000,none,BDA,9,9.89,-83.89,12.74234256,-86.75470571,False,445.26023445663446,False,True,False,,Honduras,,,,,,Costa Rica,,,,,,Costa Rica,,,,,True,False,True,True,True,True
+430785069000,none,BDA,9,-33.87,151.21,-35.243591200000004,151.15982140000003,False,152.85344225741733,False,True,False,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430785076000,none,BDA,9,44.15,17.38,45.02586877,15.03562535,False,209.7003674981131,True,True,True,Prokike,Croatia,Općina Brinje,,,,Seget Gornji,Croatia,Općina Seget,,,,,Bosnia and Herzegovina,Srednjobosanski kanton,,,,False,True,False,True,True,True
+430785079000,none,BDA,9,-33.87,151.21,-32.96058619,151.15982140000003,False,101.26116682946905,True,True,True,Wollombi,Australia,Cessnock City Council,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,True,False,True,True,True
+430785089000,none,BDA,9,-34.54,-58.53,-34.67863032,-60.19090403,False,152.82894761152625,True,True,False,,Argentina,Chacabuco,,,,,Argentina,Zárate,,,,San Andres,Argentina,General San Martin,,,,True,True,False,True,True,True
+430785098000,none,BDA,9,-34.64,-58.42,-33.53709715,-57.80276024,False,135.21086244463348,True,True,False,,Uruguay,,,,,Ensenada,Argentina,Ensenada,,,,Buenos Aires,Argentina,Comuna 4,,,,False,False,False,True,True,True
+430785157000,none,BDA,9,37.28,127.04,37.253394,126.08431159999999,False,84.64848866393073,True,True,True,Incheon,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Suwon,South Korea,,,,,False,True,True,True,True,True
+430785185000,none,BDA,9,20.74,105.7,20.44460466,104.5910175,False,120.05386625198466,True,True,True,,Vietnam,Mường Lát,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Mỹ Đức,,,,True,True,False,True,True,True
+430785559000,none,BDA,9,32.11,35.85,30.38865059,35.33484756,False,197.63185860408075,True,True,False,,Jordan,Wadi Araba Sub-District,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Ain Albasha District,,,,True,True,False,True,True,True
+430785563000,none,BDA,9,23.58,58.4,-10.75382311,130.8605992,False,8748.844482354483,False,False,False,,Australia,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,False,False,True,True,True,True
+430786344000,none,BDA,9,9.87,-83.98,13.47001241,-86.75398399,False,501.6137172708251,False,False,False,,Honduras,,,,,,Costa Rica,,,,,,Costa Rica,,,,,True,False,True,True,True,True
+430786866000,none,BDA,9,6.5,-1.54,6.402951979,0.70676261,False,248.55874057588053,True,True,False,,Ghana,Adaklu-Anyigbe,,,,Anwia,Ghana,Amansie Central,,,,Kokofu,Ghana,Amansie East,,,,False,True,False,True,True,True
+430786870000,none,BDA,9,5.63,-0.24,5.0311354889999995,-1.68138118,False,172.97105172297768,False,False,False,,Ghana,Shama,,,,,Ghana,Ga West,,,,,Ghana,Accra Metropolis,,,,True,True,False,True,True,True
+430786882000,none,BDA,9,6.81,-1.54,7.771093114,-1.68138118,False,108.03424712743013,False,False,False,Senya,Ghana,Nkoranza,,,,Anwia,Ghana,Amansie Central,,,,Aboaso,Ghana,Kwabre,,,,False,True,False,True,True,True
+430791459000,none,BDA,9,10.53,-61.38,14.19570986,-86.00750961,False,2705.211217708917,False,False,False,,Honduras,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430791487000,none,BDA,9,-34.92,-54.98,-33.53709715,-55.41461645,False,158.9275864785128,False,False,False,,Uruguay,,,,,,Uruguay,,,,,Maldonado,Uruguay,,,,,True,True,True,True,True,True
+430791492000,none,BDA,9,-34.78,-55.87,-33.53709715,-55.41461645,False,144.46140484378327,False,False,False,,Uruguay,,,,,,Uruguay,,,,,Salinas,Uruguay,,,,,True,True,True,True,True,True
+430791589000,none,BDA,9,-33.87,151.21,37.80010735,29.36448809,False,14843.802920903094,False,True,False,,Turkey,Honaz,,Dereçiftlik Mahallesi,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,False,False,False,True,False,True
+430791608000,none,BDA,9,43.51,16.44,39.94661599,43.69335083,False,2286.1752821764703,True,True,False,,Turkey,Tuzluca,Küçükova Köyü,,,Seget Gornji,Croatia,Općina Seget,,,,Split,Croatia,Općina Split,,,,False,False,False,False,True,True
+430791651000,none,BDA,9,32.51,35.85,36.70268465,34.14077567,False,491.876719228414,False,True,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,True,False,False,True,False,True
+430791667000,none,BDA,9,23.55,58.4,22.36988671,58.02221356,False,136.8473017908374,True,True,True,ابوعيد,Oman,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,False,True,True,True,True,True
+430791847000,none,BDA,9,21.21,105.71,7.771093114,-1.68138118,False,11471.20144412632,False,True,False,Senya,Ghana,Nkoranza,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Mê Linh,Thanh Lâm,,,False,False,False,True,True,True
+430791873000,none,BDA,9,9.91,8.96,9.814737486,6.677122084,False,250.39542865836313,True,True,False,,Nigeria,Shiroro,,,,,Nigeria,Jos East,,,,,Nigeria,Jos North,,,,True,True,False,True,True,True
+430792007000,none,BDA,9,47.47,19.07,47.41027321,21.00598482,False,145.79455018980175,False,True,False,Karcag,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,False,True,True,True,True,True
+430792025000,none,BDA,9,40.37,49.98,38.88146592,48.469638399999994,False,210.12681918323605,False,False,False,Boykəndil,Azerbaijan,Lerik,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,False,True,False,True,True,True
+430792380000,none,BDA,9,48.2,17.17,45.02586877,15.03562535,False,388.86215926728784,True,True,True,Prokike,Croatia,Općina Brinje,,,,Darnózseli,Hungary,,,,,Bratislava,Slovakia,Bratislava III,,,,False,False,False,True,True,True
+430792385000,none,BDA,9,50.73,13.75,49.69142341,15.03562535,False,147.37236217842192,False,True,False,Javorník,Czechia,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,False,True,True,True,True,True
+430792829000,none,BDA,9,30.56,72.69,31.57066902,71.15700441,False,184.30780271224924,True,True,False,,Pakistan,Bhakkar District,,,,,Pakistan,Toba Tek Singh District,,,,Chichawatni,Pakistan,Sahiwal District,Chichawatni,,,True,True,False,True,True,True
+430822611000,none,BDA,9,42.02,21.45,49.24341381,16.22969724,False,899.6924817035994,False,True,False,Krokočín,Czechia,,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Butel,,,,False,False,True,True,True,True
+430822657000,none,BDA,9,25.25,51.46,36.70268465,34.14077567,False,2079.9706433674537,True,True,True,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Qatar,,,,,Doha,Qatar,,,,,True,False,False,True,False,True
+430822912000,none,BDA,9,9.89,-84.06,12.5196783,-81.68419814,False,390.81766687048855,False,True,False,San Luis,Colombia,San Andrés,,,,,Costa Rica,,,,,Desamparados,Costa Rica,,,,,False,False,False,True,True,True
+430822962000,none,BDA,9,19.52,-99.28,18.49490489,-99.59527656,False,118.74389295976175,True,True,True,,Mexico,Taxco de Alarcón,,,,,Mexico,Chapa de Mota,,,,Naucalpan de Juárez,Mexico,Naucalpan,,,,True,True,False,True,True,True
+430829257000,none,BDA,9,9.91,8.89,8.453545039,9.065265874,False,163.14028131976832,True,True,True,,Nigeria,Awe,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,True,True,False,True,True,True
+430829362000,none,BDA,9,36.86,30.92,37.80010735,31.75263188,False,127.89549944840616,True,True,True,,Turkey,Beyşehir,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,True,True,False,False,False,True
+430829378000,none,BDA,9,35.24,32.95,36.70268465,34.14077567,False,194.82810241351214,False,True,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430829379000,none,BDA,9,47.52,18.93,45.02586877,15.03562535,False,408.08738722811245,True,True,False,Prokike,Croatia,Općina Brinje,,,,Tabajd,Hungary,,,,,Budakeszi,Hungary,,,,,False,False,False,True,True,True
+430829383000,none,BDA,9,35.24,32.95,36.70268465,34.14077567,False,194.82810241351214,False,True,False,,Turkey,Erdemli,,Karakeşli Mahallesi,,,Cyprus,,,,,,Cyprus,,,,,True,False,False,True,False,True
+430829388000,none,BDA,9,47.22,19.4,46.46893764,18.61784103,False,102.56572412291486,True,True,True,Medina,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,False,True,True,True,True,True
+430829567000,none,BDA,9,41.04,28.98,38.34280426,30.55855998,False,329.01239785065957,True,True,True,,Turkey,Şuhut,Kulak Köyü,,,,Turkey,Pendik,,Kurtdoğmuş Mahallesi,,,Turkey,Beyoğlu,,Bülbül Mahallesi,,True,True,False,False,False,True
+430829611000,none,BDA,9,10.53,-61.38,7.771093114,-1.68138118,False,6553.868777944297,False,False,False,Senya,Ghana,Nkoranza,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,False,False,False,True,True,True
+430829613000,none,BDA,9,43.29,76.95,43.54548524,78.32143578,False,114.38712568263118,False,True,False,,Kazakhstan,Enbekshikazakh District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,True,True,False,True,True,True
+430829731000,none,BDA,9,10.53,-61.38,14.19763969,-86.75321834,False,2785.2487244237623,False,False,False,,Honduras,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,True,False,True,True,True,True
+430829742000,none,BDA,9,-25.68,28.3,-26.37770562,28.17041619,False,78.67899016863409,True,True,True,Katlehong,South Africa,East Rand,,,,,South Africa,,,,,Roodeplaat,South Africa,Metsweding,Cullinan,,,False,True,False,True,True,True
+430829749000,none,BDA,9,3.15,101.59,5.0311354889999995,101.00880179999999,False,218.94802521890196,False,False,False,Lenggong,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Petaling Jaya,Malaysia,,,,,False,True,True,True,True,True
+430829752000,none,BDA,9,-25.68,28.3,-25.75847523,26.976344300000004,False,132.93044878174035,True,True,True,,South Africa,Bojanala,,,,,South Africa,,,,,Roodeplaat,South Africa,Metsweding,Cullinan,,,True,True,False,True,True,True
+430829756000,none,BDA,9,-25.81,28.33,-25.75847523,26.976344300000004,False,135.69670203047232,True,True,True,,South Africa,Bojanala,,,,Katlehong,South Africa,East Rand,,,,Pretoria,South Africa,Pretoria,,,,False,True,False,True,True,True
+430829757000,none,BDA,9,-33.97,18.59,37.80010735,29.36448809,False,8060.339125685342,True,True,False,,Turkey,Honaz,,Dereçiftlik Mahallesi,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,True,False,False,True,False,True
+430829776000,none,BDA,9,43.19,76.85,43.04373744,74.73922009,False,172.14726739043056,False,True,False,Korday,Kazakhstan,Korday District,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,False,True,False,True,True,True
+8_K,none,BDA,9,29.27,47.99,23.638928699999997,55.63406977,False,985.278740146922,False,False,False,,Oman,,,,,,Kuwait,,,,,Zahra,Kuwait,,,,,True,False,True,True,True,True
+AFG_3,none,BDA,9,34.94,69.27,39.94661599,46.08149462,False,2115.4071662996516,False,True,False,,Azerbaijan,Kəlbəcər,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,True,False,False,True,True,True
+Brazil_16,none,BDA,9,-22.65,-43.04,-24.65879626,-43.60749051,False,230.79646690375264,True,True,False,,Brazil,,,,,,Brazil,,,,,Magé,Brazil,Magé,,,,True,True,True,True,True,True
+DJI_3,none,BDA,9,11.6,43.15,24.26891189,56.82814167,False,2017.117989854542,True,True,False,Sohar,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,False,False,True,True,True,True
+HND_15,none,BDA,9,14.39,-87.12,5.0311354889999995,-75.71383866,False,1625.8950132757648,True,True,True,,Colombia,Palestina,,,,,Honduras,,,,,,Honduras,,,,,True,False,False,True,True,True
+LE00031612,none,BDA,9,50.73,13.76,-45.69649423,167.87682790000002,False,18034.49865665972,False,False,False,Blackmount,New Zealand,,,,,Ruda,Czechia,,,,,Dubí,Czechia,Teplice,,,,False,False,True,True,True,True
+LE00040941,none,BDA,9,41.74,44.77,42.02783601,43.69335083,False,94.7311055155824,True,True,False,Didi Sative,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,True,True,True,True,True
+LE00049602,none,BDA,9,41.76,44.77,40.99543794,46.08149462,False,138.61170639374754,False,True,False,,Azerbaijan,Şəmkir,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,False,False,False,True,True,True
+LE00095673,none,BDA,9,47.04,28.88,46.23361158,28.96481879,False,89.92804706705641,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00096500,none,BDA,9,47.04,28.87,47.53975367,27.86859526,False,93.79678219858076,True,True,True,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,True,True,True,True,True,True
+LE00098828,none,BDA,9,47.06,28.89,48.25300129,28.80820423,False,132.83874408161657,False,False,False,,Moldova,,,,,,Moldova,,,,,Chisinau,Moldova,,,,,True,True,True,True,True,True
+Soto_Cano_14,none,BDA,9,14.37,-87.62,14.9252223,-86.75240812,False,111.94207074600047,True,True,True,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,True,True,True,True,True,True
+11_K,none,DNN,9,28.87,48.16,29.34250912,47.59355146,,76.10953495059266,,,,,Kuwait,,,,,Al-Nuwaiseeb,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+14_K,none,DNN,9,29.35,47.55,29.34250912,47.59355146,,4.304001987218796,,,,,Kuwait,,,,,,Kuwait,,,,,,Kuwait,,,,,,True,,,,
+430511009000,none,DNN,9,6.62,3.25,10.406559,-61.28299200000001,,7100.606494837804,,,,,Trinidad and Tobago,,,,,,Nigeria,Badagry,,,,Lagos,Nigeria,Alimosho,,,,,False,,,,
+430785067000,none,DNN,9,9.89,-83.89,9.970521335,-84.18903868,,33.96581605958226,,,,,Costa Rica,,,,,,Costa Rica,,,,,,Costa Rica,,,,,,True,,,,
+430785069000,none,DNN,9,-33.87,151.21,-35.37667245,-65.16748459,,11440.098977299349,,,,,Argentina,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,False,,,,
+430785076000,none,DNN,9,44.15,17.38,41.59971252,21.69811408,,451.95270571730185,,,,,Macedonia (FYROM),,,,,Seget Gornji,Croatia,Općina Seget,,,,,Bosnia and Herzegovina,Srednjobosanski kanton,,,,,False,,,,
+430785079000,none,DNN,9,-33.87,151.21,-25.73326021,134.490976,,1846.59178379979,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,True,,,,
+430785089000,none,DNN,9,-34.54,-58.53,-35.37667245,-65.16748459,,612.0683889781817,,,,,Argentina,,,,,,Argentina,Zárate,,,,San Andres,Argentina,General San Martin,,,,,True,,,,
+430785098000,none,DNN,9,-34.64,-58.42,-35.37667245,-65.16748459,,620.0393106936024,,,,,Argentina,,,,,Ensenada,Argentina,Ensenada,,,,Buenos Aires,Argentina,Comuna 4,,,,,True,,,,
+430785157000,none,DNN,9,37.28,127.04,36.36770227,127.8293439,,123.4352333574649,,,,,South Korea,,,,,Gapyeong-gun,South Korea,,,,,Suwon,South Korea,,,,,,True,,,,
+430785185000,none,DNN,9,20.74,105.7,16.65160969,106.3040354,,459.18011965971397,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Mỹ Đức,,,,,True,,,,
+430785559000,none,DNN,9,32.11,35.85,31.25338168,36.78694093,,130.16647779061162,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Ain Albasha District,,,,,True,,,,
+430785563000,none,DNN,9,23.58,58.4,20.60235698,56.11008927,,406.663270267393,,,,,Oman,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,,True,,,,
+430786344000,none,DNN,9,9.87,-83.98,9.970521335,-84.18903868,,25.48711777587281,,,,,Costa Rica,,,,,,Costa Rica,,,,,,Costa Rica,,,,,,True,,,,
+430786866000,none,DNN,9,6.5,-1.54,7.959643881,-1.207046214,,166.4608063858789,,,,,Ghana,,,,,Anwia,Ghana,Amansie Central,,,,Kokofu,Ghana,Amansie East,,,,,True,,,,
+430786870000,none,DNN,9,5.63,-0.24,10.406559,-61.28299200000001,,6735.339129160767,,,,,Trinidad and Tobago,,,,,,Ghana,Ga West,,,,,Ghana,Accra Metropolis,,,,,False,,,,
+430786882000,none,DNN,9,6.81,-1.54,10.406559,-61.28299200000001,,6573.888878959117,,,,,Trinidad and Tobago,,,,,Anwia,Ghana,Amansie Central,,,,Aboaso,Ghana,Kwabre,,,,,False,,,,
+430791459000,none,DNN,9,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430791487000,none,DNN,9,-34.92,-54.98,-32.79956993,-56.01217362,,254.3900989126577,,,,,Uruguay,,,,,,Uruguay,,,,,Maldonado,Uruguay,,,,,,True,,,,
+430791492000,none,DNN,9,-34.78,-55.87,-32.79956993,-56.01217362,,220.67453283432,,,,,Uruguay,,,,,,Uruguay,,,,,Salinas,Uruguay,,,,,,True,,,,
+430791589000,none,DNN,9,-33.87,151.21,-25.73326021,134.490976,,1846.59178379979,,,,,Australia,,,,,Royal National Park,Australia,Sutherland Shire Council,,,,Sydney,Australia,Council of the City of Sydney,,,,,True,,,,
+430791608000,none,DNN,9,43.51,16.44,31.25338168,36.78694093,,2246.3276803666345,,,,,Jordan,,,,,Seget Gornji,Croatia,Općina Seget,,,,Split,Croatia,Općina Split,,,,,False,,,,
+430791651000,none,DNN,9,32.51,35.85,31.25338168,36.78694093,,165.42989335815594,,,,,Jordan,,,,,,Jordan,Al-Badiah Ash-Shamaliyah District,,,,,Jordan,Bani Obeid District,,,,,True,,,,
+430791667000,none,DNN,9,23.55,58.4,25.930410000000002,50.63777,,827.4527159638825,,,,,Bahrain,,,,,Ar Rumays,Oman,,,,,Muscat,Oman,,,,,,False,,,,
+430791847000,none,DNN,9,21.21,105.71,16.65160969,106.3040354,,510.86390462875715,,,,,Vietnam,,,,,,Vietnam,Từ Liêm,,,,,Vietnam,Mê Linh,Thanh Lâm,,,,True,,,,
+430791873000,none,DNN,9,9.91,8.96,9.593635641,8.105324653,,100.0819403575991,,,,,Nigeria,,,,,,Nigeria,Jos East,,,,,Nigeria,Jos North,,,,,True,,,,
+430792007000,none,DNN,9,47.47,19.07,47.1665223,19.41351315,,42.54877991643163,,,,,Hungary,,,,,Tabajd,Hungary,,,,,Budapest,Hungary,,,,,,True,,,,
+430792025000,none,DNN,9,40.37,49.98,40.29221962,47.532327,,207.71764400249285,,,,,Azerbaijan,,,,,Bakı,Azerbaijan,Bakı,,,,Bakı,Azerbaijan,Bakı,,,,,True,,,,
+430792380000,none,DNN,9,48.2,17.17,47.41163,28.36989,,840.5340184193624,,,,,Moldova,,,,,Darnózseli,Hungary,,,,,Bratislava,Slovakia,Bratislava III,,,,,False,,,,
+430792385000,none,DNN,9,50.73,13.75,,,,,,,,,Germany,,,,,Ruda,Czechia,,,,,Altenberg,Germany,Dresden,Sächsische Schweiz-Osterzgebirge,,,,True,,,,
+430792829000,none,DNN,9,30.56,72.69,29.96678854,69.38581312,,324.2084886513033,,,,,Pakistan,,,,,,Pakistan,Toba Tek Singh District,,,,Chichawatni,Pakistan,Sahiwal District,Chichawatni,,,,True,,,,
+430822611000,none,DNN,9,42.02,21.45,41.59971252,21.69811408,,51.07397820760022,,,,,Macedonia (FYROM),,,,,Dobrevo,Macedonia (FYROM),,,,,Skopje,Macedonia (FYROM),Butel,,,,,True,,,,
+430822657000,none,DNN,9,25.25,51.46,25.31581004,51.19120085,,28.00798630961515,,,,,Qatar,,,,,,Qatar,,,,,Doha,Qatar,,,,,,True,,,,
+430822912000,none,DNN,9,9.89,-84.06,9.970521335,-84.18903868,,16.736110774409696,,,,,Costa Rica,,,,,,Costa Rica,,,,,Desamparados,Costa Rica,,,,,,True,,,,
+430822962000,none,DNN,9,19.52,-99.28,23.95093185,-102.5349939,,596.5912109557675,,,,,Mexico,,,,,,Mexico,Chapa de Mota,,,,Naucalpan de Juárez,Mexico,Naucalpan,,,,,True,,,,
+430829257000,none,DNN,9,9.91,8.89,9.593635641,8.105324653,,92.93750827328454,,,,,Nigeria,,,,,,Nigeria,Jos East,,,,Jos,Nigeria,Jos North,,,,,True,,,,
+430829362000,none,DNN,9,36.86,30.92,39.06061961,35.17922138,,446.4996921694585,,,,,Turkey,,,,,,Turkey,Bucak,Karaot Köyü,Güllüalan Mahallesi,,,Turkey,Aksu,,Özlü Mahallesi,,,True,,,,
+430829378000,none,DNN,9,35.24,32.95,35.04299176,33.21863701,,32.820998024352605,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430829379000,none,DNN,9,47.52,18.93,47.1665223,19.41351315,,53.608451180846515,,,,,Hungary,,,,,Tabajd,Hungary,,,,,Budakeszi,Hungary,,,,,,True,,,,
+430829383000,none,DNN,9,35.24,32.95,35.04299176,33.21863701,,32.820998024352605,,,,,Cyprus,,,,,,Cyprus,,,,,,Cyprus,,,,,,True,,,,
+430829388000,none,DNN,9,47.22,19.4,47.1665223,19.41351315,,6.035367800206169,,,,,Hungary,,,,,Kecskemét,Hungary,,,,,Újhartyán,Hungary,,,,,,True,,,,
+430829567000,none,DNN,9,41.04,28.98,41.59971252,21.69811408,,611.3026253038059,,,,,Macedonia (FYROM),,,,,,Turkey,Pendik,,Kurtdoğmuş Mahallesi,,,Turkey,Beyoğlu,,Bülbül Mahallesi,,,False,,,,
+430829611000,none,DNN,9,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430829613000,none,DNN,9,43.29,76.95,48.16004265,67.30130047,,923.4054514983034,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,,,,,,True,,,,
+430829731000,none,DNN,9,10.53,-61.38,10.406559,-61.28299200000001,,17.352413884193155,,,,,Trinidad and Tobago,,,,,,Trinidad and Tobago,,,,,Enterprise,Trinidad and Tobago,,,,,,True,,,,
+430829742000,none,DNN,9,-25.68,28.3,-28.99951076,25.0931782,,486.4855996177341,,,,,South Africa,,,,,,South Africa,,,,,Roodeplaat,South Africa,Metsweding,Cullinan,,,,True,,,,
+430829749000,none,DNN,9,3.15,101.59,3.79382516,109.711555,,904.5328827816893,,,,,Malaysia,,,,,Simpang Pertang,Malaysia,,,,,Petaling Jaya,Malaysia,,,,,,True,,,,
+430829752000,none,DNN,9,-25.68,28.3,-28.99951076,25.0931782,,486.4855996177341,,,,,South Africa,,,,,,South Africa,,,,,Roodeplaat,South Africa,Metsweding,Cullinan,,,,True,,,,
+430829756000,none,DNN,9,-25.81,28.33,-28.99951076,25.0931782,,477.46114306382395,,,,,South Africa,,,,,Katlehong,South Africa,East Rand,,,,Pretoria,South Africa,Pretoria,,,,,True,,,,
+430829757000,none,DNN,9,-33.97,18.59,29.34250912,47.59355146,,7674.22480700905,,,,,Kuwait,,,,,,South Africa,West Coast DC,,,,Cape Town,South Africa,Cape Town,,,,,False,,,,
+430829776000,none,DNN,9,43.19,76.85,48.16004265,67.30130047,,924.2628016315826,,,,,Kazakhstan,,,,,,Kazakhstan,Talgar District,,,,Almaty,Kazakhstan,Karasay District,,,,,True,,,,
+8_K,none,DNN,9,29.27,47.99,29.34250912,47.59355146,,39.28986978392143,,,,,Kuwait,,,,,,Kuwait,,,,,Zahra,Kuwait,,,,,,True,,,,
+AFG_3,none,DNN,9,34.94,69.27,47.41163,28.36989,,3643.677882955288,,,,,Moldova,,,,,,Afghanistan,,,,,Bagram,Afghanistan,Chaharikar,,,,,False,,,,
+Brazil_16,none,DNN,9,-22.65,-43.04,-14.235,-51.9253,,1323.938156298076,,,,,Brazil,,,,,,Brazil,,,,,Magé,Brazil,Magé,,,,,True,,,,
+DJI_3,none,DNN,9,11.6,43.15,20.60235698,56.11008927,,1707.4304637947084,,,,,Oman,,,,,,Djibouti-Somalia,,,,,Djibouti,Djibouti,,,,,,False,,,,
+HND_15,none,DNN,9,14.39,-87.12,9.970521335,-84.18903868,,585.7831381541324,,,,,Costa Rica,,,,,,Honduras,,,,,,Honduras,,,,,,False,,,,
+LE00031612,none,DNN,9,50.73,13.76,25.31581004,51.19120085,,4253.620814654895,,,,,Qatar,,,,,Ruda,Czechia,,,,,Dubí,Czechia,Teplice,,,,,False,,,,
+LE00040941,none,DNN,9,41.74,44.77,42.17632857,43.51757521,,114.39682586934312,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00049602,none,DNN,9,41.76,44.77,42.17632857,43.51757521,,113.45615369471466,,,,,Georgia,,,,,Marneuli,Georgia,,,,,Tbilisi,Georgia,,,,,,True,,,,
+LE00095673,none,DNN,9,47.04,28.88,47.41163,28.36989,,56.51024378079527,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+LE00096500,none,DNN,9,47.04,28.87,47.41163,28.36989,,55.99791861062788,,,,,Moldova,,,,,,Moldova,,,,,Chișinău,Moldova,,,,,,True,,,,
+LE00098828,none,DNN,9,47.06,28.89,47.41163,28.36989,,55.43144585837586,,,,,Moldova,,,,,,Moldova,,,,,Chisinau,Moldova,,,,,,True,,,,
+Soto_Cano_14,none,DNN,9,14.37,-87.62,15.2,-86.2419,,174.6108933131337,,,,,Honduras,,,,,,Honduras,,,,,Comayagua,Honduras,,,,,,True,,,,

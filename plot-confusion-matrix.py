@@ -25,16 +25,20 @@ def plot_confusion_matrix(input_, output, centroid='country', centroid_fp=os.get
     results = pd.read_csv(input_)
     if model:
         results = results[results['model'] == model]
-    centroids = pd.read_csv(centroid_fp, index_col=centroid).index.values
+    centroids_df = pd.read_csv(centroid_fp, index_col=centroid)
+    centroids_df.sort_values(by=['lon', 'lat'], inplace=True)
+    centroids = centroids_df.index.values
+    results = results[['true_' + centroid, 'pred_' + centroid]].dropna()
+    results.loc[np.isin(results.true_country, ['Djibouti', 'Somalia']), 'true_country'] = \
+      'Djibouti-Somalia'
     cnf_mat = confusion_matrix(results['true_' + centroid].as_matrix(),
-            results['pred_' + centroid].as_matrix(), labels=centroids)
-
+                               results['pred_' + centroid].as_matrix(),
+                               labels=centroids)
     ro.globalenv['centroid'] = centroid
     ro.globalenv['centroids'] = centroids
     ro.globalenv['cnf_mat'] = cnf_mat
     ro.globalenv['title'] = title
     ro.globalenv['output'] = output
-    
     r("""
     library(ggplot2)
     library(reshape2)
@@ -70,4 +74,5 @@ if __name__ == '__main__':
 		  'fine': os.getcwd() + '/final-fine-cross-val.csv'}
     for name, fp in input_dict.items():
       output = 'final-{}.png'.format(name)
+      # output = 'final-{}.png'.format(name)
       plot_confusion_matrix(fp, output)
