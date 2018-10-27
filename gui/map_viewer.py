@@ -60,13 +60,13 @@ def get_coords_and_probs_from_json(json_fname):
 
 
 class MapViewerGUI(object):
-  def __init__(self, master):
+  def __init__(self, master, json_fname):
     self.master = master
     master.title("Map viewer")
 
     # Get lats longs and values for making heatmap
     # fname = master.geojson_filename
-    fname = "Costa RicaC.json"
+    fname = "geojson/Costa RicaC.json"
     self.lats, self.lons, self.probs = get_coords_and_probs_from_json(fname)
 
     # Create GUI

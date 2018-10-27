@@ -4,7 +4,7 @@ from tkinter import messagebox
 import csv
 
 
-class Window:
+class SampleUploadGUI(object):
   def __init__(self, master):
     self.filename = ""
     csvfile = Label(root, text="File").grid(row=1, column=0)
@@ -42,6 +42,8 @@ class Window:
     if self.filename:
       self.csv_fname_to_analyze = self.filename
 
-root = Tk()
-window = Window(root)
-root.mainloop()
+
+if __name__ == "__main__":
+  root = Tk()
+  window = SampleUploadGUI(root)
+  root.mainloop()
