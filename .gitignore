@@ -114,4 +114,6 @@ venv.bak/
 
 # big directories
 fitted-models/
+
 *.json
+*.hdf5
