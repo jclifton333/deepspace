@@ -67,24 +67,9 @@ class MapViewerGUI(object):
     fname = "Costa RicaC.json"
     self.lats, self.lons, self.probs = get_coords_and_probs_from_json(fname)
 
-    # Make heatmap
-    fig = Figure(figsize=(5, 4), dpi=100)
-    ax = fig.add_subplot(111)
-    m = Basemap(projection='cyl',llcrnrlat=-90,urcrnrlat=90,\
-                llcrnrlon=-180,urcrnrlon=180,resolution='c', ax=ax)
-
-    x, y = m(self.lons, self.lats)
-    self.formatted_lons = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
-    self.formatted_lats = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
-    CS = m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
-    m.drawcoastlines()
 
     # Create GUI
-    self.master.wm_title("Embedding in TK")
-    # Frame for hypothesis test
-    # a tk.DrawingArea
-    self.canvas = FigureCanvasTkAgg(fig, master=self.master)
-    self.canvas.get_tk_widget().grid(row=0, column=2)
+    self.draw_basemap()
     self.canvas.show()
 
     self.ht_frame = Tk.Frame(master=self.master)
@@ -112,39 +97,61 @@ class MapViewerGUI(object):
     button = Tk.Button(master=self.master, text='Quit', command=self._quit)
     button.grid(row=2, column=2)
 
+  def draw_basemap(self):
+    """
+    For drawing underlying map and probabilities associated to the geojson for this window.
+
+    :return:
+    """
+    # Make heatmap
+    fig = Figure(figsize=(5, 4), dpi=100)
+    self.ax = fig.add_subplot(111)
+    self.m = Basemap(projection='cyl',llcrnrlat=-90,urcrnrlat=90,\
+                     llcrnrlon=-180,urcrnrlon=180,resolution='c', ax=self.ax)
+
+    x, y = self.m(self.lons, self.lats)
+    self.formatted_lons = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
+    self.formatted_lats = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
+    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
+    self.m.drawcoastlines()
+
+    # Display in GUI
+    self.master.wm_title("Embedding in TK")
+    self.master.columnconfigure(2, weight=1)
+    self.master.rowconfigure(0, weight=1)
+    # Frame for hypothesis test
+    # a tk.DrawingArea
+    self.canvas = FigureCanvasTkAgg(fig, master=self.master)
+    self.canvas.get_tk_widget().grid(row=0, column=2, sticky="nwse")
+    # self.canvas.get_tk_widget().grid(row=0, column=2)
+
   def _ht(self):
     print('hypothesis test')
-
-    # Make heatmap
-    self.fig = Figure(figsize=(5, 4), dpi=100)
-    ax = self.fig.add_subplot(111)
-
-    m = Basemap(projection='cyl', llcrnrlat=-90, urcrnrlat=90, \
-                llcrnrlon=-180, urcrnrlon=180, resolution='c', ax=ax)
-
-    CS = m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
-    m.drawcoastlines()
+    self.ax.clear()
+    self.draw_basemap()
 
     # Plot circle
     center_lat = float(self.e1.get())
     center_lon = float(self.e2.get())
     radius = float(self.e3.get())
-    circlept_lat, circlept_lon = get_destination_coords(center_lat, center_lon, 0, radius)
-    x, y = m(center_lat, center_lon)
-    x2, y2 = m(circlept_lat, circlept_lon)
-    circle = plt.Circle((x, y), y2-y, fill=False)
-    ax.add_patch(circle)
+    # center_lat = 0.0
+    # center_lon = 0.0
+    # radius = 1000
+    circlept_lat, circlept_lon = get_destination_coords(center_lat, center_lon, 60, radius)
+    x, y = self.m(center_lat, center_lon)
+    x2, y2 = self.m(circlept_lat, circlept_lon)
+    # x2, y2 = m(center_lat, center_lon + 10)
+    basemap_radius = np.linalg.norm(np.array([x, y]) - np.array([x2, y2]))
+    circle = plt.Circle((x, y), basemap_radius, fill=False)
+    self.ax.add_patch(circle)
 
-    self.canvas.get_tk_widget().destroy()
-    self.canvas = FigureCanvasTkAgg(self.fig, master=self.toolbarFrame)
-    self.canvas.get_tk_widget().grid(row=0, column=2)
-    self.canvas.show()
+    self.canvas.draw()
 
   # Quit button
   def _quit(self):
     self.master.quit()     # stops mainloop
     self.master.destroy()  # this is necessary on Windows to prevent
-                    # Fatal Python Error: PyEval_RestoreThread: NULL tstate
+                           # Fatal Python Error: PyEval_RestoreThread: NULL tstate
 
 
 if __name__ == '__main__':
