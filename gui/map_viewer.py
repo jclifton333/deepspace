@@ -74,83 +74,80 @@ class MapViewerGUI(object):
                 llcrnrlon=-180,urcrnrlon=180,resolution='c', ax=ax)
 
     x, y = m(self.lons, self.lats)
-    x = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
-    y = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
-    CS = m.hexbin(x, y, C=self.probs)
+    self.formatted_lons = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
+    self.formatted_lats = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
+    CS = m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
     m.drawcoastlines()
 
     # Create GUI
-
-    root = Tk.Tk()
-    root.wm_title("Embedding in TK")
-
-
+    self.master..wm_title("Embedding in TK")
     # Frame for hypothesis test
-    def _ht(self, fig, canvas):
-      print('hypothesis test')
-      canvas.get_tk_widget().destroy()
-
-      # Make heatmap
-      newfig = Figure(figsize=(5, 4), dpi=100)
-      ax = newfig.add_subplot(111)
-
-      m = Basemap(projection='cyl', llcrnrlat=-90, urcrnrlat=90, \
-                  llcrnrlon=-180, urcrnrlon=180, resolution='c', ax=ax)
-
-      x, y = m(lons, lats)
-      x = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
-      y = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
-      CS = m.hexbin(x, y, C=probs)
-      m.drawcoastlines()
-
-      # Plot circle
-      lat = float(e1.get())
-      lon = float(e2.get())
-      radius = float(e3.get())
-      circlept_lat, circlept_lon = get_destination_coords(lat, lon, 0, radius)
-      x, y = m(lat, lon)
-      x2, y2 = m(circlept_lat, circlept_lon)
-      circle = plt.Circle((x, y), y2-y, fill=False)
-      ax.add_patch(circle)
-
-      canvas = FigureCanvasTkAgg(fig, master=root)
-      canvas.get_tk_widget().grid(row=0, column=2)
-      canvas.show()
-
     # a tk.DrawingArea
-    canvas = FigureCanvasTkAgg(fig, master=root)
-    canvas.get_tk_widget().grid(row=0, column=2)
-    canvas.show()
+    self.canvas = FigureCanvasTkAgg(fig, master=self.master)
+    self.canvas.get_tk_widget().grid(row=0, column=2)
+    self.canvas.show()
 
-    frame = Tk.Frame(master=root)
-    frame.grid(row=0, column=0, sticky="n")
-    Tk.Label(master=root, text="Lat").grid(row=0, column=0)
-    Tk.Label(master=root, text="Lon").grid(row=1, column=0)
-    Tk.Label(master=root, text="Radius").grid(row=2, column=0)
-    e1 = Tk.Entry(master=frame)
-    e2 = Tk.Entry(master=frame)
-    e3 = Tk.Entry(master=frame)
-    e1.grid(row=0, column=1)
-    e2.grid(row=1, column=1)
-    e3.grid(row=2, column=1)
-    Tk.Button(master=root, text='Hypothesis test', command=(lambda f=fig, c=canvas: _ht(f, c))).grid(row=4, column=0)
+    self.ht_frame = Tk.Frame(master=self.master)
+    self.ht_frame.grid(row=0, column=0, sticky="n")
+    Tk.Label(master=self.ht_frame, text="Lat").grid(row=0, column=0)
+    Tk.Label(master=self.ht_frame, text="Lon").grid(row=1, column=0)
+    Tk.Label(master=self.ht_frame, text="Radius").grid(row=2, column=0)
+    self.e1 = Tk.Entry(master=self.ht_frame)
+    self.e2 = Tk.Entry(master=self.ht_frame)
+    self.e3 = Tk.Entry(master=self.ht_frame)
+    self.e1.grid(row=0, column=1)
+    self.e2.grid(row=1, column=1)
+    self.e3.grid(row=2, column=1)
+    Tk.Button(master=self.ht_frame, text='Hypothesis test',
+              command=self._ht).grid(row=4, column=0)
 
     # Toolbar
-    toolbarFrame = Tk.Frame(master=root)
-    toolbarFrame.grid(row=1, column=2)
-    toolbar = NavigationToolbar2TkAgg(canvas, toolbarFrame)
+    self.toolbarFrame = Tk.Frame(master=self.master)
+    self.toolbarFrame.grid(row=1, column=2)
+    toolbar = NavigationToolbar2TkAgg(self.canvas, self.toolbarFrame)
     toolbar.update()
     # canvas._tkcanvas.grid(row=1, column=2)
 
-
     # Quit button
-    def _quit():
-      root.quit()     # stops mainloop
-      root.destroy()  # this is necessary on Windows to prevent
-                      # Fatal Python Error: PyEval_RestoreThread: NULL tstate
-
-
-    button = Tk.Button(master=root, text='Quit', command=_quit)
+    button = Tk.Button(master=self.master, text='Quit', command=_quit)
     button.grid(row=2, column=2)
 
-Tk.mainloop()
+  def _ht(self):
+    print('hypothesis test')
+    self.canvas.get_tk_widget().destroy()
+
+    # Make heatmap
+    self.fig = Figure(figsize=(5, 4), dpi=100)
+    ax = self.fig.add_subplot(111)
+
+    m = Basemap(projection='cyl', llcrnrlat=-90, urcrnrlat=90, \
+                llcrnrlon=-180, urcrnrlon=180, resolution='c', ax=ax)
+
+    CS = m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
+    m.drawcoastlines()
+
+    # Plot circle
+    center_lat = float(self.e1.get())
+    center_lon = float(self.e2.get())
+    radius = float(self.e3.get())
+    circlept_lat, circlept_lon = get_destination_coords(lat, lon, 0, radius)
+    x, y = m(center_lat, center_lon)
+    x2, y2 = m(circlept_lat, circlept_lon)
+    circle = plt.Circle((x, y), y2-y, fill=False)
+    ax.add_patch(circle)
+
+    self.canvas = FigureCanvasTkAgg(self.fig, master=self.toolbarFrame)
+    self.canvas.get_tk_widget().grid(row=0, column=2)
+    self.canvas.show()
+
+  # Quit button
+  def _quit(self):
+    self.master.quit()     # stops mainloop
+    self.master.destroy()  # this is necessary on Windows to prevent
+                    # Fatal Python Error: PyEval_RestoreThread: NULL tstate
+
+
+if __name__ == '__main__':
+  root = Tk.Tk()
+  map_viewer_ = MapViewerGUI(root)
+  Tk.mainloop()
