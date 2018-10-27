@@ -5,19 +5,20 @@ import csv
 
 
 class SampleUploadGUI(object):
-  def __init__(self, master):
+  def __init__(self, master, controller):
     self.filename = ""
-    csvfile = Label(root, text="File").grid(row=1, column=0)
+    self.master = master
+    csvfile = Label(self.master, text="File").grid(row=1, column=0)
     bar = Entry(master).grid(row=1, column=1)
 
     # Buttons
     y = 7
-    self.cbutton = Button(root, text="OK", command=self.process_csv)
+    self.cbutton = Button(self.master, text="OK", command=self.process_csv)
     y += 1
-    self.cbutton.grid(row=10, column=3, sticky=W + E)
-    self.bbutton = Button(root, text="Browse", command=self.browsecsv)
+    self.cbutton.grid(row=10, column=3, sticky="we")
+    self.bbutton = Button(self.master, text="Browse", command=self.browsecsv)
     self.bbutton.grid(row=1, column=3)
-    self.run_model_button = Button(root, text="Run model", command=self.run_model)
+    self.run_model_button = Button(self.master, text="Run model", command=self.run_model)
     self.run_model_button.grid(row=11, column=3)
 
     self.csv_fname_to_analyze = None

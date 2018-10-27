@@ -27,18 +27,15 @@ else:
   from tkinter import messagebox
 
 
-class MainMenuGUI(object):
-  def __init__(self, master):
+class MainMenuGUI(Tk.Frame):
+  def __init__(self, master, controller):
+    Tk.Frame.__init__(self, master)
     self.master = master
+    self.controller = controller
 
     # Navigation buttons
-    Tk.Button(master=self.master, text="Run model on new sample",
-              command=self._navigate_to_sample_upload).grid(row=0, column=0)
-    Tk.Button(master=self.master, text="Select sample to view in map",
-              command=self._navigate_to_sample_select).grid(row=1, column=0)
+    Tk.Button(self, text="Run model on new sample",
+              command=lambda: controller.show_frame("SampleUploadGUI")).grid(row=0, column=0)
+    Tk.Button(self, text="Display sample in map viewer",
+              command=lambda: controller.show_frame("SampleSelectGUI")).grid(row=1, column=0)
 
-  def _navigate_to_sample_upload(self):
-    pass
-
-  def _navigate_to_sample_select(self):
-    pass

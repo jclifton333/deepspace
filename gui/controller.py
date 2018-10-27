@@ -31,7 +31,7 @@ else:
   from tkinter import messagebox
 
 
-class App(Tk.Tk):
+class GUIController(Tk.Tk):
   def __init__(self):
     Tk.Tk.__init__(self)
 
@@ -44,7 +44,8 @@ class App(Tk.Tk):
     container.grid_columnconfigure(0, weight=1)
 
     self.frames = {}
-    for F in (MainMenuGUI, SampleUploadGUI, SampleSelectGUI):
+    # for F in (MainMenuGUI, SampleUploadGUI, SampleSelectGUI):
+    for F in [MainMenuGUI]:
       page_name = F.__name__
       frame = F(master=container, controller=self)
       self.frames[page_name] = frame
@@ -53,4 +54,15 @@ class App(Tk.Tk):
       # the one on the top of the stacking order
       # will be the one that is visible.
       frame.grid(row=0, column=0, sticky="nsew")
+
+    self.show_frame("MainMenuGUI")
+
+  def show_frame(self, page_name):
+    frame = self.frames[page_name]
+    frame.tkraise()
+
+
+if __name__ == "__main__":
+  app = GUIController()
+  app.mainloop()
 

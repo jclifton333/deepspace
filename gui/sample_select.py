@@ -32,7 +32,7 @@ GEOJSON_DIR = os.path.join(THIS_DIR, GEOJSON_DIRNAME)
 
 
 class SampleSelectGUI(object):
-  def __init__(self, master):
+  def __init__(self, master, controller):
     # Create listbox
     self.master = master
     self.sample_listbox = Tk.Listbox(self.master, selectmode=Tk.SINGLE)
