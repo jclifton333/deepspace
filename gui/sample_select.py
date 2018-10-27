@@ -31,11 +31,14 @@ GEOJSON_DIRNAME = 'geojson'
 GEOJSON_DIR = os.path.join(THIS_DIR, GEOJSON_DIRNAME)
 
 
-class SampleSelectGUI(object):
+class SampleSelectGUI(Tk.Frame):
   def __init__(self, master, controller):
+    Tk.Frame.__init__(self, master)
+    self.controller = controller
+
     # Create listbox
     self.master = master
-    self.sample_listbox = Tk.Listbox(self.master, selectmode=Tk.SINGLE)
+    self.sample_listbox = Tk.Listbox(self, selectmode=Tk.SINGLE)
     self.sample_listbox.grid(row=0, column=0)
 
     # Fill listbox with entries
@@ -47,15 +50,18 @@ class SampleSelectGUI(object):
       self.sample_listbox.insert(Tk.END, display_name)
 
     # Make button for displaying mapviewer for current selection
-    Tk.Button(master=self.master, text="Display selection in mapviewer",
+    Tk.Button(master=self, text="Display selection in mapviewer",
               command=self._open_in_mapviewer).grid(row=1, column=0)
+
+    Tk.Button(master=self, text="Return to main menu",
+              command=lambda: controller.show_frame("MainMenuGUI")).grid(row=2, column=0)
 
   def _open_in_mapviewer(self):
     selected_sample_ix = self.sample_listbox.curselection()[0]
     display_name = self.sample_display_name_list[selected_sample_ix]
     fname_to_open = self.sample_fname_list[selected_sample_ix]
     # fname_to_open = self.sample_dictionary[selected_sample_name]
-    mapviewer_window = Tk.Toplevel(self.master)
+    mapviewer_window = Tk.Toplevel(self)
     mapviewer = MapViewerGUI(mapviewer_window, fname_to_open, display_name)
 
 

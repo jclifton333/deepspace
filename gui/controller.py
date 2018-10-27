@@ -44,8 +44,7 @@ class GUIController(Tk.Tk):
     container.grid_columnconfigure(0, weight=1)
 
     self.frames = {}
-    # for F in (MainMenuGUI, SampleUploadGUI, SampleSelectGUI):
-    for F in [MainMenuGUI, SampleUploadGUI]:
+    for F in (MainMenuGUI, SampleUploadGUI, SampleSelectGUI):
       page_name = F.__name__
       frame = F(master=container, controller=self)
       self.frames[page_name] = frame
