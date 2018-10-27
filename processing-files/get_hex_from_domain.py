@@ -37,14 +37,20 @@ def get_pairwise_distances(lat_lon_pairs):
   return dist_mat
 
 
-def get_hexagons_for_list(lat_lon_pairs, domain_ids):
+def get_hexagons_for_list(lat_lon_pairs, domain_ids, country_name):
   dist_mat = get_pairwise_distances(lat_lon_pairs)
   n_domain = len(lat_lon_pairs)
+  list_of_dists = []
   if n_domain > 1:
     hex_df = pd.DataFrame.from_dict({'domain': [], 'lat':[], 'lon':[]})
     for i in range(n_domain):
       lat, lon = lat_lon_pairs[i]
-      dist = np.min((np.min(dist_mat[i,:]) / 2, 100))
+      if country_name == 'Brazil':  # Hack to handle the fact that Brazil regions are more spread out
+        # dist = np.min(dist_mat[i, :]) / 2.0
+        dist = 157.5
+      else:
+        dist = np.min((np.min(dist_mat[i, :]) / 2, 100))
+      list_of_dists.append(dist)
       hex_coords = get_hexagon_coords(lat, lon, dist)
       max_dist = np.sort(np.unique(get_pairwise_distances(list(zip(hex_coords[:,0], hex_coords[:,1])))))[-2]
       if max_dist > 1000:
@@ -57,6 +63,9 @@ def get_hexagons_for_list(lat_lon_pairs, domain_ids):
     hex_coords = get_hexagon_coords(lat, lon, 100)
     hex_df = pd.DataFrame.from_dict({'domain':  [np.array(domain_ids)[0]]*6, 'lat': hex_coords[:,0],
                                               'lon': hex_coords[:,1]})
+
+  # if country_name == 'Brazil':
+  #   pdb.set_trace()
   return hex_df
 
 
@@ -66,7 +75,7 @@ def get_hexagons_from_domain_df(domain_df):
   for country in countries:
     print('Country: {}'.format(country))
     sub_df = domain_df.loc[domain_df['country'] == country, ]
-    country_hexagons = get_hexagons_for_list(list(zip(sub_df['lat'], sub_df['lon'])), sub_df.domain)
+    country_hexagons = get_hexagons_for_list(list(zip(sub_df['lat'], sub_df['lon'])), sub_df.domain, country)
     hex_df = hex_df.append(country_hexagons)
     hex_df.domain = pd.to_numeric(hex_df.domain, downcast='integer')
   return hex_df
@@ -75,7 +84,7 @@ def get_hexagons_from_domain_df(domain_df):
 if __name__ == '__main__':
   domain_df = pd.read_csv('../data/external/global/domain-final.csv')
   hex_df = get_hexagons_from_domain_df(domain_df)
-  hex_df.to_csv('../data/external/global/domain-final-hex.csv')
+  hex_df.to_csv('../data/external/global/domain-final-hex-2.csv')
 
 
 

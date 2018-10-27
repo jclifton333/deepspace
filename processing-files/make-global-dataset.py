@@ -125,6 +125,7 @@ def main(min_counts):
         biom_summarize_table(raw_biom_fp, raw_summary_fp)
         biom_summarize_table(interim_biom_fp, interim_summary_fp)
 
+    pdb.set_trace()
     # If we examine the interim summary files we notice there are many
     # samples with very few counts. Let's filter by samples with a
     # minimum number of sequence reads, given by the min_count option
