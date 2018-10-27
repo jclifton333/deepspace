@@ -16,7 +16,7 @@ def write_reg_dict_to_geojson(reg_dict_dict, seeds, dropped_otus):
 
   # Create directory in which to save geojsons
   DIR = os.path.dirname(os.path.abspath(__file__))
-  json_output_fp = os.path.join(DIR, '../db/data/json')
+  json_output_fp = os.path.join(DIR, '../gui/geojson')
   if not os.path.exists(json_output_fp):
     os.makedirs(json_output_fp)
 

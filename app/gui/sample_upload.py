@@ -1,4 +1,10 @@
 import sys
+import os
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+PKG_DIR = os.path.join(THIS_DIR, '..', '..')
+sys.path.append(PKG_DIR)
+from app.model.compute_predictions import read_split_convert_compute
+
 if sys.version_info[0] < 3:
   import Tkinter as Tk
   from Tkinter import messagebox
@@ -43,11 +49,12 @@ class SampleUploadGUI(Tk.Frame):
       run_model_message = \
         "Running model on samples in {}.  This will take about 7 minutes per sample.".format(self.csv_fname_to_analyze)
       messagebox.showinfo("Running model", run_model_message)
+      read_split_convert_compute(self.csv_fname_to_analyze)
 
   def browsecsv(self):
     from tkinter.filedialog import askopenfilename
 
-    Tk().withdraw()
+    Tk.Tk().withdraw()
     self.filename = askopenfilename()
 
   def process_csv(self):

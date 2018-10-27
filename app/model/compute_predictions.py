@@ -9,11 +9,15 @@ import logging
 import pdb
 import datetime
 
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+PKG_DIR = os.path.join(THIS_DIR, '..', '..')
+sys.path.append(PKG_DIR)
+from app.model.write_to_geojson import write_reg_dict_to_geojson
+from app.model.get_reg_dict import get_reg_dict
+from app.model.models.points import SpatialPoints
+from app.model.models.deepspace import SpatialClassifier, Geolocator
+
 from biom import load_table
-from write_to_geojson import write_reg_dict_to_geojson
-from get_reg_dict import get_reg_dict
-from models.points import SpatialPoints
-from models.deepspace import SpatialClassifier, Geolocator
 import pandas as pd
 
 from keras.models import load_model

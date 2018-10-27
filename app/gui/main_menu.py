@@ -16,8 +16,8 @@ import sys
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 PKG_DIR = os.path.join(THIS_DIR, '..', '..')
 sys.path.append(PKG_DIR)
-from deepspace.gui.sample_upload import SampleUploadGUI
-from deepspace.gui.sample_select import SampleSelectGUI
+from app.gui.sample_upload import SampleUploadGUI
+from app.gui.sample_select import SampleSelectGUI
 
 if sys.version_info[0] < 3:
   import Tkinter as Tk

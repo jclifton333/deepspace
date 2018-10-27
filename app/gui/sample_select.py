@@ -16,7 +16,7 @@ import sys
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 PKG_DIR = os.path.join(THIS_DIR, '..', '..')
 sys.path.append(PKG_DIR)
-from deepspace.gui.map_viewer import MapViewerGUI
+from app.gui.map_viewer import MapViewerGUI
 
 import sys
 if sys.version_info[0] < 3:
