@@ -11,15 +11,17 @@ from matplotlib.figure import Figure
 import numpy as np
 import json
 import geopy
-from geopy.distance import VincentyDistance
+from geopy.distance import VincentyDistance, vincenty
 import matplotlib.pyplot as plt
 
 
 import sys
 if sys.version_info[0] < 3:
     import Tkinter as Tk
+    from Tkinter import messagebox
 else:
     import tkinter as Tk
+    from tkinter import messagebox
 
 
 def get_destination_coords(lat, lon, bearing, distance):
@@ -67,7 +69,6 @@ class MapViewerGUI(object):
     fname = "Costa RicaC.json"
     self.lats, self.lons, self.probs = get_coords_and_probs_from_json(fname)
 
-
     # Create GUI
     self.draw_basemap()
     self.canvas.show()
@@ -96,6 +97,21 @@ class MapViewerGUI(object):
     # Quit button
     button = Tk.Button(master=self.master, text='Quit', command=self._quit)
     button.grid(row=2, column=2)
+
+  def sum_probabilities_in_circle(self, lat, lon, radius):
+    """
+    For 'hypothesis testing'.
+
+    :param lat:
+    :param lon:
+    :param radius: In km.
+    :return:
+    """
+    prob_sum = 0.0
+    for ix, (lat_, lon_, prob) in enumerate(zip(self.lats, self.lons, self.probs)):
+      if vincenty((lat, lon), (lat_, lon_)).kilometers < radius:
+        prob_sum += prob
+    return prob_sum
 
   def draw_basemap(self):
     """
@@ -126,7 +142,6 @@ class MapViewerGUI(object):
     # self.canvas.get_tk_widget().grid(row=0, column=2)
 
   def _ht(self):
-    print('hypothesis test')
     self.ax.clear()
     self.draw_basemap()
 
@@ -134,9 +149,6 @@ class MapViewerGUI(object):
     center_lat = float(self.e1.get())
     center_lon = float(self.e2.get())
     radius = float(self.e3.get())
-    # center_lat = 0.0
-    # center_lon = 0.0
-    # radius = 1000
     circlept_lat, circlept_lon = get_destination_coords(center_lat, center_lon, 60, radius)
     x, y = self.m(center_lat, center_lon)
     x2, y2 = self.m(circlept_lat, circlept_lon)
@@ -144,8 +156,13 @@ class MapViewerGUI(object):
     basemap_radius = np.linalg.norm(np.array([x, y]) - np.array([x2, y2]))
     circle = plt.Circle((x, y), basemap_radius, fill=False)
     self.ax.add_patch(circle)
-
     self.canvas.draw()
+
+    # Add probabilities in circle
+    sum_prob = self.sum_probabilities_in_circle(center_lat, center_lon, radius)
+    hypothesis_test_result = \
+      "Lat: {}\nLon: {}\n Radius: {}km\n Probability: {}".format(center_lat, center_lon, radius, sum_prob)
+    messagebox.showinfo("Hypothesis test result", hypothesis_test_result)
 
   # Quit button
   def _quit(self):
