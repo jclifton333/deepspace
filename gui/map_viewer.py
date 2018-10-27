@@ -73,6 +73,7 @@ class MapViewerGUI(object):
     self.draw_basemap()
     self.canvas.show()
 
+    # HT input
     self.ht_frame = Tk.Frame(master=self.master)
     self.ht_frame.grid(row=0, column=0, sticky="n")
     Tk.Label(master=self.ht_frame, text="Lat").grid(row=0, column=0)
@@ -86,6 +87,9 @@ class MapViewerGUI(object):
     self.e3.grid(row=2, column=1)
     Tk.Button(master=self.ht_frame, text='Hypothesis test',
               command=self._ht).grid(row=4, column=0)
+
+    # Clear HT
+    Tk.Button(master=self.ht_frame, text='Reset', command=self._reset_map).grid(row=5, column=0)
 
     # Toolbar
     self.toolbarFrame = Tk.Frame(master=self.master)
@@ -163,6 +167,11 @@ class MapViewerGUI(object):
     hypothesis_test_result = \
       "Lat: {}\nLon: {}\n Radius: {}km\n Probability: {}".format(center_lat, center_lon, radius, sum_prob)
     messagebox.showinfo("Hypothesis test result", hypothesis_test_result)
+
+  def _reset_map(self):
+    self.ax.clear()
+    self.draw_basemap()
+    self.canvas.show()
 
   # Quit button
   def _quit(self):
