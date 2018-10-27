@@ -11,8 +11,12 @@ import geopy
 import os
 from geopy.distance import VincentyDistance, vincenty
 import matplotlib.pyplot as plt
-from .map_viewer import MapViewerGUI
 
+import sys
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+PKG_DIR = os.path.join(THIS_DIR, '..', '..')
+sys.path.append(PKG_DIR)
+from deepspace.gui.map_viewer import MapViewerGUI
 
 import sys
 if sys.version_info[0] < 3:
@@ -22,7 +26,7 @@ else:
   import tkinter as Tk
   from tkinter import messagebox
 
-THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+
 GEOJSON_DIRNAME = 'geojson'
 GEOJSON_DIR = os.path.join(THIS_DIR, GEOJSON_DIRNAME)
 
@@ -37,8 +41,8 @@ class SampleSelectGUI(object):
     # Fill listbox with entries
     self.sample_fname_list = [fname for fname in os.listdir(GEOJSON_DIR) if fname.endswith('.json')]
     self.sample_display_name_list = [fname.split('/')[-1].split('.csv')[0] for fname in self.sample_fname_list]
-    self.sample_dictionary = {display_name: fname for display_name, fname in zip(self.sample_display_name_list,
-                                                                                 self.sample_fname_list)}
+    # self.sample_dictionary = {display_name: fname for display_name, fname in zip(self.sample_display_name_list,
+    #                                                                              self.sample_fname_list)}
     for display_name in self.sample_display_name_list:
       self.sample_listbox.insert(Tk.END, display_name)
 
@@ -47,8 +51,9 @@ class SampleSelectGUI(object):
               command=self._open_in_mapviewer).grid(row=1, column=0)
 
   def _open_in_mapviewer(self):
-    selected_sample_name = self.sample_listbox.curselection()
-    fname_to_open = self.sample_dictionary[selected_sample_name]
+    selected_sample_ix = self.sample_listbox.curselection()[0]
+    fname_to_open = self.sample_fname_list[selected_sample_ix]
+    # fname_to_open = self.sample_dictionary[selected_sample_name]
     mapviewer_window = Tk.Toplevel(self.master)
     mapviewer = MapViewerGUI(mapviewer_window, fname_to_open)
 
