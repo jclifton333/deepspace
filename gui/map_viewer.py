@@ -136,6 +136,7 @@ class MapViewerGUI(object):
     self.formatted_lats = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
     CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
     self.m.drawcoastlines()
+    self.m.drawcountries()
 
     # Display in GUI
     self.master.wm_title("Embedding in TK")

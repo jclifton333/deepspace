@@ -1,5 +1,5 @@
 """
-Here we define the main class for the app.  We want to be able to stack Frames on top of each other in order to switch
+Here we define the controller for the app.  We want to be able to stack Frames on top of each other in order to switch
 between main menu, sample upload menu, and sample select menu, following
 https://stackoverflow.com/questions/7546050/switch-between-two-frames-in-tkinter.
 """
@@ -45,7 +45,7 @@ class GUIController(Tk.Tk):
 
     self.frames = {}
     # for F in (MainMenuGUI, SampleUploadGUI, SampleSelectGUI):
-    for F in [MainMenuGUI]:
+    for F in [MainMenuGUI, SampleUploadGUI]:
       page_name = F.__name__
       frame = F(master=container, controller=self)
       self.frames[page_name] = frame

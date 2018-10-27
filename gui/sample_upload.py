@@ -1,27 +1,38 @@
-from tkinter import *
+import sys
+if sys.version_info[0] < 3:
+  import Tkinter as Tk
+  from Tkinter import messagebox
+else:
+  import tkinter as Tk
+  from tkinter import messagebox
+
 import tkinter.filedialog
 from tkinter import messagebox
 import csv
 
 
-class SampleUploadGUI(object):
+class SampleUploadGUI(Tk.Frame):
   def __init__(self, master, controller):
+    Tk.Frame.__init__(self, master)
+    self.controller = controller
+
     self.filename = ""
+    self.csv_fname_to_analyze = None
     self.master = master
-    csvfile = Label(self.master, text="File").grid(row=1, column=0)
-    bar = Entry(master).grid(row=1, column=1)
+    csvfile = Tk.Label(self, text="File").grid(row=1, column=0)
+    bar = Tk.Entry(self).grid(row=1, column=1)
 
     # Buttons
     y = 7
-    self.cbutton = Button(self.master, text="OK", command=self.process_csv)
+    self.cbutton = Tk.Button(self, text="OK", command=self.process_csv)
     y += 1
     self.cbutton.grid(row=10, column=3, sticky="we")
-    self.bbutton = Button(self.master, text="Browse", command=self.browsecsv)
+    self.bbutton = Tk.Button(self, text="Browse", command=self.browsecsv)
     self.bbutton.grid(row=1, column=3)
-    self.run_model_button = Button(self.master, text="Run model", command=self.run_model)
+    self.run_model_button = Tk.Button(self, text="Run model", command=self.run_model)
     self.run_model_button.grid(row=11, column=3)
-
-    self.csv_fname_to_analyze = None
+    self.return_to_menu_button = Tk.Button(self, text="Return to main menu",
+                                           command=lambda: controller.show_frame("MainMenuGUI")).grid(row=12, column=3)
 
   def run_model(self):
     if self.csv_fname_to_analyze is None:
@@ -45,6 +56,6 @@ class SampleUploadGUI(object):
 
 
 if __name__ == "__main__":
-  root = Tk()
+  root = Tk.Tk()
   window = SampleUploadGUI(root)
   root.mainloop()
