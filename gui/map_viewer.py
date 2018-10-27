@@ -60,7 +60,7 @@ def get_coords_and_probs_from_json(json_fname):
 
 
 class MapViewerGUI(object):
-  def __init__(self, master, json_fname):
+  def __init__(self, master, json_fname, sample_name):
     self.master = master
     master.title("Map viewer")
 
@@ -70,6 +70,7 @@ class MapViewerGUI(object):
     self.lats, self.lons, self.probs = get_coords_and_probs_from_json(fname)
 
     # Create GUI
+    self.map_title = sample_name
     self.draw_basemap()
     self.canvas.show()
 
@@ -126,6 +127,7 @@ class MapViewerGUI(object):
     # Make heatmap
     fig = Figure(figsize=(5, 4), dpi=100)
     self.ax = fig.add_subplot(111)
+    self.ax.set_title(self.map_title)
     self.m = Basemap(projection='cyl',llcrnrlat=-90,urcrnrlat=90,\
                      llcrnrlon=-180,urcrnrlon=180,resolution='c', ax=self.ax)
 

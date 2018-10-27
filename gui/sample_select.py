@@ -40,7 +40,7 @@ class SampleSelectGUI(object):
 
     # Fill listbox with entries
     self.sample_fname_list = [fname for fname in os.listdir(GEOJSON_DIR) if fname.endswith('.json')]
-    self.sample_display_name_list = [fname.split('/')[-1].split('.csv')[0] for fname in self.sample_fname_list]
+    self.sample_display_name_list = [fname.split('/')[-1].split('.json')[0] for fname in self.sample_fname_list]
     # self.sample_dictionary = {display_name: fname for display_name, fname in zip(self.sample_display_name_list,
     #                                                                              self.sample_fname_list)}
     for display_name in self.sample_display_name_list:
@@ -52,10 +52,11 @@ class SampleSelectGUI(object):
 
   def _open_in_mapviewer(self):
     selected_sample_ix = self.sample_listbox.curselection()[0]
+    display_name = self.sample_display_name_list[selected_sample_ix]
     fname_to_open = self.sample_fname_list[selected_sample_ix]
     # fname_to_open = self.sample_dictionary[selected_sample_name]
     mapviewer_window = Tk.Toplevel(self.master)
-    mapviewer = MapViewerGUI(mapviewer_window, fname_to_open)
+    mapviewer = MapViewerGUI(mapviewer_window, fname_to_open, display_name)
 
 
 if __name__ == "__main__":
