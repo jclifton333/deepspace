@@ -1,6 +1,6 @@
 import datetime
 from reportlab.pdfgen import canvas
-from reportlab.platypus import Image, Paragraph, SimpleDocTemplate
+from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Table
 from reportlab.lib.styles import getSampleStyleSheet
 
 
@@ -13,7 +13,7 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
   :param sample_name: name of sample corresponding to images
   :param images:
   :param probabilities:
-  :param ht_results: string containing results of hypothesis tests
+  :param ht_results: array containing results of hypothesis tests
   :return:
   """
 
@@ -31,8 +31,13 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
     print(image)
     Story.append(Image(image))
 
-  Story.append(Paragraph(probabilities, getSampleStyleSheet()["Normal"]))
-  Story.append(Paragraph(ht_results, getSampleStyleSheet()["Normal"]))
+  Story.append(Paragraph("Hypothesis test results: ", getSampleStyleSheet()["Normal"]))
+  if ht_results is None:
+    Story.append(Paragraph("No hypothesis tests to report", getSampleStyleSheet()["Normal"]))
+  else:
+    Story.append(Table(ht_results))
+  Story.append(Paragraph("Point probabilities: \n", getSampleStyleSheet()["Normal"]))
+  Story.append(Table(probabilities))
 
   doc.build(Story)
   return

@@ -81,10 +81,13 @@ class MapViewerGUI(object):
 
     # Initialize stuff for pdf report generation
     self.image_fnames = []  # Filenames for images to be included in PDF report
-    self.ht_results_string = "Hypothesis test results:\n"
-    self.probs_and_coords_string = "Lat\tLon\tProb\n"
-    for lat, lon, prob in zip(self.lats, self.lons, self.probs):
-      self.probs_and_coords_string += "{}\t{}\t{}".format(lat, lon, prob)
+    self.ht_results_data = None
+    self.probs_and_coords_data = \
+      np.array([np.array([np.round(lat, decimals=3), np.round(lon, decimals=3), np.round(prob, decimals=3)])
+                for lat, lon, prob in zip(self.lats, self.lons, self.probs)])
+    self.probs_and_coords_data = self.probs_and_coords_data[(-self.probs_and_coords_data[:, -1]).argsort()]
+    self.probs_and_coords_data = \
+      [["Lat", "Lon", "Prob"]] + [[float(row[0]), float(row[1]), float(row[2])] for row in self.probs_and_coords_data]
 
     # Create GUI
     self.map_title = sample_name
@@ -127,7 +130,7 @@ class MapViewerGUI(object):
     button.grid(row=2, column=2)
 
   def _generate_pdf_report(self):
-    build_pdf_report(self.map_title, self.image_fnames, self.probs_and_coords_string, self.ht_results_string)
+    build_pdf_report(self.map_title, self.image_fnames, self.probs_and_coords_data, self.ht_results_data)
 
   def sum_probabilities_in_circle(self, lat, lon, radius):
     """
@@ -203,8 +206,11 @@ class MapViewerGUI(object):
     messagebox.showinfo("Hypothesis test result", hypothesis_test_result)
 
     # Add to hypothesis test results
-    hypothesis_test_result += "\n"
-    self.ht_results_string += hypothesis_test_result
+    if self.ht_results_data is None:
+      self.ht_results_data = \
+        [["Center lat", "Center lon", "Radius (km)"], [float(center_lat), float(center_lon), float(radius)]]
+    else:
+      self.ht_results_data.append([float(center_lat), float(center_lon), float(radius)])
 
   def _reset_map(self):
     self.ax.clear()
