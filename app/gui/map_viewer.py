@@ -88,6 +88,7 @@ class MapViewerGUI(object):
     self.probs_and_coords_data = self.probs_and_coords_data[(-self.probs_and_coords_data[:, -1]).argsort()]
     self.probs_and_coords_data = \
       [["Lat", "Lon", "Prob"]] + [[float(row[0]), float(row[1]), float(row[2])] for row in self.probs_and_coords_data]
+    self.view_counter = 0
 
     # Create GUI
     self.map_title = sample_name
@@ -115,15 +116,12 @@ class MapViewerGUI(object):
     # Clear HT
     Tk.Button(master=self.ht_frame, text="Reset", command=self._reset_map).grid(row=5, column=0)
 
-    # Generate PDF
-    Tk.Button(master=self.ht_frame, text="Generate PDF report", command=self._generate_pdf_report).grid(row=6, column=0)
+    # Add view to report
+    Tk.Button(master=self.ht_frame, text="Add view to PDF report",
+              command=self._add_view_to_report).grid(row=6, column=0)
 
-    # Toolbar
-    self.toolbarFrame = Tk.Frame(master=self.master)
-    self.toolbarFrame.grid(row=1, column=2)
-    toolbar = NavigationToolbar2TkAgg(self.canvas, self.toolbarFrame)
-    toolbar.update()
-    # canvas._tkcanvas.grid(row=1, column=2)
+    # Generate PDF
+    Tk.Button(master=self.ht_frame, text="Generate PDF report", command=self._generate_pdf_report).grid(row=7, column=0)
 
     # Quit button
     button = Tk.Button(master=self.master, text='Quit', command=self._quit)
@@ -177,6 +175,19 @@ class MapViewerGUI(object):
     self.canvas.get_tk_widget().grid(row=0, column=2, sticky="nwse")
     # self.canvas.get_tk_widget().grid(row=0, column=2)
 
+    # Toolbar
+    self.toolbarFrame = Tk.Frame(master=self.master)
+    self.toolbarFrame.grid(row=1, column=2)
+    toolbar = NavigationToolbar2TkAgg(self.canvas, self.toolbarFrame)
+    toolbar.update()
+
+  def _add_view_to_report(self):
+    # Save image
+    view_fname = os.path.join(IMAGES_DIR, "{}-view-{}.png".format(self.map_title, self.view_counter))
+    self.fig.savefig(view_fname)
+    self.image_fnames.append(os.path.abspath(view_fname))
+    self.view_counter += 1
+
   def _ht(self):
     self.ax.clear()
     self.draw_basemap()
@@ -200,7 +211,7 @@ class MapViewerGUI(object):
     self.image_fnames.append(os.path.abspath(ht_map_fname))
 
     # Add probabilities in circle
-    sum_prob = self.sum_probabilities_in_circle(center_lat, center_lon, radius)
+    sum_prob = np.round(self.sum_probabilities_in_circle(center_lat, center_lon, radius), decimals=3)
     hypothesis_test_result = \
       "Lat: {}\nLon: {}\n Radius: {}km\n Probability: {}".format(center_lat, center_lon, radius, sum_prob)
     messagebox.showinfo("Hypothesis test result", hypothesis_test_result)
@@ -208,7 +219,8 @@ class MapViewerGUI(object):
     # Add to hypothesis test results
     if self.ht_results_data is None:
       self.ht_results_data = \
-        [["Center lat", "Center lon", "Radius (km)"], [float(center_lat), float(center_lon), float(radius)]]
+        [["Center lat", "Center lon", "Radius (km)", "Probability"],
+         [float(center_lat), float(center_lon), float(radius), float(sum_prob)]]
     else:
       self.ht_results_data.append([float(center_lat), float(center_lon), float(radius)])
 
