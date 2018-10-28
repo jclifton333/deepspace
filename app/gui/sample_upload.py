@@ -49,7 +49,7 @@ class SampleUploadGUI(Tk.Frame):
       run_model_message = \
         "Running model on samples in {}.  This will take about 7 minutes per sample.".format(self.csv_fname_to_analyze)
       messagebox.showinfo("Running model", run_model_message)
-      res_dict = read_split_convert_compute(self.csv_fname_to_analyze)
+      read_split_convert_compute(self.csv_fname_to_analyze)
 
   def browsecsv(self):
     from tkinter.filedialog import askopenfilename

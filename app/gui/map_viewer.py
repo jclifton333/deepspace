@@ -75,13 +75,16 @@ class MapViewerGUI(object):
     self.master = master
     master.title("Map viewer")
 
-    # Initialize stuff for pdf report generation
-    self.image_fnames = []  # Filenames for images to be included in PDF report
-    self.ht_results_string = "Hypothesis test results:\n"
-
     # Get lats longs and values for making heatmap
     fname = os.path.join("geojson", json_fname)
     self.lats, self.lons, self.probs = get_coords_and_probs_from_json(fname)
+
+    # Initialize stuff for pdf report generation
+    self.image_fnames = []  # Filenames for images to be included in PDF report
+    self.ht_results_string = "Hypothesis test results:\n"
+    self.probs_and_coords_string = "Lat\tLon\tProb\n"
+    for lat, lon, prob in zip(self.lats, self.lons, self.probs):
+      self.probs_and_coords_string += "{}\t{}\t{}".format(lat, lon, prob)
 
     # Create GUI
     self.map_title = sample_name
@@ -124,7 +127,7 @@ class MapViewerGUI(object):
     button.grid(row=2, column=2)
 
   def _generate_pdf_report(self):
-    build_pdf_report(self.map_title, self.image_fnames, None, self.ht_results_string)
+    build_pdf_report(self.map_title, self.image_fnames, self.probs_and_coords_string, self.ht_results_string)
 
   def sum_probabilities_in_circle(self, lat, lon, radius):
     """

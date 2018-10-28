@@ -31,7 +31,7 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
     print(image)
     Story.append(Image(image))
 
-  # ToDo: Add probabilities to document
+  Story.append(Paragraph(probabilities, getSampleStyleSheet()["Normal"]))
   Story.append(Paragraph(ht_results, getSampleStyleSheet()["Normal"]))
 
   doc.build(Story)
