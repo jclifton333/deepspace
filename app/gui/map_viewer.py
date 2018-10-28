@@ -90,6 +90,7 @@ class MapViewerGUI(object):
       np.array([np.array([np.round(lat, decimals=3), np.round(lon, decimals=3), np.round(prob, decimals=3)])
                 for lat, lon, prob in zip(self.lats, self.lons, self.probs)])
     self.probs_and_coords_data = self.probs_and_coords_data[(-self.probs_and_coords_data[:, -1]).argsort()]
+    self.highest_prob_lat, self.highest_prob_lon = self.probs_and_coords_data[0, 0], self.probs_and_coords_data[0, 1]
     self.probs_and_coords_data = \
       [["Lat", "Lon", "Prob"]] + [[float(row[0]), float(row[1]), float(row[2])] for row in self.probs_and_coords_data]
     self.view_counter = 0
@@ -169,6 +170,10 @@ class MapViewerGUI(object):
     CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=[0.5, 0.75, 0.9, 1])
     self.m.drawcoastlines()
     self.m.drawcountries()
+
+    # Plot highest-probability point
+    x_highest_prob, y_highest_prob = self.m(self.highest_prob_lon, self.highest_prob_lat)
+    self.m.plot(x_highest_prob, y_highest_prob, 'gD', markersize=5)
 
     # Display in GUI
     self.master.wm_title("Embedding in TK")
