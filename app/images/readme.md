@@ -1,0 +1,1 @@
+Temporarily holds images used to generated PDF report; should be cleaned out whenver app is started.

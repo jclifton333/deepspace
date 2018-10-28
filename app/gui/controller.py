@@ -11,12 +11,14 @@ import numpy as np
 import json
 import geopy
 import os
+import shutil
 from geopy.distance import VincentyDistance, vincenty
 import matplotlib.pyplot as plt
 
 import sys
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 PKG_DIR = os.path.join(THIS_DIR, '..', '..')
+IMAGE_DIR = os.path.join(THIS_DIR, '..', 'images')
 sys.path.append(PKG_DIR)
 
 from app.gui.sample_upload import SampleUploadGUI
@@ -55,6 +57,13 @@ class GUIController(Tk.Tk):
       frame.grid(row=0, column=0, sticky="nsew")
 
     self.show_frame("MainMenuGUI")
+
+    # Clean out images directory
+    for file in os.listdir(IMAGE_DIR):
+      if file.endswith(".png"):
+        file_path = os.path.join(IMAGE_DIR, file)
+        if os.path.isfile(file_path):
+          os.unlink(file_path)
 
   def show_frame(self, page_name):
     frame = self.frames[page_name]

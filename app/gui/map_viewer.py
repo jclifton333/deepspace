@@ -70,6 +70,7 @@ def get_coords_and_probs_from_json(json_fname):
 
 IMAGES_DIR = os.path.join(THIS_DIR, "..", "images")
 
+
 class MapViewerGUI(object):
   def __init__(self, master, json_fname, sample_name):
     self.master = master
