@@ -14,9 +14,17 @@ import json
 import geopy
 from geopy.distance import VincentyDistance, vincenty
 import matplotlib.pyplot as plt
-
+import datetime
+from reportlab.pdfgen import canvas
+from reportlab.platypus import Image, Paragraph, SimpleDocTemplate
+from reportlab.lib.styles import getSampleStyleSheet
 
 import sys
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+PKG_DIR = os.path.join(THIS_DIR, '..', '..')
+sys.path.append(PKG_DIR)
+from app.report_generation import build_pdf_report
+
 if sys.version_info[0] < 3:
     import Tkinter as Tk
     from Tkinter import messagebox
@@ -60,10 +68,14 @@ def get_coords_and_probs_from_json(json_fname):
   return lats, lons, probs
 
 
+IMAGES_DIR = os.path.join(THIS_DIR, "..", "images")
+
 class MapViewerGUI(object):
   def __init__(self, master, json_fname, sample_name):
     self.master = master
     master.title("Map viewer")
+
+    self.image_fnames = []  # Filenames for images to be included in PDF report
 
     # Get lats longs and values for making heatmap
     fname = os.path.join("geojson", json_fname)
@@ -73,6 +85,9 @@ class MapViewerGUI(object):
     self.map_title = sample_name
     self.draw_basemap()
     self.canvas.show()
+    base_map_fname = os.path.join(IMAGES_DIR, "{}.png".format(self.map_title))
+    self.fig.savefig(base_map_fname)
+    self.image_fnames.append(os.path.abspath(base_map_fname))
 
     # HT input
     self.ht_frame = Tk.Frame(master=self.master)
@@ -90,7 +105,10 @@ class MapViewerGUI(object):
               command=self._ht).grid(row=4, column=0)
 
     # Clear HT
-    Tk.Button(master=self.ht_frame, text='Reset', command=self._reset_map).grid(row=5, column=0)
+    Tk.Button(master=self.ht_frame, text="Reset", command=self._reset_map).grid(row=5, column=0)
+
+    # Generate PDF
+    Tk.Button(master=self.ht_frame, text="Generate PDF report", command=self._generate_pdf_report).grid(row=6, column=0)
 
     # Toolbar
     self.toolbarFrame = Tk.Frame(master=self.master)
@@ -102,6 +120,9 @@ class MapViewerGUI(object):
     # Quit button
     button = Tk.Button(master=self.master, text='Quit', command=self._quit)
     button.grid(row=2, column=2)
+
+  def _generate_pdf_report(self):
+    build_pdf_report(self.map_title, self.image_fnames, None)
 
   def sum_probabilities_in_circle(self, lat, lon, radius):
     """
@@ -125,8 +146,8 @@ class MapViewerGUI(object):
     :return:
     """
     # Make heatmap
-    fig = Figure(figsize=(5, 4), dpi=100)
-    self.ax = fig.add_subplot(111)
+    self.fig = Figure(figsize=(5, 4), dpi=100)
+    self.ax = self.fig.add_subplot(111)
     self.ax.set_title(self.map_title)
     self.m = Basemap(projection='cyl',llcrnrlat=-90,urcrnrlat=90,\
                      llcrnrlon=-180,urcrnrlon=180,resolution='c', ax=self.ax)
@@ -144,7 +165,7 @@ class MapViewerGUI(object):
     self.master.rowconfigure(0, weight=1)
     # Frame for hypothesis test
     # a tk.DrawingArea
-    self.canvas = FigureCanvasTkAgg(fig, master=self.master)
+    self.canvas = FigureCanvasTkAgg(self.fig, master=self.master)
     self.canvas.get_tk_widget().grid(row=0, column=2, sticky="nwse")
     # self.canvas.get_tk_widget().grid(row=0, column=2)
 

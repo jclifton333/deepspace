@@ -1,6 +1,7 @@
 import datetime
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate
+from reportlab.lib.styles import getSampleStyleSheet
 
 
 def build_pdf_report(sample_name, images, probabilities):
@@ -15,26 +16,27 @@ def build_pdf_report(sample_name, images, probabilities):
   :return:
   """
 
-  report_fname = "{}.pdf".format(sample_name)
+  timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
+  report_fname = \
+    "/mnt/c/Users/Jesse/Desktop/forensic-geolocation-master/deepspace/app/{}-{}.pdf".format(sample_name, timestamp)
   doc = SimpleDocTemplate(report_fname)
   Story = []
 
   # Add timestamp to top of document
-  timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
-  Story.append(Paragraph(timestamp))
+  Story.append(Paragraph(timestamp, getSampleStyleSheet()["Normal"]))
 
   # Add images to document
   for image in images:
+    print(image)
     Story.append(Image(image))
 
   # ToDo: Add probabilities to document
 
   doc.build(Story)
-  doc.save()
   return
 
 
-if __name__ == "__main":
+if __name__ == "__main__":
   sample_name_ = "Costa RicaC"
   images_ = ["image.png"]
   probabilities_ = None
