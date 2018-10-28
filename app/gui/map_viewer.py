@@ -9,6 +9,7 @@ from mpl_toolkits.basemap import Basemap
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
 from matplotlib.figure import Figure
 import numpy as np
+import os
 import json
 import geopy
 from geopy.distance import VincentyDistance, vincenty
@@ -65,8 +66,7 @@ class MapViewerGUI(object):
     master.title("Map viewer")
 
     # Get lats longs and values for making heatmap
-    # fname = master.geojson_filename
-    fname = "geojson/Costa RicaC.json"
+    fname = os.path.join("geojson", json_fname)
     self.lats, self.lons, self.probs = get_coords_and_probs_from_json(fname)
 
     # Create GUI

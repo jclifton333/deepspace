@@ -40,7 +40,16 @@ class SampleSelectGUI(Tk.Frame):
     self.master = master
     self.sample_listbox = Tk.Listbox(self, selectmode=Tk.SINGLE)
     self.sample_listbox.grid(row=0, column=0)
+    self.fill_listbox()
 
+    # Make button for displaying mapviewer for current selection
+    Tk.Button(master=self, text="Display selection in mapviewer",
+              command=self._open_in_mapviewer).grid(row=1, column=0)
+
+    Tk.Button(master=self, text="Return to main menu",
+              command=lambda: controller.show_frame("MainMenuGUI")).grid(row=2, column=0)
+
+  def fill_listbox(self):
     # Fill listbox with entries
     self.sample_fname_list = [fname for fname in os.listdir(GEOJSON_DIR) if fname.endswith('.json')]
     self.sample_display_name_list = [fname.split('/')[-1].split('.json')[0] for fname in self.sample_fname_list]
@@ -49,12 +58,9 @@ class SampleSelectGUI(Tk.Frame):
     for display_name in self.sample_display_name_list:
       self.sample_listbox.insert(Tk.END, display_name)
 
-    # Make button for displaying mapviewer for current selection
-    Tk.Button(master=self, text="Display selection in mapviewer",
-              command=self._open_in_mapviewer).grid(row=1, column=0)
-
-    Tk.Button(master=self, text="Return to main menu",
-              command=lambda: controller.show_frame("MainMenuGUI")).grid(row=2, column=0)
+  def refresh(self):
+    self.sample_listbox.delete(0, 'end')
+    self.fill_listbox()
 
   def _open_in_mapviewer(self):
     selected_sample_ix = self.sample_listbox.curselection()[0]
