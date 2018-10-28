@@ -30,7 +30,7 @@ class SampleUploadGUI(Tk.Frame):
 
     # Buttons
     y = 7
-    self.cbutton = Tk.Button(self, text="OK", command=self.process_csv)
+    self.cbutton = Tk.Button(self, text="Load", command=self.process_csv)
     y += 1
     self.cbutton.grid(row=10, column=3, sticky="we")
     self.bbutton = Tk.Button(self, text="Browse", command=self.browsecsv)

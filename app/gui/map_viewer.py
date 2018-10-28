@@ -130,8 +130,8 @@ class MapViewerGUI(object):
     Tk.Button(master=self.ht_frame, text="Generate PDF report", command=self._generate_pdf_report).grid(row=7, column=0)
 
     # Quit button
-    button = Tk.Button(master=self.master, text='Quit', command=self._quit)
-    button.grid(row=2, column=2)
+    # button = Tk.Button(master=self.master, text='Quit', command=self._quit)
+    # button.grid(row=2, column=2)
 
   def _generate_pdf_report(self):
     build_pdf_report(self.map_title, self.image_fnames, self.probs_and_coords_data, self.ht_results_data)
@@ -247,11 +247,11 @@ class MapViewerGUI(object):
     self.draw_basemap()
     self.canvas.show()
 
-  # Quit button
-  def _quit(self):
-    self.master.quit()     # stops mainloop
-    self.master.destroy()  # this is necessary on Windows to prevent
-                           # Fatal Python Error: PyEval_RestoreThread: NULL tstate
+  # # Quit button
+  # def _quit(self):
+  #   self.master.quit()     # stops mainloop
+  #   self.master.destroy()  # this is necessary on Windows to prevent
+  #                          # Fatal Python Error: PyEval_RestoreThread: NULL tstate
 
 
 if __name__ == '__main__':

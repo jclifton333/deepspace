@@ -1,0 +1,6 @@
+- Progress bars and successful completion notifications for model fitting and pdf generation
+- Informative error dialog for incorrect uploads
+- Quit button in map_viewer should not exit entire program
+- Add highest prob point to legend
+- Include country in point probability output
+- Label maps associated with HT in pdf report (and place HT text with maps, instead of at end?)
