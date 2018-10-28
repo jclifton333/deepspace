@@ -40,7 +40,7 @@ def get_reg_dict(domain, sp_pred_regs, probs, sample_id_str_):
       {
         'type': 'Feature',
         # 'properties': {'id': str(id_), 'probability': float(probs[id_])},
-        'properties': {'id': str(sample_id_str_), 'probability': float(probs[id_])},
+        'properties': {'id': str(sample_id_str_), 'probability': float(probs[id_]), 'reg': df_reg[id_]['reg']},
         'geometry': domain_geom_dict[id_]
       }    
       for id_, reg_s in df_reg.iterrows()

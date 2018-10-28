@@ -2,6 +2,7 @@ import datetime
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Table
 from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.units import inch
 
 
 def build_pdf_report(sample_name, images, probabilities, ht_results):
@@ -19,7 +20,8 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
 
   timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
   report_fname = \
-    "/mnt/c/Users/Jesse/Desktop/forensic-geolocation-master/deepspace/app/{}-{}.pdf".format(sample_name, timestamp)
+    "/mnt/c/Users/Jesse/Desktop/forensic-geolocation-master/deepspace/app/reports/pdfs/{}-{}.pdf".format(sample_name,
+                                                                                                         timestamp)
   doc = SimpleDocTemplate(report_fname)
   Story = []
 
@@ -28,8 +30,7 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
 
   # Add images to document
   for image in images:
-    print(image)
-    Story.append(Image(image))
+    Story.append(Image(image, 6*inch, 4*inch))
 
   Story.append(Paragraph("Hypothesis test results: ", getSampleStyleSheet()["Normal"]))
   if ht_results is None:

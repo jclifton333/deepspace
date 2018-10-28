@@ -51,7 +51,7 @@ def get_coords_and_probs_from_json(json_fname):
   with open(json_fname) as f:
     data = json.load(f)
 
-  lats, lons, probs = [], [], []
+  lats, lons, probs, regs = [], [], [], []
 
   for features in data['features']:
     coords = features['geometry']['coordinates'][0]
@@ -60,12 +60,15 @@ def get_coords_and_probs_from_json(json_fname):
     lons.append(lon)
     prob = features['properties']['probability']
     probs.append(prob)
+    reg = features['properties']['reg']
+    regs.append(reg)
 
   lats = np.array(lats)
   lons = np.array(lons)
   probs = np.array(probs)
+  regs = np.array(regs)
 
-  return lats, lons, probs
+  return lats, lons, probs, regs
 
 
 IMAGES_DIR = os.path.join(THIS_DIR, "..", "images")
@@ -78,7 +81,7 @@ class MapViewerGUI(object):
 
     # Get lats longs and values for making heatmap
     fname = os.path.join("geojson", json_fname)
-    self.lats, self.lons, self.probs = get_coords_and_probs_from_json(fname)
+    self.lats, self.lons, self.probs, self.regs = get_coords_and_probs_from_json(fname)
 
     # Initialize stuff for pdf report generation
     self.image_fnames = []  # Filenames for images to be included in PDF report
@@ -162,7 +165,8 @@ class MapViewerGUI(object):
     x, y = self.m(self.lons, self.lats)
     self.formatted_lons = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
     self.formatted_lats = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
-    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
+    # CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
+    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=[0.5, 0.75, 0.9, 1])
     self.m.drawcoastlines()
     self.m.drawcountries()
 
