@@ -4,7 +4,7 @@ from reportlab.platypus import Image, Paragraph, SimpleDocTemplate
 from reportlab.lib.styles import getSampleStyleSheet
 
 
-def build_pdf_report(sample_name, images, probabilities):
+def build_pdf_report(sample_name, images, probabilities, ht_results):
   """
   For building pdf report from map displayed in mapviewer.
   See http://www.blog.pythonlibrary.org/2010/03/08/a-simple-step-by-step-reportlab-tutorial/
@@ -13,6 +13,7 @@ def build_pdf_report(sample_name, images, probabilities):
   :param sample_name: name of sample corresponding to images
   :param images:
   :param probabilities:
+  :param ht_results: string containing results of hypothesis tests
   :return:
   """
 
@@ -31,6 +32,7 @@ def build_pdf_report(sample_name, images, probabilities):
     Story.append(Image(image))
 
   # ToDo: Add probabilities to document
+  Story.append(Paragraph(ht_results, getSampleStyleSheet()["Normal"]))
 
   doc.build(Story)
   return

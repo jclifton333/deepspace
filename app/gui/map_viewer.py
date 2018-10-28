@@ -75,7 +75,9 @@ class MapViewerGUI(object):
     self.master = master
     master.title("Map viewer")
 
+    # Initialize stuff for pdf report generation
     self.image_fnames = []  # Filenames for images to be included in PDF report
+    self.ht_results_string = "Hypothesis test results:\n"
 
     # Get lats longs and values for making heatmap
     fname = os.path.join("geojson", json_fname)
@@ -122,7 +124,7 @@ class MapViewerGUI(object):
     button.grid(row=2, column=2)
 
   def _generate_pdf_report(self):
-    build_pdf_report(self.map_title, self.image_fnames, None)
+    build_pdf_report(self.map_title, self.image_fnames, None, self.ht_results_string)
 
   def sum_probabilities_in_circle(self, lat, lon, radius):
     """
@@ -186,11 +188,20 @@ class MapViewerGUI(object):
     self.ax.add_patch(circle)
     self.canvas.draw()
 
+    # Save image
+    ht_map_fname = os.path.join(IMAGES_DIR, "{}-{}-{}-{}.png".format(self.map_title, center_lat, center_lon, radius))
+    self.fig.savefig(ht_map_fname)
+    self.image_fnames.append(os.path.abspath(ht_map_fname))
+
     # Add probabilities in circle
     sum_prob = self.sum_probabilities_in_circle(center_lat, center_lon, radius)
     hypothesis_test_result = \
       "Lat: {}\nLon: {}\n Radius: {}km\n Probability: {}".format(center_lat, center_lon, radius, sum_prob)
     messagebox.showinfo("Hypothesis test result", hypothesis_test_result)
+
+    # Add to hypothesis test results
+    hypothesis_test_result += "\n"
+    self.ht_results_string += hypothesis_test_result
 
   def _reset_map(self):
     self.ax.clear()
