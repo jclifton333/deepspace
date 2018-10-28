@@ -57,5 +57,9 @@ def write_reg_dict_to_geojson(reg_dict_dict, seeds, dropped_otus):
       for word in dropped_otus:
         file.write(word + '\n')
 
-  return
+    # Return probs and lat/lons as string, this will be used in pdf report
+    f = open(probs_and_centroids_fname, "r")
+    raw_probs_string = f.read()
+
+  return raw_probs_string
 

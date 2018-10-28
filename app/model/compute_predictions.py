@@ -50,14 +50,16 @@ def read_split_convert_compute(fname, names_of_samples_to_exclude=[]):
     os.makedirs(tmp)
 
   # Split into biom files and run model on each
+  res_dict = {}
   biom_fnames, sample_names, dropped_otus = \
     read_split_convert_csv_to_biom(fname, names_of_samples_to_exclude=names_of_samples_to_exclude)
   for biom_fname, sample_name in zip(biom_fnames, sample_names):
-    compute_predictions(biom_fname, sample_name, dropped_otus)
+    res_string = compute_predictions(biom_fname, sample_name, dropped_otus)
+    res_dict[sample_name] = res_string
 
   # Get rid of tmp directory
   shutil.rmtree(tmp)
-  return
+  return res_dict
 
 
 def read_split_convert_csv_to_biom(fname, names_of_samples_to_exclude=[]):
@@ -207,7 +209,8 @@ def compute_predictions(biom_fname, sample_name, dropped_otus):
   logging.info('Sample outputs to json')
   # Output geojsons
   reg_dict_dict = get_reg_dict(domain, sp_pred_regs, probs, sample_name)
-  write_reg_dict_to_geojson(reg_dict_dict, seeds, dropped_otus)
+  res_string = write_reg_dict_to_geojson(reg_dict_dict, seeds, dropped_otus)
+  return res_string
 
 
 if __name__ == '__main__':
