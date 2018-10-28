@@ -1,4 +1,5 @@
 import sys
+import pandas as pd
 import os
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 PKG_DIR = os.path.join(THIS_DIR, '..', '..')
@@ -15,6 +16,65 @@ else:
 import tkinter.filedialog
 from tkinter import messagebox
 import csv
+
+
+def string_is_positive_integer(string):
+  """
+   Check if string is a positive integer.
+
+  :param string:
+  :return:
+  """
+  try:
+    val = int(string)
+    if val >= 0:
+      return True
+    else:
+      return False
+  except ValueError:
+    return False
+
+
+TAXON_ERROR = 'Taxon name formatted incorrectly.'
+INTEGER_ERROR = 'Incorrect data type in count data; they should all be positive integers.'
+def check_uploaded_file_for_errors(fname):
+  """
+
+  :param fname: Check that uploaded file is of correct format.
+  :return:
+  """
+  error_dictionary = {
+    TAXON_ERROR: False, INTEGER_ERROR: False
+
+  }
+
+  if fname.endswith(".csv"):
+    df = pd.read_csv(fname, index_col=0)
+  elif fname.endswith(".xslx"):
+    df = pd.read_excel(fname, index_col=0)
+
+  # Make sure index is of form Taxon_[integer]
+  for taxon_name in df.index:
+    split_name = taxon_name.split()
+    if len(split_name) > 1:
+      if split_name[0] != 'Taxon':
+        if not error_dictionary[TAXON_ERROR]:
+          error_dictionary[TAXON_ERROR] = True
+      if not string_is_positive_integer(split_name[-1]):
+        if not error_dictionary[TAXON_ERROR]:
+          error_dictionary[TAXON_ERROR] = True
+    else:
+      if not error_dictionary[TAXON_ERROR]:
+        error_dictionary[TAXON_ERROR] = True
+
+  # Make sure count data are all positive integers
+  for col in df.columns.values:
+    for entry in col:
+      if not string_is_positive_integer(entry):
+        if not error_dictionary[INTEGER_ERROR]:
+          error_dictionary[INTEGER_ERROR] = True
+
+  return error_dictionary
 
 
 class SampleUploadGUI(Tk.Frame):
@@ -59,7 +119,21 @@ class SampleUploadGUI(Tk.Frame):
 
   def process_csv(self):
     if self.filename:
-      self.csv_fname_to_analyze = self.filename
+      if self.filename.endswith(".csv") or self.filename.endswith(".xslx"):
+        error_dict = check_uploaded_file_for_errors(self.filename)
+        if not error_dict[TAXON_ERROR] and not error_dict[INTEGER_ERROR]:
+          self.csv_fname_to_analyze = self.filename
+          messagebox.showinfo("Successful upload", "Ready to run model on {}".format(self.csv_fname_to_analyze))
+        else:
+          error_string = "Formatting errors in uploaded file:\n"
+          if error_dict[TAXON_ERROR]:
+            error_string += TAXON_ERROR
+            error_string += "\n"
+          if error_dict[INTEGER_ERROR]:
+            error_string += INTEGER_ERROR
+          messagebox.showerror("Formatting error", error_string)
+      else:
+        messagebox.showerror("File type error", "Wrong file type.  Must upload .csv or .xslx.")
 
 
 if __name__ == "__main__":

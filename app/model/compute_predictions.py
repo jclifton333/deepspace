@@ -73,9 +73,13 @@ def read_split_convert_csv_to_biom(fname, names_of_samples_to_exclude=[]):
   # Get sample data and get rid of rows with taxa that we can't include
   dropped_otus = []
   dropped_samples = []
-  logging.info('Reading input csv.')
+  logging.info('Reading input csv or xlsx.')
   logging.info('fname: {}'.format(fname))
-  df = pd.read_csv(fname, index_col=0)
+  if fname.endswith(".csv"):
+    df = pd.read_csv(fname, index_col=0)
+  elif fname.endswith(".xslx"):
+    df = pd.read_excel(fname, index_col=0)
+
   for ix in df.index:
     if ix not in OTUs_to_keep_list:
       dropped_otus.append(ix)

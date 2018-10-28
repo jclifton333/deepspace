@@ -4,3 +4,5 @@
 - Add highest prob point to legend
 - Include country in point probability output
 - Label maps associated with HT in pdf report (and place HT text with maps, instead of at end?)
+- Clickable executable
+- Make compatible with .xlsx
