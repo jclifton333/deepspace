@@ -8,6 +8,7 @@ http://bagrow.com/dsv/heatmap_basemap.html
 from mpl_toolkits.basemap import Basemap
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
 from matplotlib.figure import Figure
+import matplotlib.patches as mpatches
 import numpy as np
 import os
 import json
@@ -167,13 +168,20 @@ class MapViewerGUI(object):
     self.formatted_lons = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
     self.formatted_lats = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
     # CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
-    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=[0.5, 0.75, 0.9, 1])
+    cmap = plt.cm.jet
+    bins = [0.5, 0.75, 0.9, 1.0]
+    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=bins, cmap=cmap)
     self.m.drawcoastlines()
     self.m.drawcountries()
 
     # Plot highest-probability point
     x_highest_prob, y_highest_prob = self.m(self.highest_prob_lon, self.highest_prob_lat)
     self.m.plot(x_highest_prob, y_highest_prob, 'gD', markersize=5)
+
+    # Legend
+    handles = [mpatches.Patch(color=cmap(reg), label="{} confidence region".format(reg)) for reg in bins]
+    self.ax.legend(handles=handles)
+    # self.m.colorbar(location="bottom", label="Confidence level")
 
     # Display in GUI
     self.master.wm_title("Embedding in TK")
