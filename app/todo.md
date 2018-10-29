@@ -8,3 +8,4 @@
 - ~~Make excel wb compatible~~
 - User should be able to stop model execution before it's finished
 - ~~Display dates in sample select and sort by most recent~~
+- ~~Alert user when uploading file that includes already-analyzed sample~~

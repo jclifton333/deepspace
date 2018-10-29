@@ -40,21 +40,17 @@ TAXON_ERROR = "-Taxon name formatted incorrectly."
 INTEGER_ERROR = "-Incorrect data type in count data; they should all be positive integers."
 
 
-def check_uploaded_file_for_errors(fname):
+def check_uploaded_file_for_errors(df):
   """
+  Check that uploaded file is of correct format.
 
-  :param fname: Check that uploaded file is of correct format.
+  :param df:
   :return:
   """
   error_dictionary = {
     TAXON_ERROR: False, INTEGER_ERROR: False
 
   }
-
-  if fname.endswith(".csv"):
-    df = pd.read_csv(fname, index_col=0)
-  elif fname.endswith(".xlsx"):
-    df = pd.read_excel(fname, index_col=0)
 
   # Make sure index is of form Taxon_[integer]
   for taxon_name in df.index:
@@ -81,6 +77,9 @@ def check_uploaded_file_for_errors(fname):
 
 
 class SampleUploadGUI(Tk.Frame):
+  EXISTING_SAMPLE_WARNING = \
+    "File contains column names corresponding to samples that have already been analyzed.\nRunning model will overwrite existing results for these samples names."
+
   def __init__(self, master, controller):
     Tk.Frame.__init__(self, master)
     self.controller = controller
@@ -103,6 +102,10 @@ class SampleUploadGUI(Tk.Frame):
     self.return_to_menu_button = Tk.Button(self, text="Return to main menu",
                                            command=lambda: controller.show_frame("MainMenuGUI")).grid(row=12, column=3)
 
+    # For checking whether already-analyzed sample is being uploaded
+    self.existing_json_filenames = [json_fname.split(".json")[0] for json_fname in
+                                    os.listdir(os.path.join(THIS_DIR, "geojson"))]
+
   def run_model(self):
     if self.csv_fname_to_analyze is None:
       run_model_message = \
@@ -123,7 +126,19 @@ class SampleUploadGUI(Tk.Frame):
   def process_csv(self):
     if self.filename:
       if self.filename.endswith(".csv") or self.filename.endswith(".xlsx"):
-        error_dict = check_uploaded_file_for_errors(self.filename)
+        if self.filename.endswith(".csv"):
+          df = pd.read_csv(self.filename, index_col=0)
+        elif self.filename.endswith(".xlsx"):
+          df = pd.read_excel(self.filename, index_col=0)
+
+        # Alert user if there are any column names corresponding to already-analyzed samples
+        for colname in df.columns.values:
+          if colname in self.existing_json_filenames:
+            messagebox.showwarning("Existing sample", self.EXISTING_SAMPLE_WARNING)
+            break
+
+        # Check for formatting errors in uploaded file
+        error_dict = check_uploaded_file_for_errors(df)
         if not error_dict[TAXON_ERROR] and not error_dict[INTEGER_ERROR]:
           self.csv_fname_to_analyze = self.filename
           messagebox.showinfo("Successful upload", "Ready to run model on {}".format(self.csv_fname_to_analyze))
