@@ -1,6 +1,7 @@
 import sys
 import pandas as pd
 import os
+import pdb
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 PKG_DIR = os.path.join(THIS_DIR, '..', '..')
 sys.path.append(PKG_DIR)
@@ -35,8 +36,10 @@ def string_is_positive_integer(string):
     return False
 
 
-TAXON_ERROR = 'Taxon name formatted incorrectly.'
-INTEGER_ERROR = 'Incorrect data type in count data; they should all be positive integers.'
+TAXON_ERROR = "-Taxon name formatted incorrectly."
+INTEGER_ERROR = "-Incorrect data type in count data; they should all be positive integers."
+
+
 def check_uploaded_file_for_errors(fname):
   """
 
@@ -50,12 +53,12 @@ def check_uploaded_file_for_errors(fname):
 
   if fname.endswith(".csv"):
     df = pd.read_csv(fname, index_col=0)
-  elif fname.endswith(".xslx"):
+  elif fname.endswith(".xlsx"):
     df = pd.read_excel(fname, index_col=0)
 
   # Make sure index is of form Taxon_[integer]
   for taxon_name in df.index:
-    split_name = taxon_name.split()
+    split_name = taxon_name.split("_")
     if len(split_name) > 1:
       if split_name[0] != 'Taxon':
         if not error_dictionary[TAXON_ERROR]:
@@ -69,7 +72,7 @@ def check_uploaded_file_for_errors(fname):
 
   # Make sure count data are all positive integers
   for col in df.columns.values:
-    for entry in col:
+    for entry in df[col]:
       if not string_is_positive_integer(entry):
         if not error_dictionary[INTEGER_ERROR]:
           error_dictionary[INTEGER_ERROR] = True
@@ -119,7 +122,7 @@ class SampleUploadGUI(Tk.Frame):
 
   def process_csv(self):
     if self.filename:
-      if self.filename.endswith(".csv") or self.filename.endswith(".xslx"):
+      if self.filename.endswith(".csv") or self.filename.endswith(".xlsx"):
         error_dict = check_uploaded_file_for_errors(self.filename)
         if not error_dict[TAXON_ERROR] and not error_dict[INTEGER_ERROR]:
           self.csv_fname_to_analyze = self.filename

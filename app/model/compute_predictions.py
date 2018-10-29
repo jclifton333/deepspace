@@ -77,7 +77,7 @@ def read_split_convert_csv_to_biom(fname, names_of_samples_to_exclude=[]):
   logging.info('fname: {}'.format(fname))
   if fname.endswith(".csv"):
     df = pd.read_csv(fname, index_col=0)
-  elif fname.endswith(".xslx"):
+  elif fname.endswith(".xlsx"):
     df = pd.read_excel(fname, index_col=0)
 
   for ix in df.index:
