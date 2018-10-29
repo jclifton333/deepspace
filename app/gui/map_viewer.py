@@ -237,7 +237,7 @@ class MapViewerGUI(object):
     messagebox.showinfo("Hypothesis test result", hypothesis_test_result)
 
     # Add to hypothesis test results
-    ht_result_tuple = (os.abspath(ht_map_fname), hypothesis_test_result)
+    ht_result_tuple = (os.path.abspath(ht_map_fname), hypothesis_test_result)
     self.ht_results_data.append(ht_result_tuple)
 
     #if self.ht_results_data is None:
