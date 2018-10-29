@@ -21,6 +21,8 @@ def write_reg_dict_to_geojson(reg_dict_dict, seeds, dropped_otus):
     os.makedirs(json_output_fp)
 
   # Loop thru dictionary to save each reg_dict
+  sample_id = 0
+
   for sample_id, reg_dict in reg_dict_dict.items():
     json_fp = os.path.join(json_output_fp, '{}.json'.format(sample_id))
     with open(json_fp, 'w') as f:
@@ -46,7 +48,8 @@ def write_reg_dict_to_geojson(reg_dict_dict, seeds, dropped_otus):
       probs_and_centroids_dict['lat'].append(centroid[1])
       probs_and_centroids_dict['lon'].append(centroid[0])
     probs_and_centroids__df = pd.DataFrame(probs_and_centroids_dict)
-    timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
+    # timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
+    timestamp = reg_dict["timestamp"]
     basename = '{}-probabilities-{}.txt'.format(sample_id, timestamp)
     probs_and_centroids_fname = os.path.join(DIR, '../reports', basename)
     probs_and_centroids__df.to_csv(probs_and_centroids_fname, sep='\t')

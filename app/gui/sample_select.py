@@ -2,6 +2,7 @@
 Interface for selecting sample output to display in map viewer.
 """
 
+import pdb
 from mpl_toolkits.basemap import Basemap
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
 from matplotlib.figure import Figure
@@ -52,7 +53,23 @@ class SampleSelectGUI(Tk.Frame):
   def fill_listbox(self):
     # Fill listbox with entries
     self.sample_fname_list = [fname for fname in os.listdir(GEOJSON_DIR) if fname.endswith('.json')]
-    self.sample_display_name_list = [fname.split('/')[-1].split('.json')[0] for fname in self.sample_fname_list]
+    timestamps = np.array([])
+    self.sample_display_name_list = []
+    for fname in self.sample_fname_list:
+      base_display_name = fname.split('/')[-1].split('.json')[0]
+      # Get timestamp
+      fname = "geojson/{}".format(fname)
+      with open(fname) as f:
+        data = json.load(f)
+        timestamp = data["timestamp"]
+      display_name = "{}-{}".format(base_display_name, timestamp)
+      timestamp = int(timestamp.split("_")[0])
+      timestamps = np.append(timestamps, timestamp)
+      self.sample_display_name_list.append(display_name)
+
+    # Sort by most recent
+    if self.sample_display_name_list:
+      self.sample_display_name_list = [self.sample_display_name_list[ix] for ix in (-timestamps).argsort()]
     # self.sample_dictionary = {display_name: fname for display_name, fname in zip(self.sample_display_name_list,
     #                                                                              self.sample_fname_list)}
     for display_name in self.sample_display_name_list:

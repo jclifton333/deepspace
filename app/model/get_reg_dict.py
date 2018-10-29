@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import datetime
 import pdb
 
 
@@ -24,6 +25,7 @@ def get_reg_dict(domain, sp_pred_regs, probs, sample_id_str_):
   # visualization with HTML + CSS + JS (Leaflet.js & D3.js)
 
   reg_dict_dict = {}
+  timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
   for sample_id, sp_pred_reg in sp_pred_regs.items():
 
     # This initializes confidence region assignment of each cell in domain 
@@ -48,7 +50,8 @@ def get_reg_dict(domain, sp_pred_regs, probs, sample_id_str_):
     reg_dict = {
       'type': 'FeatureCollection', 
       'crs': {'type': 'name', 'properties': {'name': 'urn:ogc:def:crs:OGC:1.3:CRS84'}},
-      'features': features_list
+      'features': features_list,
+      'timestamp': timestamp
     }
     reg_dict_dict[sample_id] = reg_dict
   return reg_dict_dict
