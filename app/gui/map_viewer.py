@@ -86,7 +86,7 @@ class MapViewerGUI(object):
 
     # Initialize stuff for pdf report generation
     self.image_fnames = []  # Filenames for images to be included in PDF report
-    self.ht_results_data = None
+    self.ht_results_data = []  # List of tuples (ht image fname, string of ht results)
     self.probs_and_coords_data = \
       np.array([np.array([np.round(lat, decimals=3), np.round(lon, decimals=3), np.round(prob, decimals=3)])
                 for lat, lon, prob in zip(self.lats, self.lons, self.probs)])
@@ -95,6 +95,7 @@ class MapViewerGUI(object):
     self.probs_and_coords_data = \
       [["Lat", "Lon", "Prob"]] + [[float(row[0]), float(row[1]), float(row[2])] for row in self.probs_and_coords_data]
     self.view_counter = 0
+    self.ht_counter = 0
 
     # Create GUI
     self.map_title = sample_name
@@ -226,21 +227,27 @@ class MapViewerGUI(object):
     # Save image
     ht_map_fname = os.path.join(IMAGES_DIR, "{}-{}-{}-{}.png".format(self.map_title, center_lat, center_lon, radius))
     self.fig.savefig(ht_map_fname)
-    self.image_fnames.append(os.path.abspath(ht_map_fname))
+    # self.image_fnames.append(os.path.abspath(ht_map_fname))
 
     # Add probabilities in circle
     sum_prob = np.round(self.sum_probabilities_in_circle(center_lat, center_lon, radius), decimals=3)
     hypothesis_test_result = \
-      "Lat: {}\nLon: {}\n Radius: {}km\n Probability: {}".format(center_lat, center_lon, radius, sum_prob)
+      "HT {}\nLat: {}\nLon: {}\n Radius: {}km\n Probability: {}".format(self.ht_counter, center_lat, center_lon, radius,
+                                                                        sum_prob)
     messagebox.showinfo("Hypothesis test result", hypothesis_test_result)
 
     # Add to hypothesis test results
-    if self.ht_results_data is None:
-      self.ht_results_data = \
-        [["Center lat", "Center lon", "Radius (km)", "Probability"],
-         [float(center_lat), float(center_lon), float(radius), float(sum_prob)]]
-    else:
-      self.ht_results_data.append([float(center_lat), float(center_lon), float(radius)])
+    ht_result_tuple = (os.abspath(ht_map_fname), hypothesis_test_result)
+    self.ht_results_data.append(ht_result_tuple)
+
+    #if self.ht_results_data is None:
+    #  self.ht_results_data = \
+    #    [["Center lat", "Center lon", "Radius (km)", "Probability"],
+    #     [float(center_lat), float(center_lon), float(radius), float(sum_prob)]]
+    #else:
+    #  self.ht_results_data.append([float(center_lat), float(center_lon), float(radius)])
+
+    self.ht_counter += 1
 
   def _reset_map(self):
     self.ax.clear()

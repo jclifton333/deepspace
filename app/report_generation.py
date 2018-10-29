@@ -14,7 +14,7 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
   :param sample_name: name of sample corresponding to images
   :param images:
   :param probabilities:
-  :param ht_results: array containing results of hypothesis tests
+  :param ht_results: list of tuples (ht image name, string of ht results)
   :return:
   """
 
@@ -32,11 +32,16 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
   for image in images:
     Story.append(Image(image, 6*inch, 4*inch))
 
+  # Add hypothesis test images and results
   Story.append(Paragraph("Hypothesis test results: ", getSampleStyleSheet()["Normal"]))
-  if ht_results is None:
+  if len(ht_results) == 0:
     Story.append(Paragraph("No hypothesis tests to report", getSampleStyleSheet()["Normal"]))
   else:
-    Story.append(Table(ht_results))
+    for image, result_str in ht_results:
+      Story.append(Image(image, 6*inch, 4*inch))
+      Story.append(Paragraph(result_str, getSampleStyleSheet()["Normal"]))
+
+  # Add table of probs and coordinates
   Story.append(Paragraph("Point probabilities: \n", getSampleStyleSheet()["Normal"]))
   Story.append(Table(probabilities))
 
