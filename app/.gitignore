@@ -1,4 +1,5 @@
 reports/
+model/tmp/
 *.biom
 *.png
 *.pdf
