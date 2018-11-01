@@ -7,6 +7,10 @@ http://bagrow.com/dsv/heatmap_basemap.html
 """
 from mpl_toolkits.basemap import Basemap
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+from matplotlib.colorbar import ColorbarBase
+from matplotlib.colors import BoundaryNorm
 from matplotlib.figure import Figure
 import matplotlib.patches as mpatches
 import numpy as np
@@ -14,7 +18,7 @@ import os
 import json
 import geopy
 from geopy.distance import VincentyDistance, vincenty
-import matplotlib.pyplot as plt
+
 import datetime
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate
@@ -162,6 +166,14 @@ class MapViewerGUI(object):
     self.fig = Figure(figsize=(5, 4), dpi=100)
     self.ax = self.fig.add_subplot(111)
     self.ax.set_title(self.map_title)
+
+    # Legend
+    cmap = plt.cm.jet
+    bins = [0.5, 0.75, 0.9, 1.0]
+    handles = [mpatches.Patch(color=cmap((bins[i] + bins[i+1])/2), label="{} confidence region".format(bins[i]))
+               for i in range(len(bins)-1)]
+    self.ax.legend(handles=handles, bbox_to_anchor=(1, -0.01), fontsize=10, handlelength=1)
+
     self.m = Basemap(projection='cyl',llcrnrlat=-90,urcrnrlat=90,\
                      llcrnrlon=-180,urcrnrlon=180,resolution='c', ax=self.ax)
 
@@ -169,19 +181,23 @@ class MapViewerGUI(object):
     self.formatted_lons = np.compress(np.logical_or(x < 1.e20, y < 1.e20), x)
     self.formatted_lats = np.compress(np.logical_or(x < 1.e20, y < 1.e20), y)
     # CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.probs)
-    cmap = plt.cm.jet
-    bins = [0.5, 0.75, 0.9, 1.0]
-    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=bins, cmap=cmap)
+
     self.m.drawcoastlines()
     self.m.drawcountries()
+    self.m.drawmapboundary(fill_color="aqua")
+    self.m.fillcontinents(color="green", lake_color="aqua", alpha=1.0, zorder=1)
+    cmap = cmap.from_list("Custom cmap", [cmap(i) for i in range(cmap.N)], cmap.N)
+    bounds = np.linspace(0, 1, 5)
+    norm = BoundaryNorm(bounds, cmap.N)
+    sm = cm.ScalarMappable(cmap=cmap, norm=norm)
+    sm.set_array([])
+    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=bins, cmap=cmap, norm=norm, zorder=2)
+    cb = self.fig.colorbar(sm, ax=self.ax)
 
     # Plot highest-probability point
     x_highest_prob, y_highest_prob = self.m(self.highest_prob_lon, self.highest_prob_lat)
     self.m.plot(x_highest_prob, y_highest_prob, 'gD', markersize=5)
 
-    # Legend
-    handles = [mpatches.Patch(color=cmap(reg), label="{} confidence region".format(reg)) for reg in bins]
-    self.ax.legend(handles=handles)
     # self.m.colorbar(location="bottom", label="Confidence level")
 
     # Display in GUI
