@@ -170,9 +170,9 @@ class MapViewerGUI(object):
     # Legend
     cmap = plt.cm.jet
     bins = [0.5, 0.75, 0.9, 1.0]
-    handles = [mpatches.Patch(color=cmap((bins[i] + bins[i+1])/2), label="{} confidence region".format(bins[i]))
-               for i in range(len(bins)-1)]
-    self.ax.legend(handles=handles, bbox_to_anchor=(1, -0.01), fontsize=10, handlelength=1)
+    # handles = [mpatches.Patch(color=cmap((bins[i] + bins[i+1])/2), label="{} confidence region".format(bins[i]))
+    #            for i in range(len(bins)-1)]
+    # self.ax.legend(handles=handles, bbox_to_anchor=(1, -0.01), fontsize=10, handlelength=1)
 
     self.m = Basemap(projection='cyl',llcrnrlat=-90,urcrnrlat=90,\
                      llcrnrlon=-180,urcrnrlon=180,resolution='c', ax=self.ax)
@@ -186,13 +186,15 @@ class MapViewerGUI(object):
     self.m.drawcountries()
     self.m.drawmapboundary(fill_color="aqua")
     self.m.fillcontinents(color="green", lake_color="aqua", alpha=1.0, zorder=1)
-    cmap = cmap.from_list("Custom cmap", [cmap(i) for i in range(cmap.N)], cmap.N)
-    bounds = np.linspace(0, 1, 5)
+    # cmap = cmap.from_list("Custom cmap", [cmap(i) for i in range(cmap.N)], cmap.N)
+    bounds = np.linspace(0.5, 1, 5)
     norm = BoundaryNorm(bounds, cmap.N)
     sm = cm.ScalarMappable(cmap=cmap, norm=norm)
     sm.set_array([])
-    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=bins, cmap=cmap, norm=norm, zorder=2)
+    CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=bins, cmap=cmap, zorder=2)
     cb = self.fig.colorbar(sm, ax=self.ax)
+    cb.set_label("Confidence level", rotation=270)
+    cb.ax.set_yticklabels(['0.5', '0.75', '0.9', '1.0'])
 
     # Plot highest-probability point
     x_highest_prob, y_highest_prob = self.m(self.highest_prob_lon, self.highest_prob_lat)
