@@ -7,6 +7,7 @@ http://bagrow.com/dsv/heatmap_basemap.html
 """
 from mpl_toolkits.basemap import Basemap
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.lines import Line2D
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from matplotlib.colorbar import ColorbarBase
@@ -198,9 +199,9 @@ class MapViewerGUI(object):
 
     # Plot highest-probability point
     x_highest_prob, y_highest_prob = self.m(self.highest_prob_lon, self.highest_prob_lat)
-    self.m.plot(x_highest_prob, y_highest_prob, 'gD', markersize=5)
-
-    # self.m.colorbar(location="bottom", label="Confidence level")
+    self.m.plot(x_highest_prob, y_highest_prob, 'w*', markersize=15)
+    self.ax.legend(handles=[Line2D([], [], color='white', marker='*', linestyle='None', markersize=10,
+                                  label='Highest probability location')], bbox_to_anchor=(1, -0.01), prop={'size':10})
 
     # Display in GUI
     self.master.wm_title("Embedding in TK")
