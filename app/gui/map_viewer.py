@@ -18,6 +18,7 @@ import numpy as np
 import os
 import json
 import geopy
+import pdb
 import pandas as pd
 from geopy.distance import VincentyDistance, vincenty
 
@@ -58,7 +59,7 @@ def get_coords_and_probs_from_json(json_fname):
   with open(json_fname) as f:
     data = json.load(f)
 
-  lats, lons, probs, regs = [], [], [], []
+  lats, lons, probs, regs, countries = [], [], [], [], []
 
   for features in data['features']:
     coords = features['geometry']['coordinates'][0]
@@ -69,13 +70,15 @@ def get_coords_and_probs_from_json(json_fname):
     probs.append(prob)
     reg = features['properties']['reg']
     regs.append(reg)
+    country = features['properties']['country']
+    countries.append(country)
 
   lats = np.array(lats)
   lons = np.array(lons)
   probs = np.array(probs)
   regs = np.array(regs)
 
-  return lats, lons, probs, regs
+  return lats, lons, probs, regs, countries
 
 
 IMAGES_DIR = os.path.join(THIS_DIR, "..", "images")
@@ -88,18 +91,19 @@ class MapViewerGUI(object):
 
     # Get lats longs and values for making heatmap
     fname = os.path.join("geojson", json_fname)
-    self.lats, self.lons, self.probs, self.regs = get_coords_and_probs_from_json(fname)
+    self.lats, self.lons, self.probs, self.regs, self.countries = get_coords_and_probs_from_json(fname)
 
     # Initialize stuff for pdf report generation
     self.image_fnames = []  # Filenames for images to be included in PDF report
     self.ht_results_data = []  # List of tuples (ht image fname, string of ht results)
     self.probs_and_coords_data = \
-      np.array([np.array([np.round(lat, decimals=3), np.round(lon, decimals=3), np.round(prob, decimals=3)])
-                for lat, lon, prob in zip(self.lats, self.lons, self.probs)])
-    self.probs_and_coords_data = self.probs_and_coords_data[(-self.probs_and_coords_data[:, -1]).argsort()]
-    self.highest_prob_lat, self.highest_prob_lon = self.probs_and_coords_data[0, 0], self.probs_and_coords_data[0, 1]
+      [[np.round(lat, decimals=3), np.round(lon, decimals=3), np.round(prob, decimals=3), country]
+       for lat, lon, prob, country in zip(self.lats, self.lons, self.probs, self.countries)]
+    self.probs_and_coords_data = [self.probs_and_coords_data[i] for i in (-self.probs).argsort()]
+    self.highest_prob_lat, self.highest_prob_lon = self.probs_and_coords_data[0][0], self.probs_and_coords_data[0][1]
     self.probs_and_coords_data = \
-      [["Lat", "Lon", "Prob"]] + [[float(row[0]), float(row[1]), float(row[2])] for row in self.probs_and_coords_data]
+      [["Lat", "Lon", "Prob", "Country"]] + [[float(row[0]), float(row[1]), float(row[2]), row[3]] for row in
+                                             self.probs_and_coords_data]
     self.view_counter = 0
     self.ht_counter = 0
 
