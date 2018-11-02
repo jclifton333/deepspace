@@ -18,6 +18,7 @@ import numpy as np
 import os
 import json
 import geopy
+import pandas as pd
 from geopy.distance import VincentyDistance, vincenty
 
 import datetime
@@ -196,6 +197,13 @@ class MapViewerGUI(object):
     cb = self.fig.colorbar(sm, ax=self.ax)
     cb.set_label("Confidence level", rotation=270)
     cb.ax.set_yticklabels(['0.5', '0.75', '0.9', '1.0'])
+
+    # Plot country names
+    # country_lon_lat = pd.read_csv(os.path.join(THIS_DIR, "country_lat_lon.csv"))
+    # for country_name, lat_, lon_ in zip(country_lon_lat.country, country_lon_lat.Longitude,
+    #                                   country_lon_lat.Latitude):
+    #   centroid_x, centroid_y = self.m(lat_, lon_)
+    #   self.ax.text(centroid_x, centroid_y, country_name, fontsize=5)
 
     # Plot highest-probability point
     x_highest_prob, y_highest_prob = self.m(self.highest_prob_lon, self.highest_prob_lat)
