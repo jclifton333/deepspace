@@ -31,7 +31,6 @@ def get_reg_dict(domain, sp_pred_regs, probs, sample_id_str_):
     # This initializes confidence region assignment of each cell in domain 
     # to 1; will be overwritten for cells at lower confidence levels 
     df_reg = pd.DataFrame(1.0, index=domain.ids, columns=['reg'])
-    
     regs = list(map(float, sp_pred_reg.keys()))
     regs.sort(reverse=True)
     for reg in regs:
@@ -42,7 +41,8 @@ def get_reg_dict(domain, sp_pred_regs, probs, sample_id_str_):
       {
         'type': 'Feature',
         # 'properties': {'id': str(id_), 'probability': float(probs[id_])},
-        'properties': {'id': str(sample_id_str_), 'probability': float(probs[id_]), 'reg': df_reg['reg'][id_]},
+        'properties': {'id': str(sample_id_str_), 'probability': float(probs[id_]), 'reg': df_reg['reg'][id_],
+                       'country': domain.areas.country[id_]},
         'geometry': domain_geom_dict[id_]
       }    
       for id_, reg_s in df_reg.iterrows()

@@ -5,6 +5,19 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import inch
 
 
+def convert_string_formatting(s):
+  """
+  Convert some basic python formatting to report lab formatting.
+
+  :param s:
+  :return:
+  """
+  s.replace(' ', '&nbsp;')
+  s = s.replace('\n', '<br />')
+  s = s.replace('\t', '&nbsp;&nbsp;&nbsp;&nbsp;')
+  return s
+
+
 def build_pdf_report(sample_name, images, probabilities, ht_results):
   """
   For building pdf report from map displayed in mapviewer.
@@ -39,10 +52,13 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
   else:
     for image, result_str in ht_results:
       Story.append(Image(image, 6*inch, 4*inch))
+      result_str = convert_string_formatting(result_str)
       Story.append(Paragraph(result_str, getSampleStyleSheet()["Normal"]))
 
   # Add table of probs and coordinates
-  Story.append(Paragraph("Point probabilities: \n", getSampleStyleSheet()["Normal"]))
+  point_probabilities_title = "\nPoint probabilities: \n"
+  point_probabilities_title = convert_string_formatting(point_probabilities_title)
+  Story.append(Paragraph(point_probabilities_title, getSampleStyleSheet()["Normal"]))
   Story.append(Table(probabilities))
 
   doc.build(Story)
