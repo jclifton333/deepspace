@@ -5,7 +5,8 @@ https://stackoverflow.com/questions/7546050/switch-between-two-frames-in-tkinter
 """
 
 from mpl_toolkits.basemap import Basemap
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+# from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 from matplotlib.figure import Figure
 import numpy as np
 import json

@@ -6,7 +6,8 @@ Adapting heatmap stuff from
 http://bagrow.com/dsv/heatmap_basemap.html
 """
 from mpl_toolkits.basemap import Basemap
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+# from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 from matplotlib.lines import Line2D
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
@@ -110,7 +111,7 @@ class MapViewerGUI(object):
     # Create GUI
     self.map_title = sample_name
     self.draw_basemap()
-    self.canvas.show()
+    self.canvas.draw()
     base_map_fname = os.path.join(IMAGES_DIR, "{}.png".format(self.map_title))
     self.fig.savefig(base_map_fname)
     self.image_fnames.append(os.path.abspath(base_map_fname))
@@ -228,7 +229,7 @@ class MapViewerGUI(object):
     # Toolbar
     self.toolbarFrame = Tk.Frame(master=self.master)
     self.toolbarFrame.grid(row=1, column=2)
-    toolbar = NavigationToolbar2TkAgg(self.canvas, self.toolbarFrame)
+    toolbar = NavigationToolbar2Tk(self.canvas, self.toolbarFrame)
     toolbar.update()
 
   def _add_view_to_report(self):
@@ -283,7 +284,7 @@ class MapViewerGUI(object):
   def _reset_map(self):
     self.ax.clear()
     self.draw_basemap()
-    self.canvas.show()
+    self.canvas.draw()
 
   # # Quit button
   # def _quit(self):

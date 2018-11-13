@@ -3,7 +3,8 @@ This first screen the user sees when the app starts.  Should include buttons to 
 fitting and 2) sample selection (for mapviewer).
 """
 from mpl_toolkits.basemap import Basemap
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+# from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 from matplotlib.figure import Figure
 import numpy as np
 import json
