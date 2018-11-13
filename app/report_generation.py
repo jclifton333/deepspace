@@ -56,10 +56,11 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
       Story.append(Paragraph(result_str, getSampleStyleSheet()["Normal"]))
 
   # Add table of probs and coordinates
-  point_probabilities_title = "\nPoint probabilities: \n"
-  point_probabilities_title = convert_string_formatting(point_probabilities_title)
-  Story.append(Paragraph(point_probabilities_title, getSampleStyleSheet()["Normal"]))
-  Story.append(Table(probabilities))
+  if probabilities is not None:
+      point_probabilities_title = "\nPoint probabilities: \n"
+      point_probabilities_title = convert_string_formatting(point_probabilities_title)
+      Story.append(Paragraph(point_probabilities_title, getSampleStyleSheet()["Normal"]))
+      Story.append(Table(probabilities))
 
   doc.build(Story)
   return
@@ -67,9 +68,9 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
 
 if __name__ == "__main__":
   sample_name_ = "Costa RicaC"
-  images_ = ["image.png"]
+  images_ = ["images/Cl1-181113_142354.png"]
   probabilities_ = None
-  build_pdf_report(sample_name_, images_, probabilities_)
+  build_pdf_report(sample_name_, images_, probabilities_, [])
 
 
 
