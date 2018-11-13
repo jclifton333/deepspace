@@ -3,6 +3,7 @@ from reportlab.pdfgen import canvas
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Table
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import inch
+import pdb
 
 
 def convert_string_formatting(s):
@@ -32,9 +33,10 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
   """
 
   timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
-  report_fname = \
-    "/mnt/c/Users/Jesse/Desktop/forensic-geolocation-master/deepspace/app/reports/pdfs/{}-{}.pdf".format(sample_name,
-                                                                                                         timestamp)
+  # report_fname = \
+    # "/mnt/c/Users/Jesse/Desktop/forensic-geolocation-master/deepspace/app/reports/pdfs/{}-{}.pdf".format(sample_name,
+    #                                                                                                      timestamp)
+  report_fname = "C:/Users/User/Desktop/deepspace/app/reports/pdfs/{}-{}.pdf".format(sample_name, timestamp)
   doc = SimpleDocTemplate(report_fname)
   Story = []
 
