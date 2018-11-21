@@ -69,7 +69,7 @@ class GUIController(Tk.Tk):
   def show_frame(self, page_name):
     frame = self.frames[page_name]
     frame.tkraise()
-    if page_name == "SampleSelectGUI":
+    if page_name in ["SampleSelectGUI", "SampleSelectGUI"]:
       frame.refresh()
 
 

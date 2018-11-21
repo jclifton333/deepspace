@@ -35,6 +35,18 @@ def string_is_positive_integer(string):
   except ValueError:
     return False
 
+def split_taxon_name(string):
+  """
+  Split "Taxon[integer]" into "Taxon", "[integer]"
+  """
+  found_integer_at_end = False
+  for i, s in string:
+    if string_is_positive_integer(s):
+      break
+  return [string[:i], string[i:]]
+
+  
+
 
 TAXON_ERROR = "-Taxon name formatted incorrectly."
 INTEGER_ERROR = "-Incorrect data type in count data; they should all be positive integers."
@@ -52,9 +64,9 @@ def check_uploaded_file_for_errors(df):
 
   }
 
-  # Make sure index is of form Taxon_[integer]
+  # Make sure index is of form Taxon[integer]
   for taxon_name in df.index:
-    split_name = taxon_name.split("_")
+    split_name = split_taxon_name(taxon_name)
     if len(split_name) > 1:
       if split_name[0] != 'Taxon':
         if not error_dictionary[TAXON_ERROR]:
@@ -116,6 +128,7 @@ class SampleUploadGUI(Tk.Frame):
         "Running model on samples in {}.  This will take about 7 minutes per sample.".format(self.csv_fname_to_analyze)
       messagebox.showinfo("Running model", run_model_message)
       read_split_convert_compute(self.csv_fname_to_analyze)
+      messagebox.showinfo("", "Model finished running.")
 
   def browsecsv(self):
     from tkinter.filedialog import askopenfilename
@@ -152,6 +165,12 @@ class SampleUploadGUI(Tk.Frame):
           messagebox.showerror("Formatting error", error_string)
       else:
         messagebox.showerror("File type error", "Wrong file type.  Must upload .csv or .xslx.")
+
+    def refresh(self):
+      self.filename = ""
+      # For checking whether already-analyzed sample is being uploaded
+      self.existing_json_filenames = [json_fname.split(".json")[0] for json_fname in
+                                      os.listdir(os.path.join(THIS_DIR, "geojson"))]
 
 
 if __name__ == "__main__":

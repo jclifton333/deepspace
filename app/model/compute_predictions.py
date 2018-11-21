@@ -122,7 +122,6 @@ def read_split_convert_csv_to_biom(fname, names_of_samples_to_exclude=[]):
       logging.info("Sample {} has count below min count of {}; it won't be analyzed.".format(colname, MIN_COUNT))
     else:
       # Convert to biom
-      logging.info("Converting sample {} to biom.".format(colname))
       basename = 'sample-{}_otus.biom'.format(colname)
       biom_sample_fname = os.path.join(tmp, basename)
       if basename not in os.listdir(tmp):
