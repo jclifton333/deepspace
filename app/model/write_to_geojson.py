@@ -36,17 +36,19 @@ def write_reg_dict_to_geojson(reg_dict_dict, seeds, dropped_otus):
       probability = feature['properties']['probability']
       coordinates = np.array(feature['geometry']['coordinates'][0])
       centroid = (np.mean(coordinates[:, 0]), np.mean(coordinates[:, 1]))
-      probs_and_centroids.append((probability, centroid))
+      country = feature['properties']['country']
+      probs_and_centroids.append((probability, country, centroid))
     probs_and_centroids = sorted(probs_and_centroids, key=lambda x: x[0], reverse=True)
 
     # Save to tsv
-    probs_and_centroids_dict = {'probs': [], 'lat': [], 'lon': []}
-    for prob, centroid in probs_and_centroids:
+    probs_and_centroids_dict = {'probs': [], 'lat': [], 'lon': [], 'country': []}
+    for prob, country, centroid in probs_and_centroids:
       probs_and_centroids_dict['probs'].append(prob)
       # probs_and_centroids_dict['lat'].append(centroid[0])
       # probs_and_centroids_dict['lon'].append(centroid[1])
       probs_and_centroids_dict['lat'].append(centroid[1])
       probs_and_centroids_dict['lon'].append(centroid[0])
+      probs_and_centroids_dict['country'].append(country)
     probs_and_centroids__df = pd.DataFrame(probs_and_centroids_dict)
     # timestamp = datetime.datetime.now().strftime("%y%m%d_%H%M%S")
     timestamp = reg_dict["timestamp"]

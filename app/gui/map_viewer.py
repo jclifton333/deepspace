@@ -175,7 +175,7 @@ class MapViewerGUI(object):
     self.ax.set_title(self.map_title)
 
     # Legend
-    cmap = plt.cm.jet
+    cmap = plt.cm.terrain
     bins = [0.5, 0.75, 0.9, 1.0]
     # handles = [mpatches.Patch(color=cmap((bins[i] + bins[i+1])/2), label="{} confidence region".format(bins[i]))
     #            for i in range(len(bins)-1)]

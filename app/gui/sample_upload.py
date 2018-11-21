@@ -40,10 +40,14 @@ def split_taxon_name(string):
   Split "Taxon[integer]" into "Taxon", "[integer]"
   """
   found_integer_at_end = False
-  for i, s in string:
+  for i, s in enumerate(string):
     if string_is_positive_integer(s):
       break
-  return [string[:i], string[i:]]
+  taxon_part = string[:i]
+  number_part = string[i:]
+  if taxon_part == 'Taxon_':  # I do this so I don't have to change the existing files formatted as 'Taxon_[integer]'.
+    taxon_part = 'Taxon'
+  return [taxon_part, number_part]
 
   
 
@@ -67,6 +71,7 @@ def check_uploaded_file_for_errors(df):
   # Make sure index is of form Taxon[integer]
   for taxon_name in df.index:
     split_name = split_taxon_name(taxon_name)
+    pdb.set_trace()
     if len(split_name) > 1:
       if split_name[0] != 'Taxon':
         if not error_dictionary[TAXON_ERROR]:
@@ -100,7 +105,9 @@ class SampleUploadGUI(Tk.Frame):
     self.csv_fname_to_analyze = None
     self.master = master
     csvfile = Tk.Label(self, text="File").grid(row=1, column=0)
-    bar = Tk.Entry(self).grid(row=1, column=1)
+    self.bar = Tk.Entry(self, width=75)
+    self.bar.grid(row=1, column=1)
+    self.bar.insert(0, "")
 
     # Buttons
     y = 7
@@ -135,6 +142,8 @@ class SampleUploadGUI(Tk.Frame):
 
     Tk.Tk().withdraw()
     self.filename = askopenfilename()
+    self.bar.delete(0, Tk.END)
+    self.bar.insert(0, self.filename)
 
   def process_csv(self):
     if self.filename:
@@ -167,6 +176,7 @@ class SampleUploadGUI(Tk.Frame):
         messagebox.showerror("File type error", "Wrong file type.  Must upload .csv or .xslx.")
 
     def refresh(self):
+      self.bar.delete(0, Tk.END)
       self.filename = ""
       # For checking whether already-analyzed sample is being uploaded
       self.existing_json_filenames = [json_fname.split(".json")[0] for json_fname in
