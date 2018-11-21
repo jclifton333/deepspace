@@ -98,7 +98,7 @@ class MapViewerGUI(object):
     self.image_fnames = []  # Filenames for images to be included in PDF report
     self.ht_results_data = []  # List of tuples (ht image fname, string of ht results)
     self.probs_and_coords_data = \
-      [[np.round(lat, decimals=3), np.round(lon, decimals=3), np.round(prob, decimals=3), country]
+      [[np.round(lat, decimals=5), np.round(lon, decimals=3), np.round(prob, decimals=3), country]
        for lat, lon, prob, country in zip(self.lats, self.lons, self.probs, self.countries)]
     self.probs_and_coords_data = [self.probs_and_coords_data[i] for i in (-self.probs).argsort()]
     self.highest_prob_lat, self.highest_prob_lon = self.probs_and_coords_data[0][0], self.probs_and_coords_data[0][1]

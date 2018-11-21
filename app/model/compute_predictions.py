@@ -30,6 +30,38 @@ logging.getLogger().setLevel(logging.INFO)
 DIR = os.path.dirname(os.path.abspath(__file__))
 
 
+def string_is_positive_integer(string):
+  """
+   Check if string is a positive integer.
+
+  :param string:
+  :return:
+  """
+  try:
+    val = int(string)
+    if val >= 0:
+      return True
+    else:
+      return False
+  except ValueError:
+    return False
+
+
+def split_taxon_name(string):
+  """
+  Split "Taxon[integer]" into "Taxon", "[integer]"
+  """
+  found_integer_at_end = False
+  for i, s in enumerate(string):
+    if string_is_positive_integer(s):
+      break
+  taxon_part = string[:i]
+  number_part = string[i:]
+  if taxon_part == 'Taxon_':  # I do this so I don't have to change the existing files formatted as 'Taxon_[integer]'.
+    taxon_part = 'Taxon'
+  return [taxon_part, number_part]
+
+
 def get_int_from_str(str):
   """
   Return integer in string, for getting partition number from filename.
@@ -68,7 +100,7 @@ def read_split_convert_csv_to_biom(fname, names_of_samples_to_exclude=[]):
 # Get list of OTUs that should be kept
   keep_otu_fp = os.path.join(DIR, 'global-otus.txt')
   OTUs_to_keep_str = open(keep_otu_fp, 'r')
-  OTUs_to_keep_list = OTUs_to_keep_str.read().split('\t')[:-1]  # Leave off '\n' at the end
+  OTUs_to_keep_list = OTUs_to_keep_str.read().split('\n')[:-1]  # Leave off '\n' at the end
 
   # Get sample data and get rid of rows with taxa that we can't include
   dropped_otus = []
@@ -88,7 +120,7 @@ def read_split_convert_csv_to_biom(fname, names_of_samples_to_exclude=[]):
   # ToDo: Get sorting right
   # Get taxa numbers from strings - ASSUMES LAST DIGIT ENCOUNTERED IS CORRECT NUMBER
   # Subtract 1 because taxa are 1-indexed
-  taxa_numbers = [[int(s) - 1 for s in taxa_str.split('_') if s.isdigit()][-1] for taxa_str in df.index]
+  taxa_numbers = [[int(s) - 1 for s in split_taxon_name(taxa_str) if s.isdigit()][-1] for taxa_str in df.index]
   sorted_taxa_ixs = np.argsort(taxa_numbers)
   df = df.iloc[sorted_taxa_ixs]
 

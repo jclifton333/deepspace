@@ -71,7 +71,6 @@ def check_uploaded_file_for_errors(df):
   # Make sure index is of form Taxon[integer]
   for taxon_name in df.index:
     split_name = split_taxon_name(taxon_name)
-    pdb.set_trace()
     if len(split_name) > 1:
       if split_name[0] != 'Taxon':
         if not error_dictionary[TAXON_ERROR]:
