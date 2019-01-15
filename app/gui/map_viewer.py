@@ -217,8 +217,10 @@ class MapViewerGUI(object):
 
     # Plot highest-probability point
     x_highest_prob, y_highest_prob = self.m(self.highest_prob_lon, self.highest_prob_lat)
-    self.m.plot(x_highest_prob, y_highest_prob, 'w*', markersize=15)
-    self.ax.legend(handles=[Line2D([], [], color='white', marker='*', linestyle='None', markersize=10,
+    self.m.plot(x_highest_prob, y_highest_prob, 'w^', markersize=15, markeredgewidth='2', markeredgecolor='black', 
+                markerfacecolor='white')
+    self.ax.legend(handles=[Line2D([], [], color='white', marker='^', markeredgewidth='2', markersize=15,
+                                  markeredgecolor='black', markerfacecolor='white',
                                   label='Highest probability location')], bbox_to_anchor=(1, -0.01), prop={'size':10})
 
     # Display in GUI
