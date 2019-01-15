@@ -205,8 +205,8 @@ class MapViewerGUI(object):
     sm.set_array([])
     CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=bins, cmap=cmap, zorder=2)
     cb = self.fig.colorbar(sm, ax=self.ax, extend='min')
-    cb.set_label("Confidence level", rotation=270)
-    cb.ax.set_yticklabels(['0.5', '0.75', '0.9', '1.0'])
+    cb.set_label("Confidence level", rotation=270, horizontalalignment='left')
+    cb.ax.set_yticklabels(['', '0.5', '0.75', '0.9', '1.0'])
 
     # Plot country names
     # country_lon_lat = pd.read_csv(os.path.join(THIS_DIR, "country_lat_lon.csv"))
@@ -221,7 +221,7 @@ class MapViewerGUI(object):
                 markerfacecolor='white')
     self.ax.legend(handles=[Line2D([], [], color='white', marker='^', markeredgewidth='2', markersize=15,
                                   markeredgecolor='black', markerfacecolor='white',
-                                  label='Highest probability location')], bbox_to_anchor=(1, -0.01), prop={'size':10})
+                                  label='Highest probability location')], loc='lower right', prop={'size':10})
 
     # Display in GUI
     self.master.wm_title("Embedding in TK")
