@@ -12,7 +12,7 @@ from matplotlib.lines import Line2D
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from matplotlib.colorbar import ColorbarBase
-from matplotlib.colors import BoundaryNorm
+from matplotlib.colors import BoundaryNorm, LinearSegmentedColormap, ListedColormap
 from matplotlib.figure import Figure
 import matplotlib.patches as mpatches
 import numpy as np
@@ -98,7 +98,7 @@ class MapViewerGUI(object):
     self.image_fnames = []  # Filenames for images to be included in PDF report
     self.ht_results_data = []  # List of tuples (ht image fname, string of ht results)
     self.probs_and_coords_data = \
-      [[np.round(lat, decimals=5), np.round(lon, decimals=3), np.round(prob, decimals=3), country]
+      [[np.round(lat, decimals=5), np.round(lon, decimals=5), np.round(prob, decimals=3), country]
        for lat, lon, prob, country in zip(self.lats, self.lons, self.probs, self.countries)]
     self.probs_and_coords_data = [self.probs_and_coords_data[i] for i in (-self.probs).argsort()]
     self.highest_prob_lat, self.highest_prob_lon = self.probs_and_coords_data[0][0], self.probs_and_coords_data[0][1]
@@ -175,8 +175,15 @@ class MapViewerGUI(object):
     self.ax.set_title(self.map_title)
 
     # Legend
-    cmap = plt.cm.terrain
+    # See https://matplotlib.org/examples/pylab_examples/custom_cmap.html
     bins = [0.5, 0.75, 0.9, 1.0]
+    # cmap = ListedColormap(['papayawhip', 'gold', 'coral', 'darkred'])
+    # cmap = ListedColormap(['white', 'lightgrey', 'darkgray', 'dimgray'])
+    # cmap = ListedColormap(['lavenderblush', 'thistle', 'orchid', 'darkmagenta'])
+    cmap = ListedColormap(['firebrick', 'gold', 'teal', 'midnightblue'])
+    bounds = [0, 0.5, 0.75, 0.9, 1.0]
+    norm = BoundaryNorm(bounds, cmap.N)
+
     # handles = [mpatches.Patch(color=cmap((bins[i] + bins[i+1])/2), label="{} confidence region".format(bins[i]))
     #            for i in range(len(bins)-1)]
     # self.ax.legend(handles=handles, bbox_to_anchor=(1, -0.01), fontsize=10, handlelength=1)
@@ -194,12 +201,10 @@ class MapViewerGUI(object):
     self.m.drawmapboundary(fill_color="aqua")
     self.m.fillcontinents(color="green", lake_color="aqua", alpha=1.0, zorder=1)
     # cmap = cmap.from_list("Custom cmap", [cmap(i) for i in range(cmap.N)], cmap.N)
-    bounds = np.linspace(0.5, 1, 5)
-    norm = BoundaryNorm(bounds, cmap.N)
     sm = cm.ScalarMappable(cmap=cmap, norm=norm)
     sm.set_array([])
     CS = self.m.hexbin(self.formatted_lons, self.formatted_lats, C=self.regs, bins=bins, cmap=cmap, zorder=2)
-    cb = self.fig.colorbar(sm, ax=self.ax)
+    cb = self.fig.colorbar(sm, ax=self.ax, extend='min')
     cb.set_label("Confidence level", rotation=270)
     cb.ax.set_yticklabels(['0.5', '0.75', '0.9', '1.0'])
 
