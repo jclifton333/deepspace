@@ -121,7 +121,7 @@ class MapViewerGUI(object):
     self.ht_frame.grid(row=0, column=0, sticky="n")
     Tk.Label(master=self.ht_frame, text="Lat").grid(row=0, column=0)
     Tk.Label(master=self.ht_frame, text="Lon").grid(row=1, column=0)
-    Tk.Label(master=self.ht_frame, text="Radius").grid(row=2, column=0)
+    Tk.Label(master=self.ht_frame, text="Radius (km)").grid(row=2, column=0)
     self.e1 = Tk.Entry(master=self.ht_frame)
     self.e2 = Tk.Entry(master=self.ht_frame)
     self.e3 = Tk.Entry(master=self.ht_frame)
@@ -180,7 +180,7 @@ class MapViewerGUI(object):
     # cmap = ListedColormap(['papayawhip', 'gold', 'coral', 'darkred'])
     # cmap = ListedColormap(['white', 'lightgrey', 'darkgray', 'dimgray'])
     # cmap = ListedColormap(['lavenderblush', 'thistle', 'orchid', 'darkmagenta'])
-    cmap = ListedColormap(['firebrick', 'gold', 'teal', 'midnightblue'])
+    cmap = ListedColormap(['red', 'orange', 'yellow', 'blue'])
     bounds = [0, 0.5, 0.75, 0.9, 1.0]
     norm = BoundaryNorm(bounds, cmap.N)
 
@@ -199,7 +199,7 @@ class MapViewerGUI(object):
     self.m.drawcoastlines()
     self.m.drawcountries()
     self.m.drawmapboundary(fill_color="aqua")
-    self.m.fillcontinents(color="green", lake_color="aqua", alpha=1.0, zorder=1)
+    self.m.fillcontinents(color="lightgray", lake_color="aqua", alpha=1.0, zorder=1)
     # cmap = cmap.from_list("Custom cmap", [cmap(i) for i in range(cmap.N)], cmap.N)
     sm = cm.ScalarMappable(cmap=cmap, norm=norm)
     sm.set_array([])
