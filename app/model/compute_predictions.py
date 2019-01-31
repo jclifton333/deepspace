@@ -210,6 +210,7 @@ def compute_predictions(biom_fname, sample_name, dropped_otus):
   logging.info('Computing likelihoods')
   dirname = os.path.join(DIR, 'fitted-models/{}'.format(seeds))
   # dirname = 'E:/'
+  # dirname = 'C:/Users/User/Desktop/fitted-models'
   likelihoods = []
   # models = [File for File in os.listdir(dirname) if
   #           File.endswith(".h5")]  # Get all files with .h5 extension (these are the fitted models)

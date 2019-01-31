@@ -59,7 +59,7 @@ def build_pdf_report(sample_name, images, probabilities, ht_results):
 
   # Add table of probs and coordinates
   if probabilities is not None:
-      point_probabilities_title = "\nPoint probabilities: \n"
+      point_probabilities_title = "\nPoint probabilities (greater than 0.001): \n"
       point_probabilities_title = convert_string_formatting(point_probabilities_title)
       Story.append(Paragraph(point_probabilities_title, getSampleStyleSheet()["Normal"]))
       Story.append(Table(probabilities))
