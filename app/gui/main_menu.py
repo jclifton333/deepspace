@@ -35,7 +35,7 @@ class MainMenuGUI(Tk.Frame):
     self.controller = controller
 
     # Main menu label
-    label = Tk.Label(self, text="DustBuster geolocation tool")
+    label = Tk.Label(self, text="ASVTracer geolocation tool")
 
     # Navigation buttons
     run_model_button = Tk.Button(self, text="Run model on new sample",

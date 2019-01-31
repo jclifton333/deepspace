@@ -146,7 +146,9 @@ class MapViewerGUI(object):
     # button.grid(row=2, column=2)
 
   def _generate_pdf_report(self):
-    build_pdf_report(self.map_title, self.image_fnames, self.probs_and_coords_data, self.ht_results_data)
+    # Get only rows where probability will display as non-zero
+    probs_and_coords_for_pdf = [self.probs_and_coords_data[0]] + [row for row in self.probs_and_coords_data[1:] if row[2] > 0.001]
+    build_pdf_report(self.map_title, self.image_fnames, probs_and_coords_for_pdf, self.ht_results_data)
 
   def sum_probabilities_in_circle(self, lat, lon, radius):
     """
